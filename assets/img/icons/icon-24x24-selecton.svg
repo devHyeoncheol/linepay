@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55 (78076) - https://sketchapp.com -->
+    <title>93FCDF4B-9C35-45C5-8507-E86C6B14F3E6</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="GUIDE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04_BUTTON" transform="translate(-245.000000, -487.000000)">
+            <g id="Glyphs/Dropdown/B" transform="translate(245.000000, 487.000000)">
+                <rect id="Rectangle" transform="translate(12.000000, 12.000000) rotate(90.000000) translate(-12.000000, -12.000000) " x="0" y="0" width="24" height="24"></rect>
+                <path d="M15.5328512,12.5321261 L15.5328512,4.84017613 C15.5328512,4.41540933 15.8771927,4.07106781 16.3019595,4.07106781 C16.7267263,4.07106781 17.0710678,4.41540933 17.0710678,4.84017613 L17.0710678,13.3019595 C17.0710678,13.7267263 16.7267263,14.0710678 16.3019595,14.0710678 C16.2866677,14.0710678 16.2714802,14.0706215 16.2564092,14.0697413 C16.2457254,14.0701411 16.234991,14.0703428 16.2242094,14.0703428 L7.85403939,14.0703428 C7.84942809,14.0704243 7.84480689,14.0704652 7.84017613,14.0704652 C7.41540933,14.0704652 7.07106781,13.7260689 7.07106781,13.3012344 C7.07106781,12.8764 7.41540933,12.5320037 7.84017613,12.5320037 C7.84480689,12.5320037 7.84942809,12.5320446 7.85403939,12.5321261 L15.5328512,12.5321261 Z" id="icon/input/dropdown_select" fill="#111111" fill-rule="evenodd" transform="translate(12.071068, 9.071068) rotate(-315.000000) translate(-12.071068, -9.071068) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

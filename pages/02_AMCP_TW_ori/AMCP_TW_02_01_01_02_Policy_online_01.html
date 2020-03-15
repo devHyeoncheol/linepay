@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg01">전체 10단계 중 1단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우
+                <p class="prg02">전체 10단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--curr"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li><a href="#">Merchant Info</a>
+                                </li>
+                                <li><a href="#">Address</a>
+                                </li>
+                                <li><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li><a href="#">Settlement Info</a>
+                                </li>
+                                <li><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Device Order</a>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                        <li><a href="#">iPass Application</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>Terms of Service</h1>
+                    <p>Please accept all items.</p>
+                </header>
+                <section class="cont__section">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article policy">
+                        <div class="col9 policy-first">
+                            <div class="btn-checkbox" role="group" data-element="checkbox">
+                                <label class="pualugin-checkbox pualugin-checkbox--all pualugin-checkbox--top">
+                                    <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__all"> <i class="pualugin-checkbox__icon"></i>
+                                    <span class="pualugin-checkbox__text">Accept all the terms of the Membership Agreement</span>
+                                </label>
+                                <ul class="terms">
+                                    <!-- 190712 첫번째 li We do not introduce LINE Pay merchandise service. 부분
+                                        삭제 -->
+                                    <li class="terms__list">
+                                        <label class="pualugin-checkbox">
+                                            <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                            <span class="pualugin-checkbox__text">LINE Pay Merchant Terms of Use.</span>
+                                        </label>
+                                        <!-- 모달 버튼 -->
+                                        <button class="btn btn--text terms__modal-btn" data-element="modal__open" data-target="#terms22LP02">View</button>
+                                    </li>
+                                    <li class="terms__list">
+                                        <label class="pualugin-checkbox">
+                                            <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                            <span class="pualugin-checkbox__text">LINE Pay Privacy Policy.</span>
+                                        </label>
+                                        <!-- 모달 버튼 -->
+                                        <button class="btn btn--text terms__modal-btn" data-element="modal__open" data-target="#terms22LP03">View</button>
+                                    </li>
+                                    <li class="terms__list">
+                                        <label class="pualugin-checkbox">
+                                            <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                            <span class="pualugin-checkbox__text">Sharing Merchant Information.</span>
+                                        </label>
+                                        <!-- 모달 버튼 -->
+                                        <button class="btn btn--text terms__modal-btn" data-element="modal__open" data-target="#terms22LP04">View</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="form__error-text">Please accept all terms and conditions.</p>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--right col9">
+                    <button type="button" class="btn btn--line">Back</button>
+                    <!-- 모든 필수 내용 입력되었는지 확인 후 Next버튼 disabled 삭제하기 -->
+                    <button type="button" class="btn" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- [s] AMCP_JP_02_01_02_02_LP01 -->
+    <div id="terms22LP01" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Prohibition of use</h1>
+                    <div class="modal__scrollarea modal-policy">
+                        <p class="modal-policy__text">LINE Pay is prohibited in the above-mentioned merchandise service. Thank you for your consent and compliance.</p>
+                        <ul class="ol-list">
+                            <li class="ol-list__li">Superior service against public order and morals <br>Ex : illegal goods (illegal drugs, weapons, etc.), adult services, etc.</li>
+                            <li class="ol-list__li">Certain Continuous Service Services</li>
+                            <li class="ol-list__li">Refundable cash proceeds <br>Ex : gift certificates, various kinds of securities, coupon tickets, etc.</li>
+                            <li class="ol-list__li">Commodities other than goods or services in exchange for payment : donations, fundraising,</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP01 -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP02 LINE Cash -->
+    <div id="terms22LP02" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP02 LINE Cash -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP03 LINE Money -->
+    <div id="terms22LP03" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP03 LINE Money -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP04 Private Policy-->
+    <div id="terms22LP04" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP04 Private Policy-->
+    <!-- [s] AMCP_JP_02_01_03_03_LP01 -->
+    <div id="terms33LP01" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_03_03_LP01 -->
+    <!-- [s] Specific -->
+    <div id="termsS01" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title">Specified Commercial Transactions Act</h1>
+                    <div class="modal__scrollarea modal-terms">
+                        <div style="width: 100%; padding: 150px 0; text-align: center; opacity: 0.2; background-color: rgb(255, 0, 0);">TBD</div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] Specific -->
+    <!-- [s] Advance -->
+    <div id="termsS02" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title">Pre-paid transaction</h1>
+                    <div class="modal__scrollarea modal-terms">
+                        <div style="width: 100%; padding: 150px 0; text-align: center; opacity: 0.2; background-color: rgb(255, 0, 0);">TBD</div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] Advance -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

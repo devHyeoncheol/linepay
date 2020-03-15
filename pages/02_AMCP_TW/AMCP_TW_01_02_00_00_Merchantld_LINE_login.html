@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container contain   er-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center" style="padding-bottom:3.5rem;">
+                    <h1>Create Merchant ID</h1>
+                    <p>Merchant account will be used to log into MYPAGE on Merchant Center
+                    </p>
+                </header>
+                <section class="cont__section">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit col8 error">
+                            <label for="input07" class="form__label form__label--required" style="font-size: 20px; top: 28px;">Merchant ID</label>
+                            <div class="form__with-btn">
+                                <input type="text" id="input07" class="form__element comp">
+                                <button class="btn btn--text">Check ID</button>
+                                <!-- check 완료시 done 클래스 추가 -->
+                            </div>
+                            <p class="form__guide-text">Alphanumeric 4-18 characters.</p>
+                            <p class="form__error-text">Required</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit error">
+                            <label for="input02" class="form__label form__label--required">Password</label>
+                            <input type="password" id="input02" class="form__element">
+                            <p class="form__guide-text">Must be 8-18 characters with upper and lowercase alphabet and numbers.</p>
+                            <p class="form__error-text">Required</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit error">
+                            <label for="input03" class="form__label form__label--required">Confirm Password</label>
+                            <input type="password" id="input03" class="form__element">
+                            <p class="form__error-text">Required</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit error">
+                            <label for="input04" class="form__label form__label--required">Email Address</label>
+                            <input type="password" id="input04" class="form__element">
+                            <p class="form__error-text">This is an invalid format.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="btn-checkbox agree-checkbox">
+                            <label class="pualugin-checkbox">
+                                <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                <span class="pualugin-checkbox__text">I read and agree to </span>
+                            </label> <a href="https://terms2.line.me/linepay_merchant_PP_JP?lang=ja" target="_blank" class="text-btn type2">LINE Pay Merchant Privacy Policy</a>
+                            <p class="form__error-text">Required</p>
+                        </div>
+                    </article>
+                    <div class="cont__btnbox contain54--btn"> <a href="#" class="btn btn--big btn--gray2">Create</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

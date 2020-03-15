@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="331" height="272" viewBox="0 0 331 272">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#F00" d="M0 0h331v272H0z" opacity=".2"/>
+        <text fill="#FFF" font-family="SFProText-Semibold, SF Pro Text" font-size="50" font-weight="500">
+            <tspan x="115" y="154">TBD</tspan>
+        </text>
+    </g>
+</svg>

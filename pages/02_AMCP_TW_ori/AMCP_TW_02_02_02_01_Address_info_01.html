@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg03">전체 10단계 중 3단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우
+                <p class="prg02">전체 10단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--comp"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li class="left__nav--comp"><a href="#">Merchant Info</a>
+                                </li>
+                                <li class="left__nav--curr"><a href="#">Address</a>
+                                </li>
+                                <li><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li><a href="#">Settlement Info</a>
+                                </li>
+                                <li><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Device Order</a>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                        <li><a href="#">iPass Application</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>Registration Address</h1>
+                    <p>LINE Pay Please enter the merchant address you need to register your merchant.</p>
+                </header>
+                <section class="cont__section startkit">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="pdt0 cont__article mcht-info-wrap col9">
+                        <div class="mcht-info mcht-info--form">
+                            <div class="mcht-info__header mcht-info__header--checkbox">
+                                <h2 class="mcht-info__title">Registration Address</h2>
+                                <label class="pualugin-checkbox mcht-info__right">
+                                    <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                    <span class="pualugin-checkbox__text">Same as Corporation Address</span>
+                                </label>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__form">
+                                    <div class="form form--half">
+                                        <div class="form__unit">
+                                            <label for="select01" class="form__label form__label--required">Store Country</label>
+                                            <select name="select" id="select01" class="form__element">
+                                                <option>Store Country</option>
+                                                <option>option1</option>
+                                                <option>option1</option>
+                                            </select>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="select02" class="form__label form__label--required">Store District</label>
+                                            <select name="select" id="select02" class="form__element">
+                                                <option>Store District</option>
+                                                <option>option1</option>
+                                                <option>option1</option>
+                                            </select>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                    </div>
+                                    <div class="form">
+                                        <div class="form__unit">
+                                            <label for="input01" class="form__label form__label--required">Store Address</label>
+                                            <input type="text" id="input01" class="form__element" />
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                    </div>
+                                    <div class="form">
+                                        <div class="form__unit">
+                                            <label for="input02" class="form__label form__label--required">Postal Code</label>
+                                            <input type="text" id="input02" class="form__element" />
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info mcht-info--form">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Registration Address (English)</h2>
+                                <label class="pualugin-checkbox mcht-info__right">
+                                    <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                    <span class="pualugin-checkbox__text">Same as Corporation Address</span>
+                                </label>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__form">
+                                    <div class="form form--half">
+                                        <div class="form__unit">
+                                            <label for="select03" class="form__label form__label--required">Store Country(English)</label>
+                                            <select name="select" id="select03" class="form__element">
+                                                <option>Store Country(English)</option>
+                                                <option>option1</option>
+                                                <option>option1</option>
+                                            </select>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="select04" class="form__label form__label--required">Store District(English)</label>
+                                            <select name="select" id="select04" class="form__element">
+                                                <option>Store District(English)</option>
+                                                <option>option1</option>
+                                                <option>option1</option>
+                                            </select>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                    </div>
+                                    <div class="form">
+                                        <div class="form__unit">
+                                            <label for="input03" class="form__label form__label--required">Store Address</label>
+                                            <input type="text" id="input03" class="form__element" />
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div> <a href="https://www.post.gov.tw/post/internet/SearchZone/index.jsp?ID=130112" target="_blank" class="text-btn mcht-info__text-btn" disabled="">Translate Address into English</a>
+                                    </div>
+                                    <div class="form">
+                                        <div class="form__unit">
+                                            <label for="input04" class="form__label form__label--required">Postal Code</label>
+                                            <input type="text" id="input04" class="form__element" />
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--between col9">
+                    <button type="button" class="btn btn--line">Save</button>
+                    <button type="button" class="btn btn--line">Back</button>
+                    <button type="button" class="btn" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <script>
+        $('.img-box').each(function() {
+            var imgBox = $(this);
+            var imgList = imgBox.find('.img-box__list');
+            var imgItem = imgList.find('div.img-item');
+            var imgReset = imgBox.find('.img-box__reset');
+            imgItem.each(function() {
+                if ($(this).hasClass('img-preview') || $(this).find('.img-item__delete').length > 0) {
+                    //
+                } else {
+                    $(this).addClass('nofunc');
+                }
+            });
+            if (imgBox.hasClass('img-box-logo')) {
+                if (imgItem.length != 0) {
+                    imgReset.show();
+                }
+            }
+            if (imgItem.length != 0) {
+                imgReset.show();
+            }
+        })
+        $(document).on('click', 'div.img-item', function() {
+            var thisItem = $(this);
+            var imgDelete = thisItem.find('.img-item__delete');
+            var imgItemOn = $(this).hasClass('is-active');
+            //var imgList = $(this).parents('.img-box').find('.img-box__wrap .img-box__list .img-item');
+            //var imgReset = $(this).parents('.img-box').find('.img-box__reset');
+            if (imgDelete.length > 0) {
+                if (!imgItemOn) {
+                    $(this).addClass('is-active');
+                } else {
+                    $(this).removeClass('is-active');
+                }
+            }
+        });
+        $(document).on('click', '.img-item__delete', function() {
+            if ($(this).parent().parent().find('div.img-item').length == 1) {
+                $(this).parents('.img-box').find('.img-box__reset').hide();
+            }
+            $(this).parent().remove();
+        })
+        $(document).on('click', '.img-box__reset', function() {
+            $(this).parents('.img-box').find('.img-box__wrap .img-box__list div.img-item').remove();
+            $(this).hide();
+        });
+    </script>
+</body>
+
+</html>

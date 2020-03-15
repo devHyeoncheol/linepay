@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#111" font-family="PublicSans-Light, Public Sans" font-size="22" font-weight="300" letter-spacing="-.8" transform="translate(-354 -6)">
+            <tspan x="0" y="22">Password1234</tspan>
+        </text>
+        <text fill="#FF0008" font-family="PublicSans-Light, Public Sans" font-size="11" font-weight="300" letter-spacing="-.2" transform="translate(-354 -6)">
+            <tspan x="0" y="54">Please fill out this form. / This password is not correct.</tspan>
+        </text>
+        <path fill="#FF0008" d="M-354 32H24v2h-378z"/>
+        <path fill="#B7B7B7" d="M12 7c-3.636 0-6.742 2.073-8 5 1.258 2.927 4.364 5 8 5s6.742-2.073 8-5c-1.258-2.927-4.364-5-8-5zm0 8.333c-2.007 0-3.636-1.493-3.636-3.333S9.993 8.667 12 8.667 15.636 10.16 15.636 12 14.007 15.333 12 15.333zM12 10c-1.207 0-2.182.893-2.182 2s.975 2 2.182 2c1.207 0 2.182-.893 2.182-2s-.975-2-2.182-2z"/>
+        <text fill="#949494" font-family="PublicSans-Light, Public Sans" font-size="14" font-weight="300" letter-spacing="-.5" transform="translate(-354 -31)">
+            <tspan x="0" y="15">Password</tspan>
+        </text>
+        <g fill="#FF0008" transform="translate(-293 -29)">
+            <circle cx="2.5" cy="2.5" r="2"/>
+        </g>
+        <g>
+            <path d="M0-1h24v24H0z"/>
+            <path fill="#111" d="M12 7c-3.636 0-6.742 2.073-8 5 1.258 2.927 4.364 5 8 5s6.742-2.073 8-5c-1.258-2.927-4.364-5-8-5zm0 8.333c-2.007 0-3.636-1.493-3.636-3.333S9.993 8.667 12 8.667 15.636 10.16 15.636 12 14.007 15.333 12 15.333zM12 10c-1.207 0-2.182.893-2.182 2s.975 2 2.182 2c1.207 0 2.182-.893 2.182-2s-.975-2-2.182-2z"/>
+        </g>
+    </g>
+</svg>

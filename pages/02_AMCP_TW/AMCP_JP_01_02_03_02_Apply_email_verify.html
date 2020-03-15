@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center contain54c">
+                    <h1>Email Verification</h1>
+                    <p>URL is sent to your Email. Please press the URL within message and continue applying.</p>
+                </header>
+                <section class="cont__section">
+                    <article class="pdt0 cont__article form contain54 ta-center-block">
+                        <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                        -->
+                        <div class="pdt0 form__unit error--show">
+                            <!-- 190715 클래스 error--show 추가 -->
+                            <input type="text" id="input01" class="form__element bold pdr50" value="aaaaa@abc.com"> <span class="counter--green">02:59</span>
+                            <p class="form__guide-text dark">URL is available in 3 minutes. <br>After 3 minutes, please resend verification URL by pressing ‘Resend URL’ button.</p>
+                            <p class="form__error-text">The validity period of the certificate has expired. Please re-send verification mail via the button below.</p>
+                        </div>
+                    </article>
+                    <div class="cont__btnbox contain54--btn pdt0"> <a href="#" class="btn btn--gray1">Re-send</a>
+                    </div>
+                    <article class="cont__article form contain54 btn-next-box">
+                        <div class="gray-box gray-box--pd32">
+                            <h3>Did not receive the mail?</h3>
+                            <ul>
+                                <li>Please make sure that your mail is not classified as spam.</li>
+                                <li>If there is no mail in the spam mail box, please resend the authentication mail or send the authentication mail to another mail address.</li>
+                                <li>Click the Resend button to resend the verification email to the same email address.</li>
+                                <li><a href="#">Click here</a> to receive a verification email at a different email address.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                    <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                    <a href="#">0120-993-454</a>
+                </li>
+                <li>
+                    <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                    <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Sales</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

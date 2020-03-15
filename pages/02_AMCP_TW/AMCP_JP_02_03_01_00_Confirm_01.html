@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg07">전체 7단계 중 7단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우 <p
+                class="prg02">전체 7단계 중 2단계</p>>-->
+        </div>
+        <div class="container cramped">
+            <div class="cont" id="cont" tabindex="0">
+                <header class="cont__header">
+                    <h1>Confirm Merchant App</h1>
+                    <p>Please check the information you entered before submitting your LINE Pay merchant application.</p>
+                </header>
+                <section class="cont__section mcht-confirm">
+                    <article class="cont__article mcht-info-wrap col9 mcht-info-wrap--line">
+                        <!-- 190712 element추가 -->
+                        <div class="mcht-info account">
+                            <div class="mcht-info__header mcht-info__header--noline">
+                                <h2 class="mcht-info__title">Merchant Information</h2>
+                            </div>
+                            <div class="form form--review form--half">
+                                <dl class="form__unit">
+                                    <dt class="form__label">Merchant ID</dt>
+                                    <!-- 190712 텍스트 수정 -->
+                                    <dd class="form__element">merchantID@pay.line</dd>
+                                </dl>
+                                <dl class="form__unit">
+                                    <dt class="form__label">Email</dt>
+                                    <!-- 190712 텍스트 수정 -->
+                                    <dd class="form__element">emailaddress@domailcom</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info account">
+                            <div class="mcht-info__header mcht-info__header--noline">
+                                <h2 class="mcht-info__title">Merchant Type</h2>
+                            </div>
+                            <p class="mcht-info__sub">Offline Store</p>
+                        </div>
+                        <!-- //190712 element추가 -->
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit error">
+                                <h2 class="mcht-info__title">Merchant Information</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#AMCPJPLPConfirm01">Edit</button>
+                                <!-- 190712 data-target명 변경 -->
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Top Categories</dt>
+                                    <dd class="mcht-info__dd">Finance</dd>
+                                    <dt class="mcht-info__dt">Sub Category</dt>
+                                    <dd class="mcht-info__dd">User selected value</dd>
+                                    <dt class="mcht-info__dt">Sales Item</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Company Name</dt>
+                                    <dd class="mcht-info__dd">LINE Pay</dd>
+                                    <dt class="mcht-info__dt">Company Name (in English)</dt>
+                                    <dd class="mcht-info__dd">LINE Pay</dd>
+                                    <dt class="mcht-info__dt">Company Name (Katakana)</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Brand Name</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Company Address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                    <dt class="mcht-info__dt">Company Phone Number</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Company Email</dt>
+                                    <dd class="mcht-info__dd">emailaddress@domailcom</dd>
+                                    <dt class="mcht-info__dt">Website Adress</dt>
+                                    <dd class="mcht-info__dd">www.pay.line.me/jp</dd>
+                                    <dt class="mcht-info__dt">Company Registration Number</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit">
+                                <h2 class="mcht-info__title">Merchant store information</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#AMCPJPLPConfirm02">Edit</button>
+                                <!-- 190712 data-target명 변경 -->
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Store Information</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Phone Number</dt>
+                                    <dd class="mcht-info__dd">123-456-789</dd>
+                                    <dt class="mcht-info__dt">Address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                    <dt class="mcht-info__dt">Opening Hours</dt>
+                                    <dd class="mcht-info__dd">10 AM</dd>
+                                    <dt class="mcht-info__dt">Other Information</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Image</dt>
+                                    <dd class="mcht-info__dd">
+                                        <div class="img-box">
+                                            <div class="img-box__wrap">
+                                                <div class="img-box__list">
+                                                    <div class="img-item">
+                                                        <img src="../../assets/img/tmp/tmp-gray-sqaure.svg" alt="images">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit error">
+                                <h2 class="mcht-info__title">Starter kit shipping</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#AMCPJPLPConfirm03">Edit</button>
+                                <!-- 190712 data-target명 변경 -->
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Name of Recipient (Kanjil)</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Recipient Phone Number</dt>
+                                    <dd class="mcht-info__dd">123-456-789</dd>
+                                    <dt class="mcht-info__dt">Address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit">
+                                <h2 class="mcht-info__title">Representative information</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#AMCPJPLPConfirm04">Edit</button>
+                                <!-- 190712 data-target명 변경 -->
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Representative Name</dt>
+                                    <dd class="mcht-info__dd">James</dd>
+                                    <dt class="mcht-info__dt">Representative Name (Katakana)</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Date of Birth</dt>
+                                    <dd class="mcht-info__dd">April 24, 1992</dd>
+                                    <dt class="mcht-info__dt">Address</dt>
+                                    <dd class="mcht-info__dd">Zip code, state, city, street address, building name</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit">
+                                <h2 class="mcht-info__title">Administrator Information</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#AMCPJPLPConfirm05">Edit</button>
+                                <!-- 190712 data-target명 변경 -->
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Administrator Name</dt>
+                                    <dd class="mcht-info__dd">James</dd>
+                                    <dt class="mcht-info__dt">Admin Name (Katakana)</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Department</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                    <dt class="mcht-info__dt">Email</dt>
+                                    <dd class="mcht-info__dd">emailaddress@domailcom</dd>
+                                    <dt class="mcht-info__dt">Phone Number</dt>
+                                    <dd class="mcht-info__dd">123-456-789</dd>
+                                    <!-- 190712 항목추가 -->
+                                    <dt class="mcht-info__dt">LINE ID</dt>
+                                    <dd class="mcht-info__dd">Lineid</dd>
+                                    <!-- //190712 항목추가 -->
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit">
+                                <h2 class="mcht-info__title">Settlement account information</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#AMCPJPLPConfirm06">Edit</button>
+                                <!-- [D] 팝업 확인용 버튼, 개발시 삭제해주세요  -->
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#AMCPJPLPConfirm06_2" style="right:2rem">Edit2</button>
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Settlement Method</dt>
+                                    <dd class="mcht-info__dd">Bank Account</dd>
+                                    <dt class="mcht-info__dt">Bank Name</dt>
+                                    <dd class="mcht-info__dd">LINE Pay</dd>
+                                    <dt class="mcht-info__dt">Branch Name</dt>
+                                    <dd class="mcht-info__dd">user input value</dd>
+                                    <dt class="mcht-info__dt">Number of Account </dt>
+                                    <dd class="mcht-info__dd">123-456-789-101112</dd>
+                                    <dt class="mcht-info__dt">Type of Account </dt>
+                                    <dd class="mcht-info__dd">user input value</dd>
+                                    <dt class="mcht-info__dt">Holder</dt>
+                                    <dd class="mcht-info__dd">User input value</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit">
+                                <h2 class="mcht-info__title">Required Documents</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#AMCPJPLPConfirm07">Edit</button>
+                                <!-- 190712 data-target명 변경 -->
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Copy of Corporate<br>Registration</dt>
+                                    <dd class="mcht-info__dd">
+                                        <div class="img-box">
+                                            <div class="img-box__wrap">
+                                                <div class="img-box__list">
+                                                    <!-- 이미지 외 파일이 업로드 됐을 때 .notimg 클래스 추가 부탁드립니다 -->
+                                                    <div class="img-item notimg">
+                                                        <!-- 이미지 외 파일이 업로드 됐을 때 노출되는 요소 -->
+                                                        <div class="notimg-box">
+                                                            <!-- 파일명 2줄 말줄임은 개발에서 처리 부탁드리겠습니다. -->
+                                                            <div class="file-name">
+                                                                <span>Filename422filen2344...</span><em>.pdf</em>
+                                                            </div>
+                                                        </div>
+                                                        <!-- //이미지 외 파일이 업로드 됐을 때 노출되어야 하는 요소 -->
+                                                        <img src="../../assets/img/tmp/tmp-gray-sqaure.svg" alt="images">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt class="mcht-info__dt">Representative<br>ID</dt>
+                                    <dd class="mcht-info__dd">
+                                        <div class="img-box">
+                                            <div class="img-box__wrap">
+                                                <div class="img-box__list">
+                                                    <div class="img-item">
+                                                        <img src="../../assets/img/tmp/tmp-gray-sqaure.svg" alt="images">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt class="mcht-info__dt">Proof of Actual<br>Business</dt>
+                                    <dd class="mcht-info__dd">
+                                        <div class="img-box">
+                                            <div class="img-box__wrap">
+                                                <div class="img-box__list">
+                                                    <div class="img-item">
+                                                        <img src="../../assets/img/tmp/tmp-gray-sqaure.svg" alt="images">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt class="mcht-info__dt">Business License<br>(Name of Permit)</dt>
+                                    <dd class="mcht-info__dd">
+                                        <div class="img-box">
+                                            <div class="img-box__wrap">
+                                                <div class="img-box__list">
+                                                    <div class="img-item">
+                                                        <img src="../../assets/img/tmp/tmp-gray-sqaure.svg" alt="images">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit error">
+                                <h2 class="mcht-info__title">Ordering LINE Pay Passive Terminals</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#">Edit</button>
+                                <!-- 190712 data-target명 변경 -->
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <!-- 191209 단말요금 항목 추가 -->
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">LINE Pay Terminal fee</dt>
+                                    <dd class="mcht-info__dd">Normal Plan</dd>
+                                    <dt class="mcht-info__dt">Payment Method</dt>
+                                    <dd class="mcht-info__dd">Use Credit Card</dd>
+                                    <dt class="mcht-info__dt">Shipping information</dt>
+                                    <dd class="mcht-info__dd">Green 8, White 12<br>
+                                            Zip code, state, city, street address, building name<br>
+                                            James Yun<br>
+                                            010-123-5595</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="mcht-info">
+                            <div class="mcht-info__header form__unit error">
+                                <h2 class="mcht-info__title">Ordering LINE Pay Passive Terminals</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s mcht-info__header-btn" data-element="modal__open" data-target="#">Edit</button>
+                                <p class="form__error-text">Invalid data. Please edit</p>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">LINE Pay Terminal fee</dt>
+                                    <dd class="mcht-info__dd">Cashless/Consumer-Return Business support plan<br><span class="guide-text">if not applicable, change to a regular plan</span></dd>
+                                    <dt class="mcht-info__dt">Payment Method</dt>
+                                    <dd class="mcht-info__dd">Use Credit Card</dd>
+                                    <dt class="mcht-info__dt">Shipping information</dt>
+                                    <dd class="mcht-info__dd">Green 8, White 12<br>
+                                            Zip code, state, city, street address, building name<br>
+                                            James Yun<br>
+                                            010-123-5595</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox">
+                    <button type="button" class="btn btn--big">Submit</button>
+                    <p class="last-confirm-text">I have confirmed the content of the application and submitted the application form.</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                    <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                    <a href="#">0120-993-454</a>
+                </li>
+                <li>
+                    <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                    <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Sales</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 190712 div id="AMCPJPLPConfirm" 제거 -->
+    <!-- 190712 추가 -->
+    <!-- AMCP_JP_02_03_01_00_LP01_Confrim -->
+    <div id="AMCPJPLPConfirm01" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Merchant information</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap">
+                            <div class="mcht-info mcht-info--form">
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input11" class="form__label form__label--required">Company Name</label>
+                                                <input type="text" id="input11" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input12" class="form__label form__label--required">Corporation Name (English)</label>
+                                                <input type="text" id="input12" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit error">
+                                                <label for="input13" class="form__label form__label--required">Corporation Name (Katakana)</label>
+                                                <input type="text" id="input13" class="form__element" />
+                                                <p class="form__guide-text">Corporation: LINE Pay Corproation / Individual: Taro Yamada</p>
+                                                <p class="form__error-text">Required.</p>
+                                            </div>
+                                            <div class="form__unit error">
+                                                <label for="input14" class="form__label form__label--required">Brand Name</label>
+                                                <input type="text" id="input14" class="form__element" />
+                                                <p class="form__guide-text type2">It becomes informa  tion to be notified to the user at the time of settlement.</p>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit error">
+                                                <label for="input15" class="form__label form__label--required">Postal Code</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input15" class="form__element" />
+                                                    <button type="button" class="icon-search form__search"></button>
+                                                </div>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select11" class="form__label form__label--required">State/ Province/ Region</label>
+                                                <select name="select" id="select11" class="form__element">
+                                                    <option>State/ Province/ Region</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input16" class="form__label form__label--required">City</label>
+                                                <input type="text" id="input16" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input17" class="form__label form__label--required">Street Address</label>
+                                                <input type="text" id="input17" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input18" class="form__label">Name of Building</label>
+                                                <input type="text" id="input18" class="form__element" />
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit tel__unit">
+                                                <label for="input19" class="form__label form__label--required">Phone of Business Representative</label>
+                                                <input type="tel" id="input19" class="form__element tel__elements">
+                                                <span class="tel__hyphen">-</span>
+                                                <input type="tel" id="input19_1" class="form__element tel__elements" title="tel_input">
+                                                <span class="tel__hyphen">-</span>
+                                                <input type="tel" id="input19_2" class="form__element tel__elements" title="tel_input">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                                <p class="form__guide-text">It becomes information to be notified to the user at the time of settlement.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input20" class="form__label form__label--required">Email of Business Representative</label>
+                                                <input type="text" id="input20" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                                <p class="form__guide-text">It becomes information to be notified to the user at the time of settlement.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input110" class="form__label form__label--required">Website URL</label>
+                                                <input type="text" id="input110" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input111" class="form__label">Corporate Number</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input111" class="form__element comp"> <a href="http://www.houjin-bangou.nta.go.jp/kensaku-kekka.html" target="_blank" class="icon-search form__search"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //AMCP_JP_02_03_01_00_LP01_Confrim -->
+    <!-- AMCP_JP_02_03_01_00_LP02_Confrim -->
+    <div id="AMCPJPLPConfirm02" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Merchant store information</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap">
+                            <div class="mcht-info mcht-info--form mcht-info--linencheck">
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input21" class="form__label form__label--required">Store Name</label>
+                                                <input type="text" id="input21" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit tel__unit">
+                                                <label for="input22" class="form__label form__label--required">Phone Number</label>
+                                                <input type="tel" id="input22" class="form__element tel__elements">
+                                                <span class="tel__hyphen">-</span>
+                                                <input type="tel" id="input22_1" class="form__element tel__elements" title="tel_input">
+                                                <span class="tel__hyphen">-</span>
+                                                <input type="tel" id="input22_2" class="form__element tel__elements" title="tel_input">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input23" class="form__label form__label--required">Postal Code</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input23" class="form__element" />
+                                                    <button type="button" class="icon-search form__search"></button>
+                                                    <!-- 190712 잘못들어가있던 부분 삭제합니다. -->
+                                                </div>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select19" class="form__label form__label--required">State/ Province/ Region</label>
+                                                <select name="select" id="select19" class="form__element">
+                                                    <option>State/ Province/ Region</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="select20" class="form__label form__label--required">City</label>
+                                                <input type="text" id="select20" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input24" class="form__label form__label--required">Street Address</label>
+                                                <input type="text" id="input24" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input25" class="form__label">Name of Building</label>
+                                                <input type="text" id="input25" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Business Hours-->
+                                        <div class="sales-info">
+                                            <div class="sales-info__item">
+                                                <div class="sales-info__header">
+                                                    <h3 class="sales-info__title">Business Hours</h3>
+                                                    <button type="button" class="btn btn--add sales-info__add"><span class="btn__icon btn__icon--add">Add Schedule</span>
+                                                    </button>
+                                                </div>
+                                                <!-- Default 없음, Add schedule 시 Schedule row 추가 됨 -->
+                                                <!-- Schedule row 한셋-->
+                                                <div class="sales-info__hour">
+                                                    <div class="sales-info__hour-delete">
+                                                        <button type="button" class="btn btn--text btn--text--s">Delete</button>
+                                                    </div>
+                                                    <div class="sales-info__date">
+                                                        <div class="check-date">
+                                                            <label class="check-date__item">
+                                                                <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Mon</span>
+                                                            </label>
+                                                            <label class="check-date__item">
+                                                                <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Tue</span>
+                                                            </label>
+                                                            <label class="check-date__item">
+                                                                <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Wed</span>
+                                                            </label>
+                                                            <label class="check-date__item">
+                                                                <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Thu</span>
+                                                            </label>
+                                                            <label class="check-date__item">
+                                                                <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Fri</span>
+                                                            </label>
+                                                            <label class="check-date__item">
+                                                                <input type="checkbox" class="check-date__input"> <span class="check-date__text">Sat</span>
+                                                            </label>
+                                                            <label class="check-date__item">
+                                                                <input type="checkbox" class="check-date__input"> <span class="check-date__text">Sun</span>
+                                                            </label>
+                                                            <label class="check-date__item">
+                                                                <input type="checkbox" class="check-date__input"> <span class="check-date__text">Holiday</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 190715 기획수정으로 마크업수정 -->
+                                                    <div class="form sales-info__form form--wave">
+                                                        <!--sales-info__form--half-->
+                                                        <div class="form__unit-wrap form__unit--from">
+                                                            <p class="sales-info__title-sub">Open</p>
+                                                            <div class="sales-info__select form__unit">
+                                                                <label for="select21" class="form__label">HH</label>
+                                                                <select name="select" id="select21" class="form__element form__selectric">
+                                                                    <option>HH</option>
+                                                                    <option>01</option>
+                                                                    <option>02</option>
+                                                                    <option>03</option>
+                                                                    <option>04</option>
+                                                                    <option>05</option>
+                                                                    <option>06</option>
+                                                                    <option>07</option>
+                                                                    <option>08</option>
+                                                                    <option>09</option>
+                                                                    <option>10</option>
+                                                                    <option>11</option>
+                                                                    <option>12</option>
+                                                                    <option>13</option>
+                                                                    <option>14</option>
+                                                                    <option>15</option>
+                                                                    <option>16</option>
+                                                                    <option>17</option>
+                                                                    <option>18</option>
+                                                                    <option>19</option>
+                                                                    <option>20</option>
+                                                                    <option>21</option>
+                                                                    <option>22</option>
+                                                                    <option>23</option>
+                                                                    <option>24</option>
+                                                                    <option>Closed</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="sales-info__select form__unit">
+                                                                <label for="select22" class="form__label">MM</label>
+                                                                <select name="select" id="select22" class="form__element form__selectric">
+                                                                    <option>MM</option>
+                                                                    <option>00</option>
+                                                                    <option>10</option>
+                                                                    <option>20</option>
+                                                                    <option>30</option>
+                                                                    <option>40</option>
+                                                                    <option>50</option>
+                                                                </select>
+                                                            </div>
+                                                            <p class="form__error-text">Please fill out this form.</p>
+                                                        </div>
+                                                        <div class="form__unit-wrap form__unit--to">
+                                                            <p class="sales-info__title-sub">Close</p>
+                                                            <div class="sales-info__select form__unit ">
+                                                                <label for="select23" class="form__label">HH</label>
+                                                                <select name="select" id="select23" class="form__element form__selectric">
+                                                                    <option>HH</option>
+                                                                    <option>01</option>
+                                                                    <option>02</option>
+                                                                    <option>03</option>
+                                                                    <option>04</option>
+                                                                    <option>05</option>
+                                                                    <option>06</option>
+                                                                    <option>07</option>
+                                                                    <option>08</option>
+                                                                    <option>09</option>
+                                                                    <option>10</option>
+                                                                    <option>11</option>
+                                                                    <option>12</option>
+                                                                    <option>13</option>
+                                                                    <option>14</option>
+                                                                    <option>15</option>
+                                                                    <option>16</option>
+                                                                    <option>17</option>
+                                                                    <option>18</option>
+                                                                    <option>19</option>
+                                                                    <option>20</option>
+                                                                    <option>21</option>
+                                                                    <option>22</option>
+                                                                    <option>23</option>
+                                                                    <option>24</option>
+                                                                    <option>Closed</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="sales-info__select form__unit ">
+                                                                <label for="select24" class="form__label">MM</label>
+                                                                <select name="select" id="select24" class="form__element form__selectric">
+                                                                    <option>MM</option>
+                                                                    <option>00</option>
+                                                                    <option>10</option>
+                                                                    <option>20</option>
+                                                                    <option>30</option>
+                                                                    <option>40</option>
+                                                                    <option>50</option>
+                                                                </select>
+                                                            </div>
+                                                            <p class="form__error-text">Please fill out this form.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- //190715 기획수정으로 마크업수정 -->
+                                                </div>
+                                                <!-- //Schedule row 한셋-->
+                                            </div>
+                                            <div class="sales-info__item">
+                                                <div class="sales-info__header">
+                                                    <h3 class="sales-info__title">Other information</h3>
+                                                </div>
+                                                <div class="form">
+                                                    <div class="form__unit">
+                                                        <label for="textarea2" class="form__label">Etc</label>
+                                                        <textarea id="textarea2" class="form__element form__textarea"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sales-info__item img-box img-box-logo">
+                                                <!-- logo의 경우 이미지 1개라도 추가시 추가 가능한 label.img-item 숨김처리 부탁드리겠습니다.-->
+                                                <div class="sales-info__header">
+                                                    <h3 class="sales-info__title">Logo image (Optional)</h3>
+                                                    <button type="button" class="btn btn--text btn--text--s img-box__reset">Delete</button>
+                                                    <div class="img-box__info ref">
+                                                        <p class="ref__text">130x130pixel recommended. JPG, JPEG, PNG 3MB max</p>
+                                                    </div>
+                                                </div>
+                                                <div class="img-box__wrap">
+                                                    <div class="img-box__list">
+                                                        <label for="add-file" class="img-item img-item--add">
+                                                            <input type="file" class="blind" id="add-file" data-js="add-img" /> <span>이미지 추가</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-checkbox">
+                                <label class="pualugin-checkbox startkit-order">
+                                    <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                    <span class="pualugin-checkbox__text">Publication Hope</span>
+                                </label>
+                            </div>
+                            <div class="btn-checkbox">
+                                <label class="pualugin-checkbox startkit-order">
+                                    <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                    <span class="pualugin-checkbox__text">We own more than 10 stores. Please contact us separately.</span>
+                                </label>
+                            </div>
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //AMCP_JP_02_03_01_00_LP02_Confrim -->
+    <!-- AMCP_JP_02_03_01_00_LP03_Confrim -->
+    <div id="AMCPJPLPConfirm03" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Starter kit shipping</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap">
+                            <div class="mcht-info mcht-info--form">
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input31" class="form__label form__label--required">Family Name of recipient</label>
+                                                <input type="text" id="input31" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input32" class="form__label form__label--required">First Name of recipient</label>
+                                                <input type="text" id="input32" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit tel__unit">
+                                                <label for="input33" class="form__label form__label--required">Phone Number</label>
+                                                <input type="tel" id="input33" class="form__element tel__elements">
+                                                <span class="tel__hyphen">-</span>
+                                                <input type="tel" id="input33_1" class="form__element tel__elements" title="tel_input">
+                                                <span class="tel__hyphen">-</span>
+                                                <input type="tel" id="input33_2" class="form__element tel__elements" title="tel_input">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input34" class="form__label form__label--required">Postal Code</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input34" class="form__element" />
+                                                    <button type="button" class="icon-search form__search"></button>
+                                                    <!-- 190712 잘못들어가있던 부분 삭제 -->
+                                                </div>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="select32" class="form__label form__label--required">State/ Province/ Region</label>
+                                                <select name="select" id="select32" class="form__element">
+                                                    <option>State/ Province/ Region</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select33" class="form__label form__label--required">City</label>
+                                                <input type="text" id="select33" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input35" class="form__label form__label--required">Street Address</label>
+                                                <input type="text" id="input35" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input36" class="form__label">Name of Building</label>
+                                                <input type="text" id="input36" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //AMCP_JP_02_03_01_00_LP03_Confrim -->
+    <!-- AMCP_JP_02_03_01_00_LP04_Confrim -->
+    <div id="AMCPJPLPConfirm04" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Representative information</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap">
+                            <div class="mcht-info mcht-info--form">
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input41" class="form__label form__label--required">Family Name of CEO</label>
+                                                <input type="text" id="input41" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input42" class="form__label form__label--required">First Name of CEO</label>
+                                                <input type="text" id="input42" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input43" class="form__label form__label--required">Family Full Name</label>
+                                                <input type="text" id="input43" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                                <p class="form__guide-text">Katagana; Only for Japanese</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input48" class="form__label form__label--required">First Full Name</label>
+                                                <input type="text" id="input48" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                                <p class="form__guide-text">Katagana; Only for Japanese</p>
+                                            </div>
+                                        </div>
+                                        <!-- 190712 변경 -->
+                                        <div class="form form--birth">
+                                            <div class="form__unit form__unit--year">
+                                                <label for="select901" class="form__label form__label--required">Year</label>
+                                                <select name="select" id="select901" class="form__element">
+                                                    <option>Year</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit form__unit--month">
+                                                <label for="select902" class="form__label form__label--required">Month</label>
+                                                <select name="select" id="select902" class="form__element">
+                                                    <option>Month</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit form__unit--date">
+                                                <label for="select903" class="form__label form__label--required">Date</label>
+                                                <select name="select" id="select903" class="form__element">
+                                                    <option>Date</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <!-- //190712 변경 -->
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input44" class="form__label form__label--required">Postal Code</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input44" class="form__element" />
+                                                    <button type="button" class="icon-search form__search"></button>
+                                                </div>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select43" class="form__label form__label--required">State/ Province/ Region</label>
+                                                <select name="select" id="select43" class="form__element">
+                                                    <option>State/ Province/ Region</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input45" class="form__label form__label--required">City</label>
+                                                <input type="text" id="input45" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input46" class="form__label form__label--required">Street Address</label>
+                                                <input type="text" id="input46" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input47" class="form__label">Name of Building</label>
+                                                <input type="text" id="input47" class="form__element" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //AMCP_JP_02_03_01_00_LP04_Confrim -->
+    <!-- AMCP_JP_02_03_01_00_LP05_Confrim -->
+    <div id="AMCPJPLPConfirm05" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Administrator Information</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap">
+                            <div class="mcht-info mcht-info--form">
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input51" class="form__label form__label--required">Family Full Name</label>
+                                                <input type="text" id="input51" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input52" class="form__label form__label--required">First Full Name</label>
+                                                <input type="text" id="input52" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input53" class="form__label form__label--required">Family Full Name</label>
+                                                <input type="text" id="input53" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                                <p class="form__guide-text">Katagana; Only for Japanese</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input54" class="form__label form__label--required">First Full Name</label>
+                                                <input type="text" id="input54" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                                <p class="form__guide-text">Katagana; Only for Japanese</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input55" class="form__label">Department</label>
+                                                <input type="text" id="input55" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input06" class="form__label form__label--required">Email Address</label>
+                                                <input type="text" id="input06" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit tel__unit">
+                                                <label for="input56" class="form__label form__label--required">Phone Number</label>
+                                                <input type="tel" id="input56" class="form__element tel__elements">
+                                                <span class="tel__hyphen">-</span>
+                                                <input type="tel" id="input56_1" class="form__element tel__elements" title="tel_input">
+                                                <span class="tel__hyphen">-</span>
+                                                <input type="tel" id="input56_2" class="form__element tel__elements" title="tel_input">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <!-- 노출 조건일 경우에만 노출 -->
+                                        <div class="form form--review">
+                                            <dl class="form__unit pdt0">
+                                                <dt class="form__label">LINE ID</dt>
+                                                <!-- 190712 form__label--required
+                                                    삭제 -->
+                                                <dd class="form__element">Lineid</dd>
+                                            </dl>
+                                            <p class="form__guide-text form__guide-text--static">Line ID is verified. <a href="#" class="form__guide-text--underline">Click here</a> to change your ID.</p>
+                                        </div>
+                                        <!-- //노출 조건일 경우에만 노출 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //AMCP_JP_02_03_01_00_LP05_Confrim -->
+    <!-- AMCP_JP_02_03_01_00_LP06_Confrim -->
+    <div id="AMCPJPLPConfirm06" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Settlement account information</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap">
+                            <div class="mcht-info mcht-info--form">
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input61" class="form__label form__label--required">Bank Name</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input61" class="form__element" />
+                                                    <button type="button" class="icon-search form__search" data-element="modal__open" data-target="#bank"></button>
+                                                </div>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input62" class="form__label form__label--required">Branch Name</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input62" class="form__element" />
+                                                    <button type="button" class="icon-search form__search" data-element="modal__open" data-target="#branch"></button>
+                                                </div>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input63" class="form__label form__label--required">Account Number</label>
+                                                <input type="text" id="input63" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select65" class="form__label form__label--required">Type</label>
+                                                <select name="select" id="select65" class="form__element">
+                                                    <option>Type</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input64" class="form__label form__label--required">Name of Account Holder</label>
+                                                <input type="text" id="input64" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //AMCP_JP_02_03_01_00_LP06_Confrim -->
+    <!-- AMCP_JP_02_03_01_00_LP06_Confrim_2 -->
+    <div id="AMCPJPLPConfirm06_2" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Settlement account information</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap pop-settle">
+                            <div class="mcht-info mcht-info--form">
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="data-wrap">
+                                            <div class="btn-radio" role="radiogroup">
+                                                <label class="btn-radio__label">
+                                                    <input type="radio" name="radio_use" id="radio_pay" class="btn-radio__input" checked="checked" data-toggle="pay">
+                                                    <i class="btn-radio__checkmark"></i>
+                                                    <span class="btn-radio__text">Use LINE Pay Balance Account</span>
+                                                </label>
+                                                <label class="btn-radio__label">
+                                                    <input type="radio" name="radio_use" id="radio_bank" class="btn-radio__input" data-toggle="bank">
+                                                    <i class="btn-radio__checkmark"></i>
+                                                    <span class="btn-radio__text">Use Bank Account</span>
+                                                </label>
+                                            </div>
+                                            <div class="data__toggle data__pay">
+                                                <ul class="ul-list ul-list--dot">
+                                                    <li class="ul-list__li">If total LINE Pay balance exceeds 100万円, LINE Pay cannot deposit the settlement.</li>
+                                                    <li class="ul-list__li">You can change the settlement method on My Page.</li>
+                                                    <li class="ul-list__li">If you select ’Use LINE Pay Balance Account’, you cannot use T+X. (Will be available on 2020/02)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="data__toggle data__bank">
+                                                <div class="form form--half">
+                                                    <div class="form__unit">
+                                                        <label for="input66" class="form__label form__label--required">Bank Name</label>
+                                                        <div class="form__with-btn form__with-btn--type2">
+                                                            <input type="text" id="input66" class="form__element" value="LINE" />
+                                                            <button type="button" class="icon-search form__search" data-element="modal__open" data-target="#bank"></button>
+                                                        </div>
+                                                        <p class="form__error-text">Please fill out this form.</p>
+                                                    </div>
+                                                    <div class="form__unit">
+                                                        <label for="input67" class="form__label form__label--required">Branch Name</label>
+                                                        <div class="form__with-btn form__with-btn--type2">
+                                                            <input type="text" id="input67" class="form__element" value="LINE" />
+                                                            <button type="button" class="icon-search form__search" data-element="modal__open" data-target="#branch"></button>
+                                                        </div>
+                                                        <p class="form__error-text">Please fill out this form.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form form--half">
+                                                    <div class="form__unit">
+                                                        <label for="input68" class="form__label form__label--required">Account Number</label>
+                                                        <input type="text" id="input68" class="form__element" value="0000-0000-0000" />
+                                                        <p class="form__error-text">Please fill out this form.</p>
+                                                    </div>
+                                                    <div class="form__unit">
+                                                        <label for="select64" class="form__label form__label--required">Type</label>
+                                                        <select name="select" id="select64" class="form__element">
+                                                            <option>Type</option>
+                                                            <option>option1</option>
+                                                            <option>option1</option>
+                                                        </select>
+                                                        <p class="form__error-text">Please fill out this form.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form">
+                                                    <div class="form__unit">
+                                                        <label for="input65" class="form__label form__label--required">Name of Account Holder</label>
+                                                        <input type="text" id="input65" class="form__element" value="Input Value" />
+                                                        <p class="form__error-text">Please fill out this form.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //AMCP_JP_02_03_01_00_LP06_Confrim_2 -->
+    <!-- AMCP_JP_02_03_01_00_LP07_Confrim -->
+    <div id="AMCPJPLPConfirm07" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Required Documents</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap mcht-info-wrap--line">
+                            <div class="mcht-info img-box">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">Copy of corporate registration</h2>
+                                    <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__img">
+                                        <div class="img-box__wrap">
+                                            <div class="img-box__list">
+                                                <!-- 190719 img 파일 이외의 파일이 올라가서 엑박 뜰 경우 notimg 클래스 추가 -->
+                                                <div class="img-item notimg">
+                                                    <div class="notimg-box">
+                                                        <img src="../../assets/img/amcp/img-doc.png" alt="" class="img-doc">
+                                                        <!-- 파일명 2줄 말줄임은 개발에서 처리 부탁드리겠습니다. -->
+                                                        <div class="file-name">
+                                                            <span>Filename422filen2344...</span><em>.pdf</em>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                    <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                                </div>
+                                                <label for="add-file1" class="img-item img-item--add">
+                                                    <input type="file" class="blind" id="add-file1" data-js="add-img" /> <span>이미지 추가</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="img-box__info ref">
+                                            <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                            <ul class="ref-list">
+                                                <li class="ref-list__item">Proof of all history.</li>
+                                                <li class="ref-list__item">Only documents issued within 6 months.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcht-info img-box">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">Representative ID</h2>
+                                    <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__img">
+                                        <div class="img-box__wrap">
+                                            <div class="img-box__list">
+                                                <!-- 190719 img 파일 이외의 파일이 올라가서 엑박 뜰 경우 notimg 클래스 추가 -->
+                                                <div class="img-item notimg">
+                                                    <div class="notimg-box">
+                                                        <img src="../../assets/img/amcp/img-doc.png" alt="" class="img-doc">
+                                                        <!-- 파일명 2줄 말줄임은 개발에서 처리 부탁드리겠습니다. -->
+                                                        <div class="file-name">
+                                                            <span>Filename422filen2344...</span><em>.pdf</em>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                    <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                                </div>
+                                                <div class="img-item">
+                                                    <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                    <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                                </div>
+                                                <div class="img-item">
+                                                    <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                    <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                                </div>
+                                                <label for="add-file2" class="img-item img-item--add">
+                                                    <input type="file" class="blind" id="add-file2" data-js="add-img" /> <span>이미지 추가</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="img-box__info ref">
+                                            <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                            <ul class="ref-list">
+                                                <li class="ref-list__item">Driver's license, health insurance card: both front and back</li>
+                                                <li class="ref-list__item">My number card: only front side</li>
+                                                <li class="ref-list__item">Other possible documents: alien registration card, residence card, special permanent resident certificate, pension handbook</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcht-info img-box">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">Photos inside the store</h2>
+                                    <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__img">
+                                        <div class="img-box__wrap">
+                                            <div class="img-box__list">
+                                                <label for="add-file3" class="img-item img-item--add">
+                                                    <input type="file" class="blind" id="add-file3" data-js="add-img" /> <span>이미지 추가</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="img-box__info ref">
+                                            <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcht-info img-box">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">Photos outside the store</h2>
+                                    <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__img">
+                                        <div class="img-box__wrap">
+                                            <div class="img-box__list">
+                                                <label for="add-file4" class="img-item img-item--add">
+                                                    <input type="file" class="blind" id="add-file4" data-js="add-img" /> <span>이미지 추가</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="img-box__info ref">
+                                            <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcht-info img-box">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">Business license</h2>
+                                    <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__img">
+                                        <div class="img-box__wrap">
+                                            <div class="img-box__list">
+                                                <label for="add-file10" class="img-item img-item--add">
+                                                    <input type="file" class="blind" id="add-file10" data-js="add-img" /> <span>이미지 추가</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="img-box__info ref">
+                                            <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //AMCP_JP_02_03_01_00_LP07_Confrim -->
+    <div id="bank" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1 searchb" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Search Bank Name</h1>
+                    <div class="modal__scrollarea">
+                        <!-- 0619 div.modal__scrollarea 로 감쌈 + bank, branch 동일하게 세경우(처음화면, 검색
+                            후, 검색 결과 없을 때) 추가 -->
+                        <div class="form">
+                            <div class="form__unit">
+                                <label for="input001" class="form__label">Bank Name</label>
+                                <div class="form__with-btn form__with-btn--type2">
+                                    <input type="text" id="input001" class="form__element" />
+                                    <button type="button" class="icon-search form__search"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [s] Default 검색 화면 : bank, brach 동일 -->
+                        <div class="search-result search-result--empty">
+                            <p class="search-result__empty-msg">Please enter your search term</p>
+                        </div>
+                        <!-- [e] Default 검색 화면 : bank, brach 동일 -->
+                        <!-- [s] 검색 결과 리스트 : bank, brach 동일 -->
+                        <div class="search-result" style="display: none;">
+                            <div class="search-result__item"> <span>ABC BANK</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC BANK</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC BANK</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC BANK</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC BANK</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC BANK</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC BANK</span>
+                            </div>
+                        </div>
+                        <!-- [e] 검색 결과 리스트 : bank, brach 동일 -->
+                        <!-- [s] 검색 결과 없을 경우 : bank, brach 동일 -->
+                        <div class="search-result search-result--empty" style="display: none;">
+                            <p class="search-result__empty-msg">There are no search results for <strong>abcd</strong>
+                            </p>
+                        </div>
+                        <!-- [e] 검색 결과 없을 경우 : bank, brach 동일 -->
+                    </div>
+                </section>
+                <div class="cont__btnbox">
+                    <button type="button" class="btn">Save</button>
+                </div>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <div id="branch" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1 searchb" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Search Branch Name</h1>
+                    <div class="modal__scrollarea">
+                        <!-- 0619 div.modal__scrollarea 로 감쌈 + bank, branch 동일하게 세경우(처음화면, 검색
+                            후, 검색 결과 없을 때) 추가 -->
+                        <div class="form">
+                            <div class="form__unit">
+                                <label for="input002" class="form__label">Branch Name</label>
+                                <div class="form__with-btn form__with-btn--type2">
+                                    <input type="text" id="input002" class="form__element" />
+                                    <button type="button" class="icon-search form__search"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [s] Default 검색 화면 : bank, brach 동일 -->
+                        <div class="search-result search-result--empty" style="display: none;">
+                            <p class="search-result__empty-msg">Please enter your search term</p>
+                        </div>
+                        <!-- [e] Default 검색 화면 : bank, brach 동일 -->
+                        <!-- [s] 검색 결과 리스트 : bank, brach 동일 -->
+                        <div class="search-result">
+                            <div class="search-result__item"> <span>ABC Branch</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC Branch</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC Branch</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC Branch</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC Branch</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC Branch</span>
+                            </div>
+                            <div class="search-result__item"> <span>ABC Branch</span>
+                            </div>
+                        </div>
+                        <!-- [e] 검색 결과 리스트 : bank, brach 동일 -->
+                        <!-- [s] 검색 결과 없을 경우 : bank, brach 동일 -->
+                        <div class="search-result search-result--empty" style="display: none;">
+                            <p class="search-result__empty-msg">There are no search results for <strong>abcd</strong>
+                            </p>
+                        </div>
+                        <!-- [e] 검색 결과 없을 경우 : bank, brach 동일 -->
+                    </div>
+                </section>
+                <div class="cont__btnbox">
+                    <button type="button" class="btn" disabled>Save</button>
+                </div>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //190712 추가 -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <script>
+        $('.img-box').each(function() {
+            var imgBox = $(this);
+            var imgList = imgBox.find('.img-box__list');
+            var imgItem = imgList.find('div.img-item');
+            var imgReset = imgBox.find('.img-box__reset');
+            imgItem.each(function() {
+                if ($(this).hasClass('img-preview') || $(this).find('.img-item__delete').length > 0) {
+                    //
+                } else {
+                    $(this).addClass('nofunc');
+                }
+            });
+            if (imgBox.hasClass('img-box-logo')) {
+                if (imgItem.length != 0) {
+                    imgReset.show();
+                }
+            }
+            if (imgItem.length != 0) {
+                imgReset.show();
+            }
+        })
+        $(document).on('click', 'div.img-item', function() {
+            var thisItem = $(this);
+            var imgDelete = thisItem.find('.img-item__delete');
+            var imgItemOn = $(this).hasClass('is-active');
+            //var imgList = $(this).parents('.img-box').find('.img-box__wrap .img-box__list .img-item');
+            //var imgReset = $(this).parents('.img-box').find('.img-box__reset');
+            if (imgDelete.length > 0) {
+                if (!imgItemOn) {
+                    $(this).addClass('is-active');
+                } else {
+                    $(this).removeClass('is-active');
+                }
+            }
+        });
+        $(document).on('click', '.img-item__delete', function() {
+            if ($(this).parent().parent().find('div.img-item').length == 1) {
+                $(this).parents('.img-box').find('.img-box__reset').hide();
+            }
+            $(this).parent().remove();
+        })
+        $(document).on('click', '.img-box__reset', function() {
+            $(this).parents('.img-box').find('.img-box__wrap .img-box__list div.img-item').remove();
+            $(this).hide();
+        });
+    </script>
+    <!-- 19.07.17 스크립트 추가-->
+    <script>
+        setTimeout(function() {
+            // 시간 ui 변형
+            hourSel();
+        }, 100)
+
+        function hourSel() {
+            var select = $('.sales-info__hour select');
+            select.each(function() {
+                var tg = $(this);
+                var add = 'sales-info__form--half';
+                var closeTxt = "Closed"; //to. 개발 : 해당 언어에 따른 단어를 기입해주세요.
+                if (hourSelectInit) {
+                    tg.selectric().on('change', function() {
+                        var selectVBal = tg.val();
+                        var form = tg.parents('.sales-info__form');
+                        if (selectVBal == closeTxt) {
+                            toClosed();
+                        } else {
+                            toReset();
+                        }
+
+                        function toClosed() {
+                            form.find('select').not(':eq(0)').attr('disabled', true);
+                            form.find('select:eq(0), select:eq(2)').prop('selectedIndex', 25).selectric('refresh');
+                            form.addClass(add);
+                        }
+
+                        function toReset() {
+                            if (form.hasClass(add)) {
+                                form.removeClass(add);
+                                form.find('select').not(':eq(0)').attr('disabled', false).prop('selectedIndex', 0).selectric('refresh');
+                            }
+                        }
+                    });
+                } else {
+                    tg.on('change', function() {
+                        var selectVBal = tg.val();
+                        var form = tg.parents('.sales-info__form');
+                        if (selectVBal == closeTxt) {
+                            toClosed();
+                        } else {
+                            toReset();
+                        }
+
+                        function toClosed() {
+                            form.find('select').not(':eq(0)').prop('disabled', true);
+                            form.find('select:eq(0), select:eq(2)').prop('selectedIndex', 25).prev('label').text(closeTxt);
+                            form.addClass(add);
+                        }
+
+                        function toReset() {
+                            if (form.hasClass(add)) {
+                                form.removeClass(add);
+                                form.find('select').not(':eq(0)').prop('disabled', false).prop('selectedIndex', 0);
+                                form.find('select:eq(2)').prev('label').text(form.find('select:eq(2)').val())
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+    <!-- //19.07.17 스크립트 추가-->
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>Merchant ID Creation</h1>
+                    <p>If you have an ID that you are using to sign up for a merchant, please <a href="#" class="apply-login-btn">login.</a>
+                    </p>
+                </header>
+                <section class="cont__section">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit">
+                            <label for="input01" class="form__label form__label--required">Merchant ID</label>
+                            <input type="text" id="input01" class="form__element">
+                            <p class="form__error-text">Please fill out this form. / The ID is already in use. / ID must be between 4 and 18 characters and must be a mixture of alphabetic characters and numbers.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit">
+                            <label for="input02" class="form__label form__label--required">Password</label>
+                            <input type="password" id="input02" class="form__element">
+                            <p class="form__error-text">Password must be between 8 and 18 characters and must be a mixture of alphabetic characters and numbers.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit">
+                            <label for="input03" class="form__label form__label--required">Confirm Password</label>
+                            <input type="password" id="input03" class="form__element">
+                            <p class="form__error-text">Passwords are not the same. Please re-enter.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit">
+                            <label for="input04" class="form__label form__label--required">Email Address</label>
+                            <input type="password" id="input04" class="form__element">
+                            <p class="form__error-text">This is an invalid format.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article contain54">
+                        <div class="captcha">
+                            <div class="captcha__descripton">
+                                <div class="captcha__coment">Please enter the characters shown in the image.</div>
+                                <div class="captcha__icon">
+                                    <button type="button" class="icon-refresh">새로고침</button>
+                                    <button type="button" class="icon-sound">소리듣기</button>
+                                </div>
+                            </div>
+                            <!-- capcha 영역 -->
+                            <div class="captcha__content">
+                                <div class="imgarea">
+                                    <img src="../../assets/img/amcp/img-capcha.jpg" alt="">
+                                </div>
+                                <div class="inputarea form">
+                                    <div class="form__unit">
+                                        <label for="input05" class="form__label">Type the Text</label>
+                                        <input type="password" id="input05" class="form__element">
+                                        <p class="form__error-text">Passwords are not the same. Please re-enter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //capcha 영역 -->
+                        </div>
+                    </article>
+                    <div class="cont__btnbox contain54--btn"> <a href="#" class="btn btn--big btn--gray2 mgb50">Create</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

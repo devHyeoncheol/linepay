@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont request_new" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>merchant application</h1>
+                </header>
+                <section class="cont__section cont__section--other data-wrap svc-type">
+                    <div class="pualugin-tab" data-element="tab">
+                        <ul class="pualugin-tab__ul">
+                            <li class="pualugin-tab__list" data-element="tab__list"> <a href="#" class="pualugin-tab__anchor" data-element="tab__anchor">Contact Request</a>
+                            </li>
+                            <li class="pualugin-tab__list" data-element="tab__list"> <a href="#" class="pualugin-tab__anchor" data-element="tab__anchor">Self Application</a>
+                            </li>
+                        </ul>
+                        <!-- [s] LINE Pay -->
+                        <div class="pualugin-tab__panel" data-element="tab__panel">
+                            <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+                            -->
+                            <article class="cont__article pdt0 radio">
+                                <p class="cont__guide_text tw" style="padding-bottom: 3.1rem;">Please leave your business information, LINE Pay will contact you then.</p>
+                                <h2 class="cont__sub-title">Merchant Type</h2>
+                                <div class="btn-radio tw" role="radiogroup">
+                                    <label class="btn-radio__label">
+                                        <input type="radio" name="radio1" id="radio11" class="btn-radio__input" checked="checked" data-toggle="newapp"> <i class="btn-radio__checkmark"></i>
+                                        <span class="btn-radio__text">New Application</span>
+                                    </label>
+                                    <label class="btn-radio__label">
+                                        <input type="radio" name="radio1" id="radio12" class="btn-radio__input" data-toggle="existingapp"> <i class="btn-radio__checkmark"></i>
+                                        <span class="btn-radio__text">Existing Merchant</span>
+                                    </label>
+                                </div>
+                            </article>
+                            <!-- new Merchant 선택시 노출되는 부분 -->
+                            <div class="data__toggle data__newapp">
+                                <article class="cont__article form pdt0">
+                                    <div class="form__unit">
+                                        <label for="input01" class="form__label">Referral Code</label>
+                                        <input type="text" id="input01" class="form__element" />
+                                        <p class="form__guide-text">If someone recommends you to register LINE Pay Merchant, they might have their own ‘Referral Code’. Code is required to let them get the reward.</p>
+                                        <p class="form__error-text">Required</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article form form--half pdt0">
+                                    <div class="form__unit error">
+                                        <label for="input01" class="form__label form__label--required">Brand name</label>
+                                        <input type="text" id="input01" class="form__element" />
+                                        <p class="form__error-text">Required</p>
+                                    </div>
+
+                                    <div class="form__unit error">
+                                        <label for="input02" class="form__label form__label--required">Administrator's name</label>
+                                        <input type="text" id="input02" class="form__element" />
+                                        <p class="form__error-text">Required</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article form form--half pdt0">
+                                    <div class="form__unit inputon tel__unit error">
+                                        <label for="input_20" class="form__label form__label--required" style="font-size: 12px; top: 29px;">Phone</label>
+                                        <input type="tel" id="input_20" class="form__element tel__elements comp" value="">
+                                        <span class="tel__hyphen">-</span>
+                                        <input type="tel" id="input_20_1" class="form__element tel__elements comp" title="tel_input" value="">
+                                        <span class="tel__hyphen">-</span>
+                                        <input type="tel" id="input_20_2" class="form__element tel__elements comp" title="tel_input" value="">
+                                        <p class="form__error-text">Required</p>
+                                    </div>
+                                    <div class="form__unit error">
+                                        <label for="input04" class="form__label">Email(optional)</label>
+                                        <input type="text" id="input04" class="form__element" />
+                                        <p class="form__guide-text">Ex. brown@linepay.com</p>
+                                        <p class="form__error-text">Invalid Email format</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article form form--half pdt0">
+                                    <div class="form__unit error">
+                                        <label for="select01" class="form__label form__label--required">Business type</label>
+                                        <select name="select" id="select01" class="form__element">
+                                            <option>Business type</option>
+                                            <option>Offline</option>
+                                            <option>Online</option>
+                                        </select>
+                                        <p class="form__error-text">Required</p>
+                                    </div>
+                                    <div class="form__unit error">
+                                        <label for="input06" class="form__label form__label--required">Website URL</label>
+                                        <input type="text" id="input06" class="form__element" />
+                                        <!-- input, select가 disabled 상태일 때 label.form__label에도 disabled 클래스 추가
+                                            부탁드려요.-->
+                                        <p class="form__error-text">Invalid URL format</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article form form--half pdt0">
+                                    <div class="form__unit error">
+                                        <label for="select02" class="form__label form__label--required">Business status</label>
+                                        <select name="select" id="select02" class="form__element">
+                                            <option>Business status</option>
+                                            <option>Open for business</option>
+                                            <option>Preparing to open</option>
+                                        </select>
+                                        <p class="form__error-text">Required</p>
+                                    </div>
+                                    <div class="form__unit error">
+                                        <label for="select03" class="form__label form__label--required">Number of stores</label>
+                                        <select name="select" id="select03" class="form__element">
+                                            <option>Number of stores</option>
+                                            <option>No store</option>
+                                            <option>1 store</option>
+                                            <option>2-5 store</option>
+                                            <option>6-10 store</option>
+                                            <option>10+ store</option>
+                                        </select>
+                                        <p class="form__error-text">Required</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article form pdt0">
+                                    <div class="form__unit error">
+                                        <label for="select04" class="form__label form__label--required">Business category</label>
+                                        <select name="select" id="select04" class="form__element">
+                                            <option>Business category</option>
+                                            <option>option1</option>
+                                            <option>option1</option>
+                                        </select>
+                                        <p class="form__error-text">Required</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article pdt0">
+                                    <div class="sales-info__hour contact__sales-info__hour">
+                                        <p class="contact__description required">Available Time Zone</p>
+                                        <div class="sales-info__date">
+                                            <div class="check-date check-date--big">
+                                                <label class="check-date__item type2">
+                                                    <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Mon</span>
+                                                </label>
+                                                <label class="check-date__item type2">
+                                                    <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Tue</span>
+                                                </label>
+                                                <label class="check-date__item type2">
+                                                    <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Wed</span>
+                                                </label>
+                                                <label class="check-date__item type2">
+                                                    <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Thu</span>
+                                                </label>
+                                                <label class="check-date__item type2">
+                                                    <input type="checkbox" class="check-date__input" checked="checked"> <span class="check-date__text">Fri</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form form--wave sales-info__form">
+                                            <div class="form__unit error form__unit--from inputon">
+                                                <label for="select003" class="form__label">Time</label>
+                                                <select name="select" id="select003" class="form__element">
+                                                    <option>Time</option>
+                                                    <option>11:00 AM</option>
+                                                    <option>12:00 PM</option>
+                                                    <option>1:00 PM</option>
+                                                </select>
+                                                <p class="form__error-text">Required</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="cont__article form pdt0">
+                                    <div class="form__unit">
+                                        <label for="input15" class="form__label">Others</label>
+                                        <input type="text" id="input15" class="form__element" />
+                                        <p class="form__guide-text">Any message you would like to leave</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- //new Merchant 선택시 노출되는 부분 -->
+                            <!-- Existing Merchant 선택시 노출되는 부분 -->
+                            <div class="data__toggle data__existingapp">
+                                <article class="cont__article form pdt0">
+                                    <div class="form__unit error">
+                                        <label for="input11" class="form__label form__label--required">Email</label>
+                                        <input type="text" id="input11" class="form__element" />
+                                        <p class="form__guide-text">Ex. brown@linepay.com</p>
+                                        <p class="form__error-text">Invalid Email format</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article form pdt0">
+                                    <div class="form__unit email error">
+                                        <label for="input12" class="form__label form__label--required">Merchant ID</label>
+                                        <input type="text" id="input12" class="form__element email" /><span>@line.pay</span>
+                                        <p class="form__error-text">Invalid Email format</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article form form--half pdt0">
+                                    <div class="form__unit inputon tel__unit type2 error">
+                                        <label for="input_20" class="form__label" style="font-size: 12px; top: 29px;">Phone number</label>
+                                        <input type="tel" id="input_20" class="form__element tel__elements comp" value="">
+                                        <span class="tel__hyphen">-</span>
+                                        <input type="tel" id="input_20_1" class="form__element tel__elements comp" title="tel_input" value="">
+                                        <span class="tel__hyphen">-</span>
+                                        <input type="tel" id="input_20_2" class="form__element tel__elements comp" title="tel_input" value="">
+                                        <p class="form__error-text">Invalid phone number format</p>
+                                    </div>
+                                </article>
+                                <article class="cont__article form pdt0">
+                                    <div class="form__unit error">
+                                        <label for="input14" class="text__label form__label--required">Inquiry details</label>
+                                        <textarea class="text__textarea" id="input14"></textarea>
+                                        <p class="form__error-text">Please enter at least 15 characters.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- //Existing Merchant 선택시 노출되는 부분 -->
+                            <div class="btn-checkbox agree-checkbox error">
+                                <label class="pualugin-checkbox">
+                                    <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                    <span class="pualugin-checkbox__text">I read and agree to </span>
+                                </label><button class="text-btn" data-element="modal__open" data-target="#payService" aria-expended="false" aria-controls="#payService">LINE Pay Privacy Policy.</button>
+                                <p class="form__error-text">Please read and agree.</p>
+                            </div>
+                            <article class="cont__article">
+                                <div class="captcha">
+                                    <div class="captcha__descripton">
+                                        <div class="captcha__coment">Please enter the characters shown in the image.</div>
+                                    </div>
+                                    <!-- capcha 영역 -->
+                                    <div class="captcha__content">
+                                        <div class="imgarea">
+                                            <img src="../../assets/img/amcp/img-capcha.jpg" alt="">
+                                        </div>
+                                        <div class="inputarea form">
+                                            <div class="form__unit error">
+                                                <label for="input05" class="form__label">Enter the values here</label>
+                                                <input type="password" id="input05" class="form__element">
+                                                <p class="form__error-text">Required</p>
+                                            </div>
+                                        </div>
+                                        <div class="captcha__icon">
+                                            <button type="button" class="icon-refresh">새로고침</button>
+                                        </div>
+                                    </div>
+                                    <!-- //capcha 영역 -->
+                                </div>
+                            </article>
+                            <div class="cont__btnbox cont__btnbox--right col9">
+                                <button type="button" class="btn">Submit</button>
+                            </div>
+                        </div>
+                        <!-- [e] LINE Pay -->
+                        <!-- [s] Fee Information -->
+                        <div class="pualugin-tab__panel" data-element="tab__panel">
+                            <article class="cont__article pdt0">
+                                <p class="cont__guide_text" style="padding-bottom: 5.2rem;">Before click 'Apply', please prepare the following documents,<br>
+                                    cant speed up your application process.</p>
+                                <dl class="cont__dlist">
+                                    <div class="dlist_box">
+                                        <dt>Merchant type</dt>
+                                        <dd>Required documents</dd>
+                                    </div>
+                                    <dt>Corporation</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>Certified copy of the certificate of registration、Incorporation issued by government authorities、Certificate of business tax status (alternative)</li>
+                                            <li>The latest copy of the owner’s ID card</li>
+                                            <li>Business account bankbook (the beneficiary must same as the company registration name)</li>
+                                            <li>For the physical store, it's necessary to attach the storefront photo and the product DM which include price</li>
+                                            <li>For the online store, it’s necessary to provide the official website (must be able to purchase)</li>
+                                            <li>For prepaid type product must provide the performance bond related documents</li>
+                                        </ul>
+                                    </dd>
+                                    <dt>Individual</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>The latest copy of the owner’s ID card</li>
+                                            <li>Personal account bankbook (the beneficiary must same as the owner’s name)</li>
+                                            <li>Business account bankbook (the beneficiary must same as the company registration name)</li>
+                                            <li><strong>For the physical store, it's necessary to attach the storefront photo and the product DM which include price</strong></li>
+                                        </ul>
+                                        <p>* Not open following industry apply individual merchant: Online store/Premium price product(unit price higher than ten thousand)/Prepaid type product/Hotel and Guesthouse, etc</p>
+                                    </dd>
+                                </dl>
+                            </article>
+                            <div class="cont__btnbox cont__btnbox--right col9" style="padding-top:3.46rem ;">
+                                <button type="button" class="btn" disabled>Apply</button>
+                            </div>
+                        </div>
+                        <!-- [e] Fee Information -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- [s] layer pop -->
+    <div id="payService" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type2" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal svc-type">
+                    <h1 class="modal__title--amcp">Privacy Policy</h1>
+                    <div class="modal__scrollarea">
+                        <div class="pualugin-tab__panel" data-element="tab__panel">
+                            <div class="data-innerTab">
+                                <ul class="inner-tab__ul">
+                                    <li class="inner-tab__list">
+                                        <button type="button" class="inner-tab__anchor data-innerTabAnchor is-active">漢語</button>
+                                    </li>
+                                    <li class="inner-tab__list">
+                                        <button type="button" class="inner-tab__anchor data-innerTabAnchor">English</button>
+                                    </li>
+                                </ul>
+                                <!--tw-->
+                                <div class="inner-tab__panel data-innerTabPanel">
+                                    <div class="pop-box">
+                                        <h3 class="pop-box__title">LINE PAY Terms of Service for Platform Operators</h3>
+                                        <br>
+                                        <br>
+                                        <p class="pop-box__comment">The purpose of this document (“Privacy Policy”) is to inform you of how RABBIT-LINE PAY COMPANY LIMITED (and in the event that the Services are provided by any company which is affiliated to RABBIT-LINE PAY COMPANY LIMITED ("LINE Affiliate"), that LINE Affiliate) collects, processes and uses the Personal Information (as hereinafter defined) in connection with the Company’s Rabbit LINE Pay services and all its related services to any online store platform operator (“Platform Operator”) (hereinafter referred to collectively as the “Services”) which is subject to the applicable laws for the personal information protection. Please take a moment to read this Privacy Policy so that you know and understand the purposes for which we collect, process, use and disclose your Personal Information.</p>
+                                        <br>
+                                        <br>
+                                        <p class="pop-box__comment">By providing any Personal Information to us, you agree and consent (and you represent and warrant to the Company that the Personnel (as hereinafter defined) have agreed and consented) to RABBIT-LINE PAY COMPANY LIMITED (including its related corporations, LINE Affiliates and business units such as the LINE Group), as well as their respective representatives and/or agents (collectively referred to herein as "the Company", "us", "we" or "our") collecting, processing, using, disclosing and sharing amongst themselves the Personal Information, and disclosing such Personal Information to the Company's authorised service providers and relevant third parties in the manner set forth in this Privacy Policy.</p>
+                                        <br>
+                                        <br>
+                                        <p class="pop-box__comment">Personal Information Collected by Company</p>
+                                        <br>
+                                        <br>
+                                        <p class="pop-box__comment">When the Platform Operator applies for using the Services, or uses the Services, the Company may require the Platform Operator to provide the personal information of the Platform Operator (in case of a natural person), and that of its representatives, persons-in-charges, business operators, managers and/or employees for the purpose of the Services (together with Platform Operator (in case of a natural person), the "Personnel"), including, without limitation, the Personnel's name, date of birth identification number, address, telephone number, email address, bank account information, and/or other personal information that is required for the Company to review the Platform Operator's application for the Services and provide the Services and may directly or indirectly identify the identity of the Personnel (collectively, the "Personal Information").</p>
+                                    </div>
+                                </div>
+                                <!--tw-->
+                                <!--en-->
+                                <div class="inner-tab__panel data-innerTabPanel" style="display: none;">
+                                    <div class="pop-box">
+                                        <h3 class="pop-box__title">LINE PAY Terms of Service for Platform Operators</h3>
+                                        <br>
+                                        <br>
+                                        <p class="pop-box__comment">The purpose of this document (“Privacy Policy”) is to inform you of how RABBIT-LINE PAY COMPANY LIMITED (and in the event that the Services are provided by any company which is affiliated to RABBIT-LINE PAY COMPANY LIMITED ("LINE Affiliate"), that LINE Affiliate) collects, processes and uses the Personal Information (as hereinafter defined) in connection with the Company’s Rabbit LINE Pay services and all its related services to any online store platform operator (“Platform Operator”) (hereinafter referred to collectively as the “Services”) which is subject to the applicable laws for the personal information protection. Please take a moment to read this Privacy Policy so that you know and understand the purposes for which we collect, process, use and disclose your Personal Information.</p>
+                                        <br>
+                                        <br>
+                                        <p class="pop-box__comment">By providing any Personal Information to us, you agree and consent (and you represent and warrant to the Company that the Personnel (as hereinafter defined) have agreed and consented) to RABBIT-LINE PAY COMPANY LIMITED (including its related corporations, LINE Affiliates and business units such as the LINE Group), as well as their respective representatives and/or agents (collectively referred to herein as "the Company", "us", "we" or "our") collecting, processing, using, disclosing and sharing amongst themselves the Personal Information, and disclosing such Personal Information to the Company's authorised service providers and relevant third parties in the manner set forth in this Privacy Policy.</p>
+                                        <br>
+                                        <br>
+                                        <p class="pop-box__comment">Personal Information Collected by Company</p>
+                                        <br>
+                                        <br>
+                                        <p class="pop-box__comment">When the Platform Operator applies for using the Services, or uses the Services, the Company may require the Platform Operator to provide the personal information of the Platform Operator (in case of a natural person), and that of its representatives, persons-in-charges, business operators, managers and/or employees for the purpose of the Services (together with Platform Operator (in case of a natural person), the "Personnel"), including, without limitation, the Personnel's name, date of birth identification number, address, telephone number, email address, bank account information, and/or other personal information that is required for the Company to review the Platform Operator's application for the Services and provide the Services and may directly or indirectly identify the identity of the Personnel (collectively, the "Personal Information").</p>
+                                    </div>
+                                </div>
+                                <!--en-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+     <!-- [s] layer pop -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

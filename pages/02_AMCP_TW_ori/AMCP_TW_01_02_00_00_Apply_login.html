@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>LINE Pay Merchant <br />Application</h1>
+                    <p>If you LINE login, you can link your LINE account to your merchant account. <br>If you do not want to connect, please proceed without signing in.</p>
+                </header>
+                <section class="cont__section cont__section--other-type2">
+                    <article class="cont__article ta-center-block">
+                        <div class="apply__visual--email">
+                            <h3>If you are a member of LINE</h3>
+                            <p>Log in to your LINE account and create a merchant account.</p> <a href="#" class="btn">LINE Login</a>
+                        </div>
+                        <div class="apply__visual--line">
+                            <h3>Create a merchant account</h3>
+                            <p>Create a merchant account without logging into your LINE account.</p>
+                            <a href="#" class="btn">Merchant Account</a>
+                        </div>
+                    </article>
+                    <article class="cont__article ta-center-block pdb120">
+                        <div class="gray-box gray-box--type5">
+                            <p class="gray-box__detail gray-box__detail--dark">If you login in as LINE login, you have these benefits.</p>
+                            <ul class="ul-list ul-list--dot">
+                                <li class="ul-list__li">A review message will be sent to the LINE App.</li>
+                                <li class="ul-list__li">You can manage the merchant at once with the linked ID.</li>
+                                <li class="ul-list__li">After the merchant is opened, you can login with the corresponding LINE ID.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

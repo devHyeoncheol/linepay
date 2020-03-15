@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>Application Status </h1>
+                    <p>merchantID@pay.line, You left a contact. <br>The Operations team is checking. We will contact you at the time of contact.</p>
+                </header>
+                <section class="cont__section cont__section--status cont__section--status-type2">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article pdt0">
+                        <div class="status__edit-btn"><a href="#" target="_blank" class="text-btn--gray">Edit</a>
+                        </div>
+                        <div class="gray-box gray-box--dl status__gray-box--dl">
+                            <dl class="gray-box__dl">
+                                <dt class="gray-box__dt">Name</dt>
+                                <dd class="gray-box__dd">LINE Pay28</dd>
+                                <dt class="gray-box__dt">Phone number</dt>
+                                <dd class="gray-box__dd">123-456-789</dd>
+                                <dt class="gray-box__dt">Available Time Zone</dt>
+                                <dd class="gray-box__dd">MON ~ FRI, AM 10:00 ~ PM 10:00</dd>
+                                <dt class="gray-box__dt">Email Address</dt>
+                                <dd class="gray-box__dd">merchantID@pay.line</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    <div class="cont__btnbox">
+                        <p class="last-confirm-text status__last-confirm-text">You have a merchant application you are writing. <br>If you want to fill out the application form, please click the fill out button.</p> <a href="#" target="_blank" class="text-btn text-btn--darker">Complete your application</a>
+                        <!--
+                            190712 text-btn--darker 클래스 추가 -->
+                        <button type="button" class="btn btn--big">Confirm</button>
+                        <!-- 190712 btn--big 클래스 추가 -->
+                    </div>
+                    <div class="status__footer ta-center">
+                        <p class="status__footer-title">Please leave inquiries related to the examination.</p>
+                        <div class="status__footer-textarea clearfix">
+                            <p class="status__footer-detail fl"><span class="status__footer-detail--bold">Call</span>0120-993-454</p>
+                            <p class="status__footer-detail fl"><span class="status__footer-detail--bold">Email</span> linepay_judge_biz_jp@linecorp.com</p>
+                            <!--
+                                    190701 태그명 오류 spab -> span 수정 -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

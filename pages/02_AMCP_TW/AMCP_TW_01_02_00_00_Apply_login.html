@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1 style="margin-bottom:10px">Select log in option</h1>
+                    <p>If you are already completing the application, please <a href="#" class="apply-login-btn">login.</a>
+                    </p>
+                    <div class="container--center">
+                        <button type="button" class="apply-how--btn toggle--btn">How to Apply</button>
+                        <div class="apply-how">
+                            <ol class="apply-how--ol">
+                                <li class="apply-how--ele1">
+                                    <h3>Step1<br>
+                                        Create Account</h3>
+                                    <p>Create a merchant account with the desired ID.</p>
+                                </li>
+                                <li class="apply-how--ele2">
+                                    <h3>Step2<br>
+                                        Enter merchant information</h3>
+                                    <p>Please enter merchant information and upload required documents</p>
+                                </li>
+                                <li class="apply-how--ele3">
+                                    <h3>Step3<br>
+                                        Screening</h3>
+                                    <p>When merchant submits all required documents, LINE Pay will start screening process.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </header>
+                <section class="cont__section">
+                    <article class="cont__article ta-center-block mgt-50">
+                        <div class="apply__visual--login">
+                            <h3>Want to link LINE<br>
+                                account with Merchant<br>
+                                account
+                            </h3>
+                            <a href="#" class="btn">LINE Login</a>
+                        </div>
+                        <div class="apply__visual--offline">
+                            <h3>Create Merchant<br>
+                                account only
+                            </h3>
+                            <a href="#" class="btn">Create Merchant ID</a>
+                        </div>
+                    </article>
+                </section>
+                <section class="cont__section--other-type2">
+                    <article class="cont__article ta-center-block">
+                        <div class="gray-box gray-box--type5">
+                            <p class="gray-box__detail gray-box__detail--dark">Here are some benefits when you log in with LINE account.</p>
+                            <ul class="ul-list ul-list--dot">
+                                <li class="ul-list__li">You can receive screening result message on LINE app.</li>
+                                <li class="ul-list__li">After merchant account is activated, you can log in with your LINE account to connect Merchant
+                                    Center which is the web page to manage LINE Pay Merchant activity.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

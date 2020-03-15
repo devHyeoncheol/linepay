@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>Application Status </h1>
+                </header>
+                <section class="cont__section cont__section--status">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article pdt0">
+                        <div class="gray-box gray-box--type1">
+                            <div class="gray-box__title">merchantID@pay.line</div>
+                            <p class="gray-box__detail">The submitted application is under review. <br>To edit the application details, please click the modify application button below.</p>
+                        </div>
+                        <!-- 190712 추가 -->
+                        <div class="status__center">
+                            <p class="status__text">There is no authentication information in the admin email. <br>LINE Pay Please proceed with the e-mail authentication procedure for smooth communication with the merchant operation team.</p>
+                            <button class="text-btn text-btn--normal" data-element="modal__open" data-target="#AMCPJPLPEmail">Email Authentication</button>
+                        </div>
+                        <!-- //190712 추가 -->
+                    </article>
+                    <div class="cont__btnbox">
+                        <button type="button" class="btn btn--big">Edit application</button>
+                        <!-- 190712 btn--big 클래스 추가 -->
+                    </div>
+                    <div class="status__footer ta-center">
+                        <p class="status__footer-title">Please leave inquiries related to the examination.</p>
+                        <div class="status__footer-textarea clearfix">
+                            <p class="status__footer-detail fl"><span class="status__footer-detail--bold">Call</span>0120-993-454</p>
+                            <p class="status__footer-detail fl"><span class="status__footer-detail--bold">Email</span> linepay_judge_biz_jp@linecorp.com</p>
+                            <!--
+                                    190701 태그명 오류 spab -> span 수정 -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- 레이어팝업 -->
+    <div id="AMCPJPLPEmail" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal modal-emailverify">
+                    <h1 class="modal__title--amcp">Email Verification</h1>
+                    <div class="modal__scrollarea">
+                        <div class="modal-emailverify__row sended-before is-active">
+                            <!-- 초기 is-active 클래스 있음-->
+                            <p class="modal-emailverify__text">Verification URL will be sent to you via email below. <br>Re-enter if it's not a valid email</p>
+                            <div class="form">
+                                <div class="form__unit col9">
+                                    <label for="input51" class="form__label">Admin email address</label>
+                                    <input type="text" id="input51" class="form__element">
+                                    <p class="modal-emailverify__guidetext">The edited e-mail will be saved in the administrator information.</p>
+                                </div>
+                            </div>
+                            <div class="cont__btnbox">
+                                <button type="button" class="btn" onclick="javascript:sendCheck()">Save</button>
+                                <!--페이지 하단 스크립트 참조-->
+                            </div>
+                        </div>
+                        <div class="modal-emailverify__row sended">
+                            <p class="modal-emailverify__text">URL for email verification sent. <br>Check your message and click on the URL.</p>
+                            <div class="form">
+                                <div class="form__unit">
+                                    <div class="pdt0 form__unit">
+                                        <input type="text" id="input01" class="form__element bold pdr50" value="aaaaa@abc.com"> <span class="counter--green">02:59</span>
+                                        <p class="modal-emailverify__guidetext">Authentication is valid for 3 minutes after sending e-mail. <br>Please retry verification URL after 3 minutes.</p>
+                                        <p class="form__error-text">Please confirm the agreement on the use of the stationary LINE Pay terminal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont__btnbox">
+                                <button type="button" class="btn btn--gray1">Re-send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-emailverify__info sended">
+                        <div class="gray-box">
+                            <div class="gray-box__sub-title">Did not receive the mail?</div>
+                            <ul class="ul-list ul-list--dot">
+                                <li class="ul-list__li">Please make sure that your mail is not classified as spam.</li>
+                                <li class="ul-list__li">If there is no mail in the spam mail box, please resend the authentication mail or send the authentication mail to another mail address.</li>
+                                <li class="ul-list__li">Click the Resend button to resend the verification email to the same email address.</li>
+                                <li class="ul-list__li">
+                                    <button class="text-btn text-btn--small change-email">Click here</button>to receive a verification email at a different email address.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- //레이어팝업 -->
+    <!--이메일 보내기 벨리데이션-->
+    <script>
+        function sendCheck() {
+            // todo : 벨리데이션 체크 후 다음의 스크립트 실행
+            $('.sended-before').removeClass('is-active');
+            $('.sended').addClass('is-active');
+        }
+
+        function resetEmail() {
+            // todo : reset이 필요한 경우
+            $('.sended').removeClass('is-active').find('input.form__element').val("");
+            $('.sended-before').addClass('is-active').find('input.form__element').val("");
+        }
+        $('.email-verify-btn, .change-email').on('click', function() {
+            resetEmail();
+        })
+    </script>
+    <!--//이메일 보내기 벨리데이션-->
+    <!-- 190712 스크립트 추가 -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <!-- //190712 스크립트 추가 -->
+</body>
+
+</html>

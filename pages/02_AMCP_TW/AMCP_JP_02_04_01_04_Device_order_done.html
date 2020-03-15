@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>Device Order</h1>
+                    <p>Your device order is complete. <br>It will take 1 ~ 2 weeks for shipment after the merchant inspection is completed. <br>Please check the results of the examination.</p>
+                </header>
+                <section class="cont__section cont__section--status">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article pdt0">
+                        <div class="gray-box gray-box--dl status__gray-box--dl">
+                            <dl class="gray-box__dl">
+                                <dt class="gray-box__dt">Terminal fee payment method</dt>
+                                <dd class="gray-box__dd">Use Credit Card</dd>
+                                <dt class="gray-box__dt">Shipping information</dt>
+                                <dd class="gray-box__dd">Green 8, White 12<br>
+                                        Zip code, state, city, street address, building name<br>
+                                        James Yun<br>
+                                        010-123-5595</dd>
+                                <dt class="gray-box__dt">Shipping information</dt>
+                                <dd class="gray-box__dd">Green 8, White 12<br>
+                                        Zip code, state, city, street address, building name<br>
+                                        James Yun<br>
+                                        010-123-5595</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    <div class="cont__btnbox">
+                        <button type="button" class="btn btn--big">Home</button>
+                        <!-- 190712 텍스트 변경 및 클래스 추가 -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

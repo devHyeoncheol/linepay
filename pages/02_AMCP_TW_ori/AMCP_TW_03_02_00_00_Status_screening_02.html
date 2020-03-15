@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>Application Status </h1>
+                    <p>The submitted application is under review. <br>If you have not yet sent the documents, please submit them.</p>
+                </header>
+                <section class="cont__section cont__section--status cont__section--status-tw">
+                    <article class="cont__article pdt0">
+                        <div class="gray-box gray-box--dl gray-box--dl--type2 gray-box--dl--full">
+                            <dl class="gray-box__dl">
+                                <dt class="gray-box__dt">LINE Pay merchant Judging status</dt>
+                                <dd class="gray-box__dd">Under examination</dd>
+                            </dl>
+                            <dl class="gray-box__dl">
+                                <dt class="gray-box__dt">iPass merchant Judging status</dt>
+                                <dd class="gray-box__dd">Under examination</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    <article class="cont__article pdt0">
+                        <button type="button" class="btn btn btn--line btn--line--big">Confirm application</button>
+                    </article>
+                    <header class="cont__header cont__header--center">
+                        <p>LINE Pay will ask you to upload additional documents. Please submit the documents.</p>
+                    </header>
+                    <article class="mcht-info-wrap mcht-info-wrap--line">
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">Business Registration Documents</h2>
+                                    <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                                </div>
+                                <div class="mcht-info__img">
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                    </div>
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file2" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file2" data-js="add-img"> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">Bank Book</h2>
+                                    <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                                </div>
+                                <div class="mcht-info__img">
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                    </div>
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                            </div>
+                                            <label for="add-file3" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file3" data-js="add-img"> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox">
+                    <button type="button" class="btn btn--big">Submit</button>
+                </div>
+                <div class="status__footer ta-center">
+                    <p class="status__footer-title">Please send inquiries related to the examination here.</p>
+                    <div class="status__footer-textarea clearfix">
+                        <p class="status__footer-detail fl"><span class="status__footer-detail--bold">Email</span>linepaymerchant@linecorp.com</p>
+                        <p class="status__footer-detail fl"><span class="status__footer-detail--bold">Line@ ID</span> @linepaymerchant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AMCP_TW_02_03_01_00_LP01_Confrim -->
+        <div id="AMCPTWLPConfirm01" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal">
+                        <h1 class="modal__title--amcp">Merchant information</h1>
+                        <div class="modal__scrollarea">
+                            <article class="modal__article mcht-info-wrap">
+                                <div class="mcht-info mcht-info--form">
+                                    <div class="mcht-info__cont">
+                                        <div class="mcht-info__form">
+                                            <div class="form form--half">
+                                                <div class="form__unit">
+                                                    <label for="input11" class="form__label form__label--required">Company Name</label>
+                                                    <input type="text" id="input11" class="form__element" value="LINE" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                                <div class="form__unit">
+                                                    <label for="input12" class="form__label form__label--required">Corporation Name (English)</label>
+                                                    <input type="text" id="input12" class="form__element" value="LINE" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form form--half">
+                                                <div class="form__unit">
+                                                    <label for="input13" class="form__label form__label--required">Brand Name (Service Name)</label>
+                                                    <input type="text" id="input13" class="form__element" value="LINE Pay" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                                <div class="form__unit">
+                                                    <label for="input14" class="form__label form__label--required">Business Registration NO.</label>
+                                                    <input type="text" id="input14" class="form__element" value="User input value" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form form--half">
+                                                <div class="form__unit">
+                                                    <label for="select15" class="form__label form__label--required">Store Country</label>
+                                                    <select name="select" id="select15" class="form__element">
+                                                        <option>Republic of Korea</option>
+                                                        <option>option1</option>
+                                                        <option>option1</option>
+                                                    </select>
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                                <div class="form__unit">
+                                                    <label for="select16" class="form__label form__label--required">Store District</label>
+                                                    <select name="select" id="select16" class="form__element">
+                                                        <option>Seoul</option>
+                                                        <option>option1</option>
+                                                        <option>option1</option>
+                                                    </select>
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form">
+                                                <div class="form__unit">
+                                                    <label for="input17" class="form__label form__label--required">Store Address</label>
+                                                    <input type="text" id="input17" class="form__element" value="Gangnam-daero Line Pay Building" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form">
+                                                <div class="form__unit">
+                                                    <label for="input18" class="form__label form__label--required">Postal Code</label>
+                                                    <input type="text" id="input18" class="form__element" value="06039" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form">
+                                                <div class="form__unit">
+                                                    <label for="input19" class="form__label form__label--required">Email of Business Representative</label>
+                                                    <input type="text" id="input19" class="form__element" value="emailaddress@domail.com " />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form">
+                                                <div class="form__unit">
+                                                    <label for="input20" class="form__label form__label--required">Website URL</label>
+                                                    <input type="text" id="input20" class="form__element" value="www.pay.line.me/jp" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form">
+                                                <div class="form__unit">
+                                                    <label for="input21" class="form__label form__label--required">Website URL (Optional)</label>
+                                                    <input type="text" id="input21" class="form__element" value="www.pay.line.me/jp" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form">
+                                                <div class="form__unit">
+                                                    <label for="input22" class="form__label form__label--required">Corporate Number</label>
+                                                    <input type="text" id="input22" class="form__element" value="123-456-789" />
+                                                    <p class="form__error-text">Please fill out this form.</p>
+                                                </div>
+                                            </div>
+                                            <h3 class="modal__sub-title">GUI exemption</h3>
+                                            <div class="form">
+                                                <div class="btn-radio" role="radiogroup">
+                                                    <label class="btn-radio__label">
+                                                        <input type="radio" name="radiolp12" id="radio121" class="btn-radio__input" checked="checked"> <i class="btn-radio__checkmark"></i>
+                                                        <span class="btn-radio__text">No.</span>
+                                                    </label>
+                                                    <label class="btn-radio__label">
+                                                        <input type="radio" name="radiolp12" id="radio122" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                                        <span class="btn-radio__text">Yes.(Exempted from issuance of GUI to customers) </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="cont__btnbox">
+                                <button type="button" class="btn" disabled>Save</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+        <!-- //AMCP_TW_02_03_01_00_LP01_Confrim -->
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <script>
+        $('.img-box').each(function() {
+            var imgBox = $(this);
+            var imgList = imgBox.find('.img-box__list');
+            var imgItem = imgList.find('div.img-item');
+            var imgReset = imgBox.find('.img-box__reset');
+            imgItem.each(function() {
+                if ($(this).hasClass('img-preview') || $(this).find('.img-item__delete').length > 0) {
+                    //
+                } else {
+                    $(this).addClass('nofunc');
+                }
+            });
+            if (imgBox.hasClass('img-box-logo')) {
+                if (imgItem.length != 0) {
+                    imgReset.show();
+                }
+            }
+            if (imgItem.length != 0) {
+                imgReset.show();
+            }
+        })
+        $(document).on('click', 'div.img-item', function() {
+            var thisItem = $(this);
+            var imgDelete = thisItem.find('.img-item__delete');
+            var imgItemOn = $(this).hasClass('is-active');
+            //var imgList = $(this).parents('.img-box').find('.img-box__wrap .img-box__list .img-item');
+            //var imgReset = $(this).parents('.img-box').find('.img-box__reset');
+            if (imgDelete.length > 0) {
+                if (!imgItemOn) {
+                    $(this).addClass('is-active');
+                } else {
+                    $(this).removeClass('is-active');
+                }
+            }
+        });
+        $(document).on('click', '.img-item__delete', function() {
+            if ($(this).parent().parent().find('div.img-item').length == 1) {
+                $(this).parents('.img-box').find('.img-box__reset').hide();
+            }
+            $(this).parent().remove();
+        })
+        $(document).on('click', '.img-box__reset', function() {
+            $(this).parents('.img-box').find('.img-box__wrap .img-box__list div.img-item').remove();
+            $(this).hide();
+        });
+    </script>
+</body>
+
+</html>

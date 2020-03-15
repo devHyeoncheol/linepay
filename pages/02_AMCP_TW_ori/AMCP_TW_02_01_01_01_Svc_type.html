@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg01">전체 10단계 중 1단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우
+                <p class="prg02">전체 10단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--curr"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li><a href="#">Merchant Info</a>
+                                </li>
+                                <li><a href="#">Address</a>
+                                </li>
+                                <li><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li><a href="#">Settlement Info</a>
+                                </li>
+                                <li><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Device Order</a>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                        <li><a href="#">iPass Application</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>Pay Service</h1>
+                    <p>Check out the LINE Pay service.</p>
+                </header>
+                <section class="cont__section svc-type">
+                    <article class="cont__article pdt0">
+                        <h2 class="col9">What is the Line Pay service?</h2>
+                        <p class="cont__comment col9">Easy smartphone payment solution for merchants and customers. Various tools for LINE Pay payment - Printed QR, Appforce, LINE Pay terminal - You can choose according to your payment environment.</p>
+                        <div class="col9">
+                            <ul class="svc-type__img-list svc-type__img-list--service">
+                                <li class="svc-type__img-item svc-type__img1">
+                                    <p class="svc-type__img-item-text">Printed QR</p>
+                                </li>
+                                <li class="svc-type__img-item svc-type__img10">
+                                    <p class="svc-type__img-item-text">LINE Pay Terminal</p>
+                                </li>
+                            </ul>
+                            <button type="button" class="text-btn text-btn--small" data-element="modal__open" data-target="#payService">Learn more about LINE Pay Service</button>
+                        </div>
+                    </article>
+                    <article class="cont__article">
+                        <h2 class="col9 pdb17">How much is the service charge?</h2>
+                        <div class="col9">
+                            <div class="gray-box gray-box--half">
+                                <div class="gray-box__half-box">
+                                    <div class="gray-box__sub-title">Payment Fee</div>
+                                    <p class="gray-box__detail gray-box__detail--555">3% (未稅) <br>System setting / service charge: None</p>
+                                </div>
+                                <div class="gray-box__half-box">
+                                    <div class="gray-box__sub-title">Settlement Cycle</div>
+                                    <p class="gray-box__detail">Deposit within 7 business days after request</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--right col9 pdb120">
+                    <button type="button" class="btn btn--line">Back</button>
+                    <button type="button" class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- [s] What is LINE PAy Service? : AMCP_JP_02_01_03_01_LP01_Svc_type_LP
+        -->
+    <div id="payService" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type2" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal svc-type">
+                    <h1 class="modal__title--amcp">Learn about the Line Pay service</h1>
+                    <p class="modal__comment--amcp">Please check each tab for the line fee service and settlement method.</p>
+                    <div class="modal__scrollarea">
+                        <div class="pualugin-tab" data-element="tab">
+                            <ul class="pualugin-tab__ul">
+                                <li class="pualugin-tab__list" data-element="tab__list"> <a href="#" class="pualugin-tab__anchor" data-element="tab__anchor">LINE Pay</a>
+                                </li>
+                                <li class="pualugin-tab__list" data-element="tab__list"> <a href="#" class="pualugin-tab__anchor" data-element="tab__anchor">Fee Information</a>
+                                </li>
+                            </ul>
+                            <!-- [s] LINE Pay -->
+                            <div class="pualugin-tab__panel" data-element="tab__panel">
+                                <div class="inner-tab data-innerTab">
+                                    <ul class="inner-tab__ul">
+                                        <li class="inner-tab__list">
+                                            <button type="button" class="inner-tab__anchor data-innerTabAnchor is-active">Printed QR code</button>
+                                        </li>
+                                        <li class="inner-tab__list">
+                                            <button type="button" class="inner-tab__anchor data-innerTabAnchor">LINE Pay mini</button>
+                                        </li>
+                                    </ul>
+                                    <!-- Printed QR code -->
+                                    <div class="inner-tab__panel data-innerTabPanel">
+                                        <div class="info-box">
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-qr-feature-tw.jpg" alt="image">
+                                            </div>
+                                            <div class="info-box__text-area">
+                                                <p class="info-box__title info-box__title--primary">What is a QR scan code?</p>
+                                                <p class="info-box__comment">Payment will be made when the payment QR code is placed in the store and the customer scans the smartphone, without the need to install additional equipment or introduce a dedicated application. If the review is passed after the application, it can be used immediately as App POS.</p>
+                                                <p class="info-box__comment-warning">* When you apply for LINE Pay, there is a review. Failure to comply with the screening criteria may result in a failure to pass.</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__slide-area">
+                                                <h2 class="info-box__title">QR scan code Payment method</h2>
+                                                <ul class="step-scroll qrcode-method">
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-tw-qrmethod1.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">LINE Pay> Wallet> Select code reader</p>
+                                                    </li>
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-tw-qrmethod2.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">Pay users QR scan</p>
+                                                    </li>
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-tw-qrmethod3.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">User enters amount</p>
+                                                    </li>
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-tw-qrmethod4.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">User Payment Completed screen</p>
+                                                    </li>
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-tw-qrmethod5.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">Confirm AOA messages sent to your merchant account</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h2 class="info-box__title">QR ScanCode Method</h2>
+                                                <div class="step-info step-info--qr">
+                                                    <dl class="step-info__item">
+                                                        <dt class="step-info__title qr1">Fixed amount</dt>
+                                                        <dd class="step-info__desc info-box__comment">The customer scans and pays the QR code generated by the merchant directly entering the amount.</dd>
+                                                    </dl>
+                                                    <dl class="step-info__item">
+                                                        <dt class="step-info__title qr2">Customer Input Type</dt>
+                                                        <dd class="step-info__desc info-box__comment">The customer scans the QR code for payment and enters the amount to pay.</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h3 class="info-box__title">Transact with QR code more easily without cash</h3>
+                                                <ol class="step-info step-info--type2 step-info--qrstep">
+                                                    <li class="step-info__item">
+                                                        <h4 class="step-info__title">01. Scanning QR codes</h4>
+                                                        <ol class="step-info__icon-list">
+                                                            <li class="step-info__icon qrstep1-1">Scanning QR codes in the store</li>
+                                                            <li class="step-info__icon qrstep1-2">Enter amount</li>
+                                                            <li class="step-info__icon qrstep1-3">Final payment completed when the clerk checked</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li class="step-info__item">
+                                                        <h4 class="step-info__title">02. Show my code</h4>
+                                                        <ol class="step-info__icon-list">
+                                                            <li class="step-info__icon qrstep2-1">Open My Code</li>
+                                                            <li class="step-info__icon qrstep2-2">I'll give it to the clerk</li>
+                                                            <li class="step-info__icon qrstep1-3">Payment completed</li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <p class="info-box__title">Use QR codes more conveniently with POSM!</p>
+                                                <p class="info-box__comment">POSM kit is a package dedicated to LINE Pay that allows merchants to conveniently use LINE Pay. LINE Pay A sticker that shows the merchants who can pay, and a stand that can hold QR codes and QR codes for exclusive use by merchants.</p>
+                                                <p class="info-box__comment-sub">We will ship it to you after the completion of the merchant examination.</p>
+                                            </div>
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-qr-tw.jpg" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- [e] Printed QR code -->
+                                    <!-- [s] Terminal -->
+                                    <div class="inner-tab__panel data-innerTabPanel" style="display: none;">
+                                        <div class="info-box">
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-linepaymini-tw.jpg" alt="image">
+                                            </div>
+                                            <div class="info-box__text-area">
+                                                <p class="info-box__title info-box__title--primary">What is a LINE Pay mini?</p>
+                                                <p class="info-box__comment">After installing the store, turn on the power, enter the amount only, the payment is complete! When a customer scans, they will be charged immediately, without having to enter a payment amount.</p>
+                                                <p class="info-box__comment-warning">* When you apply for LINE Pay merchant, you will be judged. Failure to meet the screening criteria may result in failure. <br>* After you apply for membership, you will be sent from LINE Pay when the merchant examination is completed.</p>
+                                            </div>
+                                            <div class="info-box__inner">
+                                                <h3 class="info-box__inner-title">What is a LINE Pay Golchi terminal?</h3>
+                                                <ol class="info-box__slide step-slide">
+                                                    <li class="step-slide__list">
+                                                        <div class="step-slide__img">
+                                                            <img src="../../assets/img/amcp/img-terminal-feature-golchi-tw.svg" alt="image">
+                                                        </div>
+                                                        <div class="step-slide__text">
+                                                            <p class="step-slide__order">Step 1</p>
+                                                            <p class="step-slide__desc">Enter amount by member store owner</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step-slide__list">
+                                                        <div class="step-slide__img">
+                                                            <img src="../../assets/img/amcp/img-terminal-feature-golchi-tw.svg" alt="image">
+                                                        </div>
+                                                        <div class="step-slide__text">
+                                                            <p class="step-slide__order">Step 2</p>
+                                                            <p class="step-slide__desc">The amount entered appears on the terminal as QR code and number for payment.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step-slide__list">
+                                                        <div class="step-slide__img">
+                                                            <img src="../../assets/img/amcp/img-terminal-feature-golchi-tw.svg" alt="image">
+                                                        </div>
+                                                        <div class="step-slide__text">
+                                                            <p class="step-slide__order">Step 3</p>
+                                                            <p class="step-slide__desc">The customer scans the QR code displayed on the stationary terminal and completes the payment.</p>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <p class="info-box__title">What is LINE Pay mini?</p>
+                                            </div>
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-terminal-tw.jpg" alt="image">
+                                            </div>
+                                            <div class="mcht-info-wrap terminal-mcht-info">
+                                                <p class="info-box__title-sub">LINE Pay mini is a portable terminal for convenient payment.</p>
+                                                <div class="mcht-info__cont">
+                                                    <dl class="mcht-info__dl">
+                                                        <dt class="mcht-info__dt">Name</dt>
+                                                        <dd class="mcht-info__dd">LINE Pay Terminator</dd>
+                                                        <dt class="mcht-info__dt">Body size</dt>
+                                                        <dd class="mcht-info__dd">H95 X W80 X D155(mm)</dd>
+                                                        <dt class="mcht-info__dt">Weight</dt>
+                                                        <dd class="mcht-info__dd">about 430 g</dd>
+                                                        <dt class="mcht-info__dt">Connection method</dt>
+                                                        <dd class="mcht-info__dd">Bluetooth V4.2 / Wi-fi / WCDMA / NFC*1</dd>
+                                                        <dt class="mcht-info__dt">Battery duration</dt>
+                                                        <dd class="mcht-info__dd">30 hours, 7,800 mAh charge</dd>
+                                                        <dt class="mcht-info__dt">QR code display screen</dt>
+                                                        <dd class="mcht-info__dd">2.4 "TFT-LCD (320X240) Black and white</dd>
+                                                        <dt class="mcht-info__dt">Color</dt>
+                                                        <dd class="mcht-info__dd">2 species (green and white)</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <p class="info-box__title">Cost</p>
+                                            </div>
+                                            <div class="info-box__table">
+                                                <!-- 테이블 한셋트 -->
+                                                <h3 class="info-box__table-title">LINE Pay mini monthly rental fee & MDR</h3>
+                                                <table class="fee-table fee-table--type2 green">
+                                                    <colgroup>
+                                                        <col style="width:25%">
+                                                        <col style="width:25%">
+                                                        <col style="width:25%">
+                                                        <col style="width:25%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>System set up fee</th>
+                                                            <th>LINE Pay MDR</th>
+                                                            <th>iPASS Card MDR</th>
+                                                            <th>Monthly rental fee</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Free</td>
+                                                            <td>3% without tax</td>
+                                                            <td>2% without tax</td>
+                                                            <td>NTD 300/per month</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- //테이블 한셋트 -->
+                                            </div>
+                                            <div class="info-box__table">
+                                                <!-- 테이블 한셋트 -->
+                                                <h3 class="info-box__table-title">LINE Pay mini Launch Campaign</h3>
+                                                <p class="info-box__table-sub-text">Campaign period : Merchants who applied for LINE Pay mini, 2019.01.25~2020.02.29</p>
+                                                <table class="fee-table fee-table--type2">
+                                                    <colgroup>
+                                                        <col style="width:33%">
+                                                        <col style="width:33%">
+                                                        <col style="width:33%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Application period <br>(2019.01.25~2019.08.31)</th>
+                                                            <th>Application period <br>(2019.09.01~2020.02.29)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>1to 6 month</th>
+                                                            <td>Free</td>
+                                                            <td>150 NTD / per month</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>7 to 12 month</th>
+                                                            <td>150 NTD / per month</td>
+                                                            <td>300 NTD / per month</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>13 to 36 month</th>
+                                                            <td>300 NTD / per month</td>
+                                                            <td>300 NTD / per month</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="info-box__comment-sub info-box__table-noti">* Monthly Rental fee will be charged every 1st day of month after installation.</p>
+                                                <!--
+                                                        //테이블 한셋트 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- [e] Terminal -->
+                                </div>
+                            </div>
+                            <!-- [e] LINE Pay -->
+                            <!-- [s] Fee Information -->
+                            <div class="pualugin-tab__panel" data-element="tab__panel">
+                                <div class="info-box">
+                                    <div class="info-box__text-area">
+                                        <p class="info-box__title info-box__title--primary">How to make a payment at each service</p>
+                                    </div>
+                                    <div class="info-box__table">
+                                        <p class="info-box__table-title">LINE Pay mini monthly rental fee & MDR</p>
+                                        <!-- 테이블 한셋트 -->
+                                        <table class="fee-table fee-table--type2 green">
+                                            <colgroup>
+                                                <col style="width:33%">
+                                                <col style="width:33%">
+                                                <col style="width:33%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>MDR (%) w/o Tax</th>
+                                                    <th>System set up Fee / Service Fee</th>
+                                                    <th>Settlement Period</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>3%</td>
+                                                    <td>Free</td>
+                                                    <td>7 working days since after capture</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- //테이블 한셋트 -->
+                                        <!-- 테이블 한셋트 -->
+                                        <table class="fee-table fee-table--type2">
+                                            <colgroup>
+                                                <col style="width:20%">
+                                                <col style="width:20%">
+                                                <col style="width:20%">
+                                                <col style="width:20%">
+                                                <col style="width:20%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>Payment method <br>/ Usage scenarios</th>
+                                                    <th>Scan QR Code</th>
+                                                    <th>LINE Pay mini</th>
+                                                    <th>Website / App</th>
+                                                    <th>Pos</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Credit Card</th>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Debit Card</th>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>iPASS Account</th>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                    <td class="valid">valid</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>iPASS Card</th>
+                                                    <td></td>
+                                                    <td class="valid">valid</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- //테이블 한셋트 -->
+                                    </div>
+                                    <div class="info-box__table">
+                                        <!-- 테이블 한셋트 -->
+                                        <h3 class="info-box__table-title">LINE Pay mini Launch Campaign</h3>
+                                        <p class="info-box__table-sub-text">Campaign period : Merchants who applied for LINE Pay mini, 2019.01.25~2020.02.29</p>
+                                        <table class="fee-table fee-table--type2 green">
+                                            <colgroup>
+                                                <col style="width:33%">
+                                                <col style="width:33%">
+                                                <col style="width:33%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Application period <br>(2019.01.25~2019.08.31)</th>
+                                                    <th>Application period <br>(2019.09.01~2020.02.29)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1to 6 month</th>
+                                                    <td>Free</td>
+                                                    <td>150 NTD / per month</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>7 to 12 month</th>
+                                                    <td>150 NTD / per month</td>
+                                                    <td>300 NTD / per month</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>13 to 36 month</th>
+                                                    <td>300 NTD / per month</td>
+                                                    <td>300 NTD / per month</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="info-box__comment-sub info-box__table-noti">* Monthly Rental fee will be charged every 1st day of month after installation.</p>
+                                        <!--
+                                                //테이블 한셋트 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [e] Fee Information -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] What is LINE PAy Service? : AMCP_JP_02_01_03_01_LP01_Svc_type_LP
+        -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <script>
+        // Svc type modal > Terminal 내 slide
+        $('.step-slide').slick({
+            dots: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 1,
+            infinite: false,
+            variableWidth: true
+        });
+    </script>
+</body>
+
+</html>

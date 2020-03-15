@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg01">전체 7단계 중 1단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우 <p
+                class="prg02">전체 7단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--curr"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li><a href="#">Merchant Info</a>
+                                </li>
+                                <li><a href="#">Address</a>
+                                </li>
+                                <li><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li><a href="#">Settlement Info</a>
+                                </li>
+                                <li><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>Pay Services</h1>
+                    <p>Please select the form of payment you want to use</p>
+                </header>
+                <section class="cont__section">
+                    <article class="cont__article form form__unit form__radio">
+                        <div class="box-radio__label box-radio__label--linepay">
+                            <!-- 190712 마크업 수정 -->
+                            <label>
+                                <div>
+                                    <input type="radio" name="radio1" id="radio11" class="btn-radio__input" data-toggle="specificCheck"> <i class="btn-radio__checkmark"></i>
+                                    <p>LINE Pay</p> <span class="btn-radio__text">Easy smartphone payment solution for merchants and customers.<br>Print, QR, Appforce, LINE Pay Holder Depending on your billing environment.</span>
+                                </div>
+                            </label>
+                            <button type="button" class="text-btn btn-pay-service" data-element="modal__open" data-target="#payService">What is LINE Pay Service?</button>
+                        </div>
+                        <!-- //190712 마크업 수정 -->
+                        <label class="box-radio__label box-radio__label--other">
+                            <div>
+                                <input type="radio" name="radio1" id="radio12" class="btn-radio__input" data-toggle="specificCheck"> <i class="btn-radio__checkmark"></i>
+                                <p>Other Pay</p> <span class="btn-radio__text">Do you have a payment tool you already use? Do you want to use the Star Pay payment tool?<br>Please leave contact information.</span>
+                            </div>
+                        </label>
+                        <p class="form__error-text">The entered information will be deleted when you change it.</p>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--right col9 pdt0 pdb120">
+                    <button type="button" class="btn btn--line">Back</button>
+                    <button type="button" class="btn" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                    <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                    <a href="#">0120-993-454</a>
+                </li>
+                <li>
+                    <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                    <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Sales</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- [s] What is LINE PAy Service? : AMCP_JP_02_01_03_01_LP01_Svc_type_LP
+        -->
+    <div id="payService" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type2" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal svc-type">
+                    <h1 class="modal__title--amcp">Learn about the Line Pay service</h1>
+                    <p class="modal__comment--amcp">Please check each tab for the line fee service and settlement method.</p>
+                    <div class="modal__scrollarea">
+                        <div class="pualugin-tab" data-element="tab">
+                            <ul class="pualugin-tab__ul">
+                                <li class="pualugin-tab__list" data-element="tab__list"> <a href="#" class="pualugin-tab__anchor" data-element="tab__anchor">LINE Pay</a>
+                                </li>
+                                <li class="pualugin-tab__list" data-element="tab__list"> <a href="#" class="pualugin-tab__anchor" data-element="tab__anchor">Settlement of Merchants</a>
+                                </li>
+                            </ul>
+                            <!-- [s] LINE Pay -->
+                            <div class="pualugin-tab__panel" data-element="tab__panel">
+                                <div class="inner-tab data-innerTab">
+                                    <ul class="inner-tab__ul">
+                                        <li class="inner-tab__list">
+                                            <button type="button" class="inner-tab__anchor data-innerTabAnchor is-active">Printed QR code</button>
+                                        </li>
+                                        <li class="inner-tab__list">
+                                            <button type="button" class="inner-tab__anchor data-innerTabAnchor">App POS</button>
+                                        </li>
+                                        <li class="inner-tab__list">
+                                            <button type="button" class="inner-tab__anchor data-innerTabAnchor">Terminal</button>
+                                        </li>
+                                    </ul>
+                                    <!-- Printed QR code -->
+                                    <div class="inner-tab__panel data-innerTabPanel">
+                                        <div class="info-box">
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-qr-feature.jpg" alt="image">
+                                            </div>
+                                            <div class="info-box__text-area">
+                                                <h2 class="info-box__title info-box__title--primary">What is a QR scan code?</h2>
+                                                <p class="info-box__comment">Payment will be made when the payment QR code is placed in the store and the customer scans the smartphone, without the need to install additional equipment or introduce a dedicated application. If the review is passed after the application, it can be used immediately as App POS.</p>
+                                                <p class="info-box__comment-warning">* When you apply for LINE Pay, there is a review. Failure to comply with the screening criteria may result in a failure to pass.</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__slide-area">
+                                                <h2 class="info-box__title">QR scan code Payment method</h2>
+                                                <ul class="step-scroll qrcode-method">
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-jp-qrmethod1.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">LINE Pay> Wallet> Select code reader</p>
+                                                    </li>
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-jp-qrmethod2.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">Pay users QR scan</p>
+                                                    </li>
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-jp-qrmethod3.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">User enters amount</p>
+                                                    </li>
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-jp-qrmethod4.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">User Payment Completed screen</p>
+                                                    </li>
+                                                    <li class="step-scroll__item">
+                                                        <div class="step-scroll__img">
+                                                            <img src="../../assets/img/amcp/img-jp-qrmethod5.png">
+                                                        </div>
+                                                        <p class="step-scroll__text">Confirm AOA messages sent to your merchant account</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h2 class="info-box__title">QR ScanCode Method</h2>
+                                                <div class="step-info step-info--qr">
+                                                    <dl class="step-info__item">
+                                                        <dt class="step-info__title qr1">Fixed amount</dt>
+                                                        <dd class="step-info__desc info-box__comment">The customer scans and pays the QR code generated by the merchant directly entering the amount.</dd>
+                                                    </dl>
+                                                    <dl class="step-info__item">
+                                                        <dt class="step-info__title qr2">Customer Input Type</dt>
+                                                        <dd class="step-info__desc info-box__comment">The customer scans the QR code for payment and enters the amount to pay.</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h3 class="info-box__title">Transact with QR code more easily without cash</h3>
+                                                <ol class="step-info step-info--type2 step-info--qrstep">
+                                                    <li class="step-info__item">
+                                                        <h4 class="step-info__title">01. Scanning QR codes</h4>
+                                                        <ol class="step-info__icon-list">
+                                                            <li class="step-info__icon qrstep1-1">Scanning QR codes in the store</li>
+                                                            <li class="step-info__icon qrstep1-2">Enter amount</li>
+                                                            <li class="step-info__icon qrstep1-3">Final payment completed when the clerk checked</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li class="step-info__item">
+                                                        <h4 class="step-info__title">02. Show my code</h4>
+                                                        <ol class="step-info__icon-list">
+                                                            <li class="step-info__icon qrstep2-1">Open My Code</li>
+                                                            <li class="step-info__icon qrstep2-2">I'll give it to the clerk</li>
+                                                            <li class="step-info__icon qrstep1-3">Payment completed</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li class="step-info__item">
+                                                        <h4 class="step-info__title">03. Payment with LINE Pay Card</h4>
+                                                        <ol class="step-info__icon-list">
+                                                            <li class="step-info__icon qrstep3-1">Register card usage upon receipt of the requested LINE Pay card</li>
+                                                            <li class="step-info__icon qrstep3-2">Payment can be made at domestic and foreign JCB member stores</li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h3 class="info-box__title">Use QR code more conveniently with the starter kit!</h3>
+                                                <p class="info-box__comment">The starter kit is a package dedicated to LINE Pay that enables merchants to conveniently use LINE Pay. It contains a sticker indicating the merchant that can pay LINE Pay, a QR code for the merchant, and a stand for the QR code to be set up. Please apply for the starter kit free of charge when filling out the merchant's application form. We will ship it to you after completing the merchant review.</p>
+                                            </div>
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-qr.jpg" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h3 class="info-box__title">Cost</h3>
+                                                <p class="info-box__comment">Provide the merchant with a printed version of the QR code. It's free, and no further steps are required.</p>
+                                                <p class="info-box__comment-sub">Once the LINE Pay merchant review process has been completed, the printed QR code will be sent to the store for placement.</p>
+                                            </div>
+                                            <ul class="cost-box">
+                                                <li> <strong>0%</strong>
+                                                    <p class="info-box__title-sub">a fee to pay</p> <span class="info-box__comment-sub">(Until July 31st, 2021)</span>
+                                                </li>
+                                                <li> <strong>JPY0</strong>
+                                                    <p class="info-box__title-sub">Enforcement feey</p>
+                                                </li>
+                                                <li> <strong>JPY0</strong>
+                                                    <p class="info-box__title-sub">monthly usage fee</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- [e] Printed QR code -->
+                                    <!-- [s] App POS -->
+                                    <div class="inner-tab__panel data-innerTabPanel app-pos" style="display: none;">
+                                        <div class="info-box">
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-pos-feature.jpg" alt="image">
+                                            </div>
+                                            <div class="info-box__text-area">
+                                                <h2 class="info-box__title info-box__title--primary">App POS?</h2>
+                                                <p class="info-box__comment">This service is equipped with promotional functions as well as payment through a dedicated application. Once the application is completed and the review is passed, the same as the QR scan code is available immediately.</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <h3 class="info-box__title">App POS Payment Method</h3>
+                                            <ul class="step-scroll apppos-method">
+                                                <li class="step-scroll__item">
+                                                    <div class="step-scroll__img">
+                                                        <img src="../../assets/img/amcp/img-jp-posmethod1.png">
+                                                    </div>
+                                                    <p class="step-scroll__text">AppPOS First Screen</p>
+                                                </li>
+                                                <li class="step-scroll__item">
+                                                    <div class="step-scroll__img">
+                                                        <img src="../../assets/img/amcp/img-jp-posmethod2.png">
+                                                    </div>
+                                                    <p class="step-scroll__text">Enter amount</p>
+                                                </li>
+                                                <li class="step-scroll__item">
+                                                    <div class="step-scroll__img">
+                                                        <img src="../../assets/img/amcp/img-jp-posmethod3.png">
+                                                    </div>
+                                                    <p class="step-scroll__text">Merchant scan user QR code</p>
+                                                </li>
+                                                <li class="step-scroll__item">
+                                                    <div class="step-scroll__img">
+                                                        <img src="../../assets/img/amcp/img-jp-posmethod4.png">
+                                                    </div>
+                                                    <p class="step-scroll__text">appPOS paid</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h3 class="info-box__title">APP POS only special features!</h3>
+                                                <p class="info-box__comment-sub app-pos__spcamcnoti">[cautions for operation of multiple stores (branches) and multiple terminals]</p>
+                                                <p class="info-box__comment-sub">"LINE Pay store app ' is a service that is used by logging in with the 'Partner ID' and 'Password' set at the time of merchant application.  Multiple devices cannot log in simultaneously with the same merchant ID and password. When using the terminal at multiple stores (branch offices), a separate merchant application is required for each terminal used.</p>
+                                                <div class="step-info step-info--pos">
+                                                    <dl class="step-info__item">
+                                                        <dt class="step-info__title pos1">Message to Payment Customer</dt>
+                                                        <dd class="step-info__desc info-box__comment">You can view a list of paid customers in the app and promote a variety of services and coupon information to customers who have added friends. <p class="info-box__comment-warning">※ If the store account has fewer than 20 friends, only 'All Followers' can be selected.</p>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl class="step-info__item">
+                                                        <dt class="step-info__title pos2">Download Coupon Issue Functions</dt>
+                                                        <dd class="step-info__desc info-box__comment">You can publish it by creating a coupon that you can download from the app. Send it to the customer and market it. <p class="info-box__comment-sub">· You can issue a download coupon in the LINE Pay store app. <br>· Only discount coupons can be issued. <br>· The issued coupon can be sent to the store account and the customers who are friends through the 'Message Forwarding' function, which is an app for LINE Pay stores.</p>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h3 class="info-box__title">Cost</h3>
+                                                <p class="info-box__comment">Download the store-only app and add a friend to your payment customers for promotional marketing. Please have your app download terminal (smart phone or tablet). The member store must pay for the app-enabled packets and communication fee.</p>
+                                            </div>
+                                            <ul class="cost-box">
+                                                <li> <strong>0%</strong>
+                                                    <p class="info-box__title-sub">a fee to pay</p> <span class="info-box__comment-sub">(Until July 31st, 2021)</span>
+                                                </li>
+                                                <li> <strong>JPY0</strong>
+                                                    <p class="info-box__title-sub">Enforcement feey</p>
+                                                </li>
+                                                <li> <strong>JPY0*</strong>
+                                                    <p class="info-box__title-sub">monthly usage fee</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- [e] App POS -->
+                                    <!-- [s] Terminal -->
+                                    <div class="inner-tab__panel data-innerTabPanel" style="display: none;">
+                                        <div class="info-box">
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-terminal-feature.jpg" alt="image">
+                                            </div>
+                                            <div class="info-box__text-area">
+                                                <h2 class="info-box__title info-box__title--primary">What is a non-stop terminal?</h2>
+                                                <p class="info-box__comment">Install it in the store, power it on, and enter the amount to complete the payment! If the customer scans, the payment will be made immediately without having to enter the payment amount.</p>
+                                                <p class="info-box__comment-warning">* When you apply for LINE Pay, there is a review. Failure to comply with the screening criteria may result in a failure to pass. <br>* After applying for membership, LINE Pay will send it to you when the merchant reviews are completed.</p>
+                                            </div>
+                                            <div class="info-box__inner">
+                                                <h3 class="info-box__inner-title">What is a LINE Pay Golchi terminal?</h3>
+                                                <div class="info-box__slide step-slide">
+                                                    <div class="step-slide__list">
+                                                        <div class="step-slide__img">
+                                                            <img src="../../assets/img/amcp/img-terminal-feature-golchi.svg" alt="image">
+                                                        </div>
+                                                        <div class="step-slide__text">
+                                                            <p class="step-slide__order">Step 1</p>
+                                                            <p class="step-slide__desc">Enter amount by member store owner.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="step-slide__list">
+                                                        <div class="step-slide__img">
+                                                            <img src="../../assets/img/amcp/img-terminal-feature-golchi.svg" alt="image">
+                                                        </div>
+                                                        <div class="step-slide__text">
+                                                            <p class="step-slide__order">Step 2</p>
+                                                            <p class="step-slide__desc">The amount entered appears on the terminal as QR code and number for payment.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="step-slide__list">
+                                                        <div class="step-slide__img">
+                                                            <img src="../../assets/img/amcp/img-terminal-feature-golchi.svg" alt="image">
+                                                        </div>
+                                                        <div class="step-slide__text">
+                                                            <p class="step-slide__order">Step 3</p>
+                                                            <p class="step-slide__desc">The customer scans the QR code displayed on the stationary terminal and completes the payment.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h3 class="info-box__title">What is a LINE Pay Golchi terminal?</h3>
+                                            </div>
+                                            <div class="info-box__img-area">
+                                                <img src="../../assets/img/amcp/img-terminal-jp.jpg" alt="image">
+                                            </div>
+                                            <div class="mcht-info-wrap terminal-mcht-info">
+                                                <h4 class="info-box__title-sub">LINE Pay Gauguin Terminal is a portable terminal for convenient payment.</h4>
+                                                <div class="mcht-info__cont">
+                                                    <dl class="mcht-info__dl">
+                                                        <dt class="mcht-info__dt">Name</dt>
+                                                        <dd class="mcht-info__dd">LINE Pay Terminator</dd>
+                                                        <dt class="mcht-info__dt">Body size</dt>
+                                                        <dd class="mcht-info__dd">H95 X W80 X D155(mm)</dd>
+                                                        <dt class="mcht-info__dt">Weight</dt>
+                                                        <dd class="mcht-info__dd">about 430 g</dd>
+                                                        <dt class="mcht-info__dt">Connection method</dt>
+                                                        <dd class="mcht-info__dd">Bluetooth V4.2 / Wi-fi / WCDMA / NFC*1</dd>
+                                                        <dt class="mcht-info__dt">Battery duration</dt>
+                                                        <dd class="mcht-info__dd">30 hours, 7,800 mAh charge</dd>
+                                                        <dt class="mcht-info__dt">QR code display screen</dt>
+                                                        <dd class="mcht-info__dd">2.4 "TFT-LCD (320X240) Black and white</dd>
+                                                        <dt class="mcht-info__dt">Color</dt>
+                                                        <dd class="mcht-info__dd">2 species (green and white)</dd>
+                                                        <dt class="mcht-info__dt">Providing country</dt>
+                                                        <dd class="mcht-info__dd">Japan, Taiwan <p class="info-box__comment-sub">1: At the beginning of service delivery, NFC payments are only available in Taiwan. The service in Japan is undecided. <br>2: We have our own review when we apply for a merchant. You need to apply for a merchant by branch.</p>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="info-box__text-area">
+                                                <h3 class="info-box__title">Cost</h3>
+                                                <p class="info-box__comment">Provide the merchant with a printed version of the QR code. It's free, and no further steps are required.</p>
+                                                <p class="info-box__comment-sub">When you complete the application to LINE PAY member store and provide the payment details, we will ship the requested Gauguin terminal to the merchant after the merchant's examination.</p>
+                                                <p class="info-box__comment-warning">* Initial cost is free <br>* Payment fee is free until July 31, 2021</p>
+                                            </div>
+                                            <ul class="cost-box cost-box--terminal">
+                                                <li> <strong>0%</strong>
+                                                    <p class="info-box__title-sub">a fee to pay</p> <span class="info-box__comment-sub">(Until July 31st, 2021)</span>
+                                                </li>
+                                                <li> <strong>JPY0</strong>
+                                                    <p class="info-box__title-sub">Enforcement feey</p>
+                                                </li>
+                                                <li> <strong>1,500 yen/month</strong>
+                                                    <span class="info-box__comment-sub">(Tax not included)</span>
+                                                    <p class="info-box__title-sub">monthly usage fee</p>
+                                                </li>
+                                            </ul>
+                                            <div class="gray-box svc-type__gray-box terminal-gray-box">
+                                                <p class="info-box__comment">* Terminal charges usually take place from next month of the delivery month. There is no monthly delivery. Also, the payment method can only be made by a credit card</p>
+                                                <p class="info-box__comment">* Minimum service period. It will be 12 months from next month of the terminal delivery month.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- [e] Terminal -->
+                                </div>
+                            </div>
+                            <!-- [e] LINE Pay -->
+                            <!-- [s] Settlement of Merchants -->
+                            <div class="pualugin-tab__panel" data-element="tab__panel">
+                                <ul class="info-box info-box--horizontal settlement">
+                                    <li class="info-box__list">
+                                        <div class="info-box__img-area">
+                                            <img src="../../assets/img/amcp/img-settlementaccount.svg" alt="Settlement account">
+                                        </div>
+                                        <div class="info-box__text-area">
+                                            <h2 class="info-box__title">Settlement account</h2>
+                                            <p class="info-box__comment">Settlement accounts have two options.</p>
+                                            <dl>
+                                                <dt class="info-box__title-sub">LINE Pay Balance</dt>
+                                                <dd class="info-box__comment">If you are a member of LINE Pay Money, you will receive the settlement amount with Balance.</dd>
+                                                <dt class="info-box__title-sub">Bank Account</dt>
+                                                <dd class="info-box__comment">Receive the settlement amount to the merchant bank account you set up.</dd>
+                                            </dl>
+                                            <p class="info-box__comment-sub">The payment account information can be changed through the merchant center &gt; Basic information management &gt; Deposit account management &gt; Change account menu.</p>
+                                        </div>
+                                    </li>
+                                    <li class="info-box__list">
+                                        <div class="info-box__img-area">
+                                            <img src="../../assets/img/amcp/img-settlementcycle.svg" alt="Settlement Cycle">
+                                        </div>
+                                        <div class="info-box__text-area">
+                                            <h2 class="info-box__title">Settlement Cycle</h2>
+                                            <p class="info-box__comment">The settlement takes place on the 19th of each month, and the outstanding transactions are remitted to the bank account at the end of next month. (If the money was processed in March, the money will be transferred at the end of April)</p>
+                                            <p class="info-box__comment">A fee of 240 yen (tax included) per deposit is charged.</p>
+                                            <p class="info-box__comment">Application for settlement will be made at the time of application for deposit or once a month (the end of the following day). Depending on the type of bank account you're using, there may be a delay.</p>
+                                        </div>
+                                    </li>
+                                    <li class="info-box__list">
+                                        <div class="info-box__img-area">
+                                            <img src="../../assets/img/amcp/img-servicefee.svg" alt="Settlement Cycle">
+                                        </div>
+                                        <div class="info-box__text-area">
+                                            <h2 class="info-box__title">Settlement account</h2>
+                                            <p class="info-box__comment">The fee for using LINE Pay merchant service is as follows. However, the commission rate may change depending on the sales item and transaction volume.</p>
+                                            <div class="service-fee">
+                                                <dl class="service-fee__half">
+                                                    <dt class="info-box__title-sub">LINE Pay Terminal / Printed QR / LINE APP POS fee free</dt>
+                                                    <dd class="info-box__comment">(excluding tax) <br>Until July 31, 2021: 0% After August 1, 2021: 2.45% <span class="info-box__comment-sub">※ LINE Pay Terminal terminal fee is not included<br>From June 30, 2019: 1,500 yen (excluding tax) / month</span>
+                                                    </dd>
+                                                </dl>
+                                                <dl class="service-fee__half">
+                                                    <dt class="info-box__title-sub">Online</dt>
+                                                    <dd class="info-box__comment">Goods & Service: 3.45% <br>Digital contents: 5.5%</dd>
+                                                    <dt class="info-box__title-sub">StarPay</dt>
+                                                    <dd class="info-box__comment">3.45% <span class="info-box__comment-sub">※ StarPay terminal usage charge extra 35,000 yen (tax not included) Pay to StarPay</span>
+                                                    </dd>
+                                                    <dt class="info-box__title-sub">POS</dt>
+                                                    <dd class="info-box__comment">~3.45%</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- [e] Settlement of Merchants -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] What is LINE PAy Service? : AMCP_JP_02_01_03_01_LP01_Svc_type_LP
+        -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <script>
+        // Svc type modal > Terminal 내 slide
+        $('.step-slide').slick({
+            dots: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 1,
+            infinite: false,
+            variableWidth: true,
+        });
+    </script>
+</body>
+
+</html>

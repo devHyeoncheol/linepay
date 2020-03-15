@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>Email Verification</h1>
+                    <p>URL will be sent to Email you enter blow.</p>
+                </header>
+                <section class="cont__section">
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit">
+                            <label for="input01" class="form__label form__label--required">Email</label>
+                            <!-- 190712 Here 삭제 -->
+                            <input type="text" id="input01" class="form__element">
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                        <div class="form__unit pdt0 mgt40">
+                            <!-- 0621 element 추가 -->
+                            <label class="pualugin-checkbox mgr0">
+                                <!--class mgt40 제거 -->
+                                <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                <span class="pualugin-checkbox__text">I read and agree to </span>
+                                <button type="button" class="text-btn text-btn--darker" data-element="modal__open" data-target="#terms22LP04">LINE Pay Privacy Policy.</button>
+                            </label>
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                    </article>
+                    <div class="cont__btnbox contain54--btn">
+                        <button type="button" class="btn btn--big mgb50" disabled>Send</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                    <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                    <a href="#">0120-993-454</a>
+                </li>
+                <li>
+                    <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                    <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Sales</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <div id="layer1" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Privacy Policy</h1>
+                    <div class="modal__scrollarea modal-terms">
+                        <p><b><span style="font-size: 17px; font-weight: 500; color: #111111;">プライバシーポリシー</span></b>
+                        </p>
+                        <br>
+                        <p>私たちLINE　Pay株式会社（以下、「当社」といいます）は、当社が提供する前払式支払手段の発行の業務、資金移動業等の決済サ</p>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [s] AMCP_JP_02_01_02_02_LP01 -->
+    <!-- 190712 terms22LP01 삭제 -->
+    <!-- [e] AMCP_JP_02_01_02_02_LP01 -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP02 LINE Cash -->
+    <div id="terms22LP02" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP02 LINE Cash -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP03 LINE Money -->
+    <div id="terms22LP03" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP03 LINE Money -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP04 Private Policy-->
+    <div id="terms22LP04" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP04 Private Policy-->
+    <!-- [s] AMCP_JP_02_01_03_03_LP01 -->
+    <div id="terms33LP01" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_03_03_LP01 -->
+    <!-- [s] Specific AMCP_JP_02_01_02_02_LP05_Policy -->
+    <div id="terms22LP05" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">特定商取引法とは</h1>
+                    <!-- 190712 내용수정 -->
+                    <!-- 190712 내용수정 -->
+                    <div class="modal__scrollarea modal-terms">
+                        <div>
+                            <p><b><span>訪問販売とは</span></b>
+                            </p>
+                            <p><span>事業者が消費者の自宅に訪問して、商品や権利の販売または役務（サービス）の提供を行う契約をする取引のこと。キャッチセールスやアポイントメントセールスを含みます。</span>
+                            </p>
+                            <br>
+                            <p><b><span>特定継続的役務提供とは</span></b>
+                            </p>
+                            <p><span>長期的・継続的な役務（サービス）の提供（特定継続的役務）と、これに対する高額の対価を約する取引のこと。エステティックサロン、美容医療、語学教室、家庭教師、学習塾、パソコン教室、結婚相手紹介サービスが特定継続的役務に指定されています。</span>
+                            </p>
+                            <br>
+                            <p><b><span>電話勧誘販売とは</span></b>
+                            </p>
+                            <p><span>業者が電話で勧誘を行い、申し込みを受付ける取引のこと。電話をいったん切った後、消費者が郵便や電話等によって申し込みを行う場合にも該当します。</span>
+                            </p>
+                            <br>
+                            <p><b><span>連鎖販売取引とは</span></b>
+                            </p>
+                            <p><span>個人を販売員として勧誘し、さらにその個人に次の販売員の勧誘をさせる形で販売組織を連鎖的に拡大して行う商品・役務（サービス）取引のこと。</span>
+                            </p>
+                            <br>
+                            <p><b><span>業務提供誘引販売取引とは</span></b>
+                            </p>
+                            <p><span>「仕事を提供するので収入が得られる」という口実で消費者を誘引し、仕事に必要であるとして、商品等を売って金銭的負担を負わせる取引のこと。</span>
+                            </p>
+                            <br>
+                            <p><span>※詳細は「特定商取引に関する法律」をご確認ください</span>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                    <!-- //190712 내용수정 -->
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] Specific AMCP_JP_02_01_02_02_LP05_Policy -->
+    <!-- [s] Advance AMCP_JP_02_01_02_02_LP06_Policy -->
+    <div id="terms22LP06" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">前払い式取引とは</h1>
+                    <!-- 190712 내용수정 -->
+                    <!-- 190712 내용수정 -->
+                    <div class="modal__scrollarea modal-terms">
+                        <div>
+                            <p><span>購入者等に対する商品の引き渡しの前に、購入者等から商品代金等を2か月以上の期間にわたり、かつ3回以上に分割して受け取る取引のこと。 例えば、「友の会」や「冠婚葬祭互助会」と呼ばれているものがこの取引方法に該当します</span>
+                            </p>
+                            <br>
+                            <p><span>※詳細は「割賦販売法」をご確認ください。</span>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                    <!-- //190712 내용수정 -->
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] Advance AMCP_JP_02_01_02_02_LP06_Policy -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

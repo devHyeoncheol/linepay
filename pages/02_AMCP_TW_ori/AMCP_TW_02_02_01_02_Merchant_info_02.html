@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg02">전체 10단계 중 2단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우
+                <p class="prg02">전체 10단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--comp"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li class="left__nav--curr"><a href="#">Merchant Info</a>
+                                </li>
+                                <li><a href="#">Address</a>
+                                </li>
+                                <li><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li><a href="#">Settlement Info</a>
+                                </li>
+                                <li><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Device Order</a>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                        <li><a href="#">iPass Application</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>Merchant Information</h1>
+                    <p>In order to activate merchant account, all required information should be submitted. <br>Additional documents and screening process will be requested according to your business category.</p>
+                </header>
+                <section class="cont__section">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article form form--half pdt0 mc-info02">
+                        <div class="form__unit">
+                            <label for="input01" class="form__label form__label--required">Company Name</label>
+                            <input type="text" id="input01" class="form__element">
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                        <div class="form__unit">
+                            <label for="input02" class="form__label"> <span class="form__label--required">Corporation Name (English)</span>
+                                <div class="pualugin-tooltip" data-element="tooltip" data-options='{"position": "bottom", "mode": "popover"}'>
+                                    <button class="icon-tooltip" type="button" data-element="tooltip__button" aria-label="tooltip"></button> <span class="pualugin-tooltip__panel tooltip__panel--type02 pualugin-tooltip__panel--bottom mc-info02__pualugin-tooltip__panel" data-element="tooltip__panel">
+                                        <div class="info-box info-box--horizontal tooltip">
+                                            <div class="info-box__list">
+                                                <div class="info-box__img-area">
+                                                    <img src="../../assets/img/char/tooltip02.svg" alt="">
+                                                </div>
+                                                <div class="info-box__text-area">
+                                                    <span class="tooltip__title">Where is the company's English name used?</span>
+                                                    <span class="tooltip__detail tooltip__detail--555">The company's English name is for the customer (LINE Pay user) to be credited to the credit card payment.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="tooltip__close" type="button" data-element="tooltip__close">Close</button>
+                                    </span>
+                                </div>
+                            </label>
+                            <input type="text" id="input02" class="form__element" />
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form form--half pdt0">
+                        <div class="form__unit">
+                            <label for="input03" class="form__label"> <span class="form__label--required">Brand Name(Service Name)</span>
+                                <div class="pualugin-tooltip" data-element="tooltip" data-options='{"position": "right", "mode": "popover"}'>
+                                    <button class="icon-tooltip" type="button" data-element="tooltip__button" aria-label="tooltip"></button> <span class="pualugin-tooltip__panel pualugin-tooltip__panel--right tooltip__panel--type03" data-element="tooltip__panel">
+                                        <div class="info-box info-box--horizontal tooltip">
+                                            <div class="info-box__list">
+                                                <div class="info-box__img-area">
+                                                    <img src="../../assets/img/char/tooltip.svg" alt="">
+                                                </div>
+                                                <div class="info-box__text-area">
+                                                    <span class="tooltip__title">Where is my company name and brand name used?</span>
+                                                    <span class="tooltip__detail tooltip__detail--555 tooltip__detail--list">After the LINE Pay payment, the company name or brand name is displayed on the payment completion screen (statement screen) that is visible to the customer.</span> <span class="tooltip__detail tooltip__detail--555 tooltip__detail--list">Statement screen preferences are the information of the merchant's brand name and the contact details of the merchant</span>
+                                                    <span class="tooltip__guidetext">The screen information of the statement can be changed through the merchant center &gt; Basic information management &gt; Other information &gt; Merchant screen setting menu.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="tooltip__close" type="button" data-element="tooltip__close">Close</button>
+                                    </span>
+                                </div>
+                            </label>
+                            <input type="text" id="input03" class="form__element" />
+                            <p class="form__error-text">The device can be used immediately without separate installation / setting.</p>
+                        </div>
+                        <div class="form__unit">
+                            <label for="input04" class="form__label form__label--required">Business Registration NO</label>
+                            <input type="text" id="input04" class="form__element">
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form form--half pdt0">
+                        <div class="form__unit">
+                            <label for="select02" class="form__label form__label--required">Store Country</label>
+                            <select name="select" id="select02" class="form__element">
+                                <option>Store Country</option>
+                                <option>option1</option>
+                                <option>option1</option>
+                            </select>
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                        <div class="form__unit">
+                            <label for="select03" class="form__label form__label--required">Store District</label>
+                            <select name="select" id="select03" class="form__element">
+                                <option>Store District</option>
+                                <option>option1</option>
+                                <option>option1</option>
+                            </select>
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form pdt0 col9">
+                        <div class="form__unit">
+                            <label for="input06" class="form__label form__label--required">Store Address</label>
+                            <input type="text" id="input06" class="form__element">
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form pdt0 col9">
+                        <div class="form__unit">
+                            <label for="input07" class="form__label form__label--required">Postal Code</label>
+                            <input type="text" id="input07" class="form__element">
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--between col9">
+                    <button type="button" class="btn btn--line">Save</button>
+                    <button type="button" class="btn btn--line">Back</button>
+                    <!-- 모든 필수 내용 입력되었는지 확인 후 Next버튼 disabled 삭제하기 -->
+                    <button type="button" class="btn" disabled="">Next</button>
+                    <!-- Save 버튼 클릭해서 나오는 Toast Message -->
+                    <div class="toast-alert" style="display: block;"> <span class="toast-alert__text">Your entries have been saved.</span>
+                    </div>
+                    <!-- //Save 버튼 클릭해서 나오는 Toast Message -->
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                    로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- [s] AMCP_JP_02_01_02_02_LP01 -->
+    <div id="terms22LP01" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Prohibition of use</h1>
+                    <div class="modal__scrollarea modal-policy">
+                        <p class="modal-policy__text">LINE Pay is prohibited in the above-mentioned merchandise service. Thank you for your consent and compliance.</p>
+                        <ul class="ol-list">
+                            <li class="ol-list__li">Superior service against public order and morals <br>Ex : illegal goods (illegal drugs, weapons, etc.), adult services, etc.</li>
+                            <li class="ol-list__li">Certain Continuous Service Services</li>
+                            <li class="ol-list__li">Refundable cash proceeds <br>Ex : gift certificates, various kinds of securities, coupon tickets, etc.</li>
+                            <li class="ol-list__li">Commodities other than goods or services in exchange for payment : donations, fundraising,</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP01 -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP02 LINE Cash -->
+    <div id="terms22LP02" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP02 LINE Cash -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP03 LINE Money -->
+    <div id="terms22LP03" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP03 LINE Money -->
+    <!-- [s] AMCP_JP_02_01_02_02_LP04 Private Policy-->
+    <div id="terms22LP04" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_02_02_LP04 Private Policy-->
+    <!-- [s] AMCP_JP_02_01_03_03_LP01 -->
+    <div id="terms33LP01" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <div class="modal__scrollarea modal-terms"></div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] AMCP_JP_02_01_03_03_LP01 -->
+    <!-- [s] Specific -->
+    <div id="termsS01" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title">Specified Commercial Transactions Act</h1>
+                    <div class="modal__scrollarea modal-terms">
+                        <div style="width: 100%; padding: 150px 0; text-align: center; opacity: 0.2; background-color: rgb(255, 0, 0);">TBD</div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] Specific -->
+    <!-- [s] Advance -->
+    <div id="termsS02" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title">Pre-paid transaction</h1>
+                    <div class="modal__scrollarea modal-terms">
+                        <div style="width: 100%; padding: 150px 0; text-align: center; opacity: 0.2; background-color: rgb(255, 0, 0);">TBD</div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- [e] Advance -->
+    <div id="modalType1" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap modal__wrap--sctype1" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title">Search Bank</h1>
+                    <div class="modal__scrollarea">width 564</div>
+                </section>
+                <div class="cont__btnbox">
+                    <button type="button" class="btn">Apply</button>
+                </div>
+            </div>
+            <button class="pualugin-modal__close icon-close" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

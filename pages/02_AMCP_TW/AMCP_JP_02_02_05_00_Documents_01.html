@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg06">전체 7단계 중 6단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우 <p
+                class="prg02">전체 7단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--comp"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li class="left__nav--comp"><a href="#">Merchant Info</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">Address</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">Settlement Info</a>
+                                </li>
+                                <li class="left__nav--curr"><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>Submit Required Documents</h1>
+                    <p>Please upload the necessary documents to register your LINE Pay merchant.</p>
+                </header>
+                <section class="cont__section">
+                    <article class="cont__article mcht-info-wrap col9 mcht-info-wrap--line">
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Copy of corporate registration</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Company Name</dt>
+                                    <dd class="mcht-info__dd">Input value</dd>
+                                    <dt class="mcht-info__dt">Company address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                    <dt class="mcht-info__dt">Representative address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                </dl>
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <!-- 190719 img 파일 이외의 파일이 올라가서 엑박 뜰 경우 notimg 클래스 추가 -->
+                                            <div class="img-item notimg">
+                                                <div class="notimg-box">
+                                                    <img src="../../assets/img/amcp/img-doc.png" alt="" class="img-doc">
+                                                    <!-- 파일명 2줄 말줄임은 개발에서 처리 부탁드리겠습니다. -->
+                                                    <div class="file-name">
+                                                        <span>Filename422filen2344...</span><em>.pdf</em>
+                                                    </div>
+                                                </div>
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <!-- // 190719 img 파일 이외의 파일이 올라가서 엑박 뜰 경우 notimg 클래스 추가 -->
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <label for="add-file1" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file1" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">ファイル形式：JPG、PNG、PDF、GIF、TIF、TIFF（最大10MB/1枚あたり）</p>
+                                        <ul class="ref-list">
+                                            <li class="ref-list__item">Proof of all history.</li>
+                                            <li class="ref-list__item">Only documents issued within 6 months.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Representative ID</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Representative name</dt>
+                                    <dd class="mcht-info__dd">Input value</dd>
+                                    <dt class="mcht-info__dt">Representative address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                    <dt class="mcht-info__dt">Representative Date of Birth</dt>
+                                    <dd class="mcht-info__dd">April 24, 1992</dd>
+                                </dl>
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                            </div>
+                                            <label for="add-file2" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file2" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">ファイル形式：JPG、PNG、PDF、GIF、TIF、TIFF (最大10MB/1枚あたり)<br>Upload one of the following</p>
+                                        <ul class="ul-list ul-list--dot list--noti">
+                                            <li class="ul-list__li ul-list__li--small ul-list__li--linegray500">Driver's license: back side </li>
+                                            <li class="ul-list__li ul-list__li--small ul-list__li--linegray500">Health insurance card: back side </li>
+                                            <li class="ul-list__li ul-list__li--small ul-list__li--linegray500">My number card: only front side</li>
+                                            <li class="ul-list__li ul-list__li--small ul-list__li--linegray500">Driver credentials: front/backside</li>
+                                            <li class="ul-list__li ul-list__li--small ul-list__li--linegray500">Visa Card: front/backside</li>
+                                            <li class="ul-list__li ul-list__li--small ul-list__li--linegray500">Special permanent resident certificate: front/backside</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Photos inside the store</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file3" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file3" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">ファイル形式：JPG、PNG、PDF、GIF、TIF、TIFF (最大10MB/1枚あたり)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Photos outside the store</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file4" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file4" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">ファイル形式：JPG、PNG、PDF、GIF、TIF、TIFF (最大10MB/1枚あたり)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Business license</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Industry category</dt>
+                                    <dd class="mcht-info__dd">user input value</dd>
+                                    <dt class="mcht-info__dt">Name of document</dt>
+                                    <dd class="mcht-info__dd">Name of specific license for each type of business</dd>
+                                </dl>
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">ファイル形式：JPG、PNG、PDF、GIF、TIF、TIFF (最大10MB/1枚あたり)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--between col9">
+                    <button type="button" class="btn btn--line">Save</button>
+                    <button type="button" class="btn btn--line">Back</button>
+                    <button type="button" class="btn" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                    <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                    <a href="#">0120-993-454</a>
+                </li>
+                <li>
+                    <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                    <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Sales</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <script>
+        $('.img-box').each(function() {
+            var imgBox = $(this);
+            var imgList = imgBox.find('.img-box__list');
+            var imgItem = imgList.find('div.img-item');
+            var imgReset = imgBox.find('.img-box__reset');
+            imgItem.each(function() {
+                if ($(this).hasClass('img-preview') || $(this).find('.img-item__delete').length > 0) {
+                    //
+                } else {
+                    $(this).addClass('nofunc');
+                }
+            });
+            if (imgBox.hasClass('img-box-logo')) {
+                if (imgItem.length != 0) {
+                    imgReset.show();
+                }
+            }
+            if (imgItem.length != 0) {
+                imgReset.show();
+            }
+        })
+        $(document).on('click', 'div.img-item', function() {
+            var thisItem = $(this);
+            var imgDelete = thisItem.find('.img-item__delete');
+            var imgItemOn = $(this).hasClass('is-active');
+            //var imgList = $(this).parents('.img-box').find('.img-box__wrap .img-box__list .img-item');
+            //var imgReset = $(this).parents('.img-box').find('.img-box__reset');
+            if (imgDelete.length > 0) {
+                if (!imgItemOn) {
+                    $(this).addClass('is-active');
+                } else {
+                    $(this).removeClass('is-active');
+                }
+            }
+        });
+        $(document).on('click', '.img-item__delete', function() {
+            if ($(this).parent().parent().find('div.img-item').length == 1) {
+                $(this).parents('.img-box').find('.img-box__reset').hide();
+            }
+            $(this).parent().remove();
+        })
+        $(document).on('click', '.img-box__reset', function() {
+            $(this).parents('.img-box').find('.img-box__wrap .img-box__list div.img-item').remove();
+            $(this).hide();
+        });
+    </script>
+</body>
+
+</html>

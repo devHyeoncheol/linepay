@@ -1,0 +1,88 @@
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select {
+    margin:0;
+    padding:0
+}
+body,input,textarea,select,button,table {
+    font-family:NanumBarunGothic;
+    font-size:12px;
+    color:#181818
+}
+button {
+    border :0;
+}
+img,fieldset {
+    border:0
+}
+textarea {
+    -webkit-border-radius:0;
+    -webkit-appearance:none;
+    resize:none
+}
+ul,ol {
+    list-style:none
+}
+li {
+    vertical-align:top
+}
+em,address {
+    font-style:normal
+}
+input,select {
+    vertical-align:middle
+}
+a {
+    color:#181818;
+    text-decoration:none
+}
+a:hover {
+    text-decoration:none
+}
+.blind{
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(0 0 0 0) !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+}
+caption{
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+::-webkit-input-placeholder {
+  color: #97999e; }
+
+:-moz-placeholder {
+  color: #97999e; }
+
+::-moz-placeholder {
+  color: #97999e; }
+
+:-ms-input-placeholder {
+  color: #97999e; }
+
+.wrap {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+    height: 100%;
+}

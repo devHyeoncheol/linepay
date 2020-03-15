@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>LINE Pay Merchant <br />Application</h1>
+                    <p>If you are already completing the application, please <a href="#" class="apply-login-btn">log in.</a></p>
+                    <div class="container--center">
+                        <button type="button" class="apply-how--btn toggle--btn">How to Apply</button>
+                        <div class="apply-how">
+                            <ol class="apply-how--ol">
+                                <li class="apply-how--ele1">
+                                    <h3>Create Account</h3>
+                                    <p>LINE After login or email verification Create a merchant account.</p>
+                                </li>
+                                <li class="apply-how--ele2">
+                                    <h3>Enter information</h3>
+                                    <p>Enter merchant information and necessary documents Please register!</p>
+                                </li>
+                                <li class="apply-how--ele3">
+                                    <h3>judge</h3>
+                                    <p>Once all application documents have been confirmed Merchant review will proceed!</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </header>
+                <section class="cont__section">
+                    <article class="cont__article ta-center-block mgt-50">
+                        <div class="apply__visual--email checkheight">
+                            <h3>Email verification without LINE ID</h3>
+                            <p>Without a LINE ID, you can apply for a merchant only by email authentication.</p>
+                            <a href="#" class="btn">Email Verification</a>
+                        </div>
+                        <div class="apply__visual--line checkheight">
+                            <h3>If you are a member of LINE</h3>
+                            <p>You can use the LINE account to connect to the LINE Pay Merchant service.</p>
+                            <a href="#" class="btn">LINE Login</a>
+                        </div>
+                        <p class="apply-text">Fast and easy application process for LINE Pay Money member.</p>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                    <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                    <a href="#">0120-993-454</a>
+                </li>
+                <li>
+                    <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                    <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Sales</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

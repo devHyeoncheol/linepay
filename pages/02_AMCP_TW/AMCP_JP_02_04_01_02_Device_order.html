@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1> Device Order</h1>
+                    <p>Please enter the information required to deliver the LINE Pay Terminal</p>
+                </header>
+                <section class="cont__section cont__section--other device-order">
+                    <!-- 191209 옵션 추가 -->
+                    <!-- Normal Plan -->
+                    <article class="cont__article">
+                        <h2>Terminal fee and details</h2>
+                        <!-- [D] radio default normal plan -->
+                        <div class="btn-radio" role="radiogroup">
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio3" id="radio_normal" class="btn-radio__input" checked="checked">
+                                <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Normal Plan</span>
+                            </label>
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio3" id="radio_plan" class="btn-radio__input">
+                                <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">"Cashless Consumer Return Program" Response Plan</span>
+                            </label>
+                        </div>
+                        <!-- [D] Cashless Consumer Return Program 선택시 노출 -->
+                        <p class="guide-text" style="display:none">*For a subsidy plan, you must apply for a government subsidy upon completion of the merchant<br>registration, and depending on the result of the application, the subsidy plan service fee<br> may not be available unless you are eligible for support.</p>
+                        <div class="mcht-info terminal-order">
+                            <div class="gray-box gray-box--half">
+                                <div class="gray-box__half-box">
+                                    <ul class="ul-list ul-list--dot ul-list--gray900">
+                                        <li class="ul-list__li">据置端末（SIMカード含む）</li>
+                                        <li class="ul-list__li">月額利用料金：<span class="sub-text">1,500円/月(税別)</span>
+                                        </li>
+                                        <!-- 190712 삭제 <li class="ul-list__li">Terminal rental fee <span class="sub-text">Free (until June 2019)</span>
+                                     </li>-->
+                                    </ul>
+                                </div>
+                                <div class="gray-box__half-box">
+                                    <ul class="ul-list ul-list--dot">
+                                        <!-- 190712 삭제 <li class="ul-list__li">Fee <span class="sub-text">1,500 ¥</span>
+                                     </li> -->
+                                        <li class="ul-list__li">最低利用期間 : <span class="sub-text">端末発送日の翌月から12ヶ月間</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <label class="pualugin-checkbox">
+                                <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input">
+                                <!-- 190712 default 체크아님 --> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                <span class="pualugin-checkbox__text"><a href="https://terms2.line.me/paymerchant_LP_Device?lang=ja" target="_blank" class="text-btn">Please confirm the agreement on the use of the stationary LINE Pay terminal.</a></span>
+                            </label>
+                        </div>
+                    </article>
+                    <!-- //Normal Plan -->
+                    <!-- Response Plan -->
+                    <article class="cont__article">
+                        <h2>Terminal fee and details</h2>
+                        <div class="btn-radio" role="radiogroup">
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio3_1" id="radio_normal_1" class="btn-radio__input">
+                                <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Normal Plan</span>
+                            </label>
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio3_1" id="radio_plan_1" class="btn-radio__input" checked="checked">
+                                <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">"Cashless Consumer Return Program" Response Plan</span>
+                            </label>
+                        </div>
+                        <!-- [D] Cashless Consumer Return Program 선택시 노출 -->
+                        <p class="guide-text">*For a subsidy plan, you must apply for a government subsidy upon completion of the merchant<br>registration, and depending on the result of the application, the subsidy plan service fee<br> may not be available unless you are eligible for support.</p>
+                        <h2>Please select from the following for use if you are not eligible for this project</h2>
+                        <!-- [D] radio default normal plan -->
+                        <div class="btn-radio" role="radiogroup">
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio4" id="radio_apply" class="btn-radio__input" checked="checked">
+                                <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Continue to apply at normal rate</span>
+                            </label>
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio4" id="radio_cancel" class="btn-radio__input">
+                                <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Cancel Device Application</span>
+                             </label>
+                        </div>
+                        <div class="terminal-order">
+                            <div class="gray-box gray-box--half">
+                                <div class="gray-box__half-box">
+                                    <ul class="ul-list ul-list--dot ul-list--gray900">
+                                        <li class="ul-list__li">据置端末（SIMカード含む）</li>
+                                        <li class="ul-list__li">月額利用料金：<span class="sub-text">500円/月(税別)</span><br><span class="guide-text">2020年12月利用分まで無料</span></li>
+                                    </ul>
+                                </div>
+                                <div class="gray-box__half-box">
+                                    <ul class="ul-list ul-list--dot">
+                                        <li class="ul-list__li">最低利用期間 : <span class="sub-text">端末発送日の翌月から12ヶ月間</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="guide-text">*If you select the "Cashless Consumer Return Business" plan, we will send you the <br>terminal as soon as we confirm that you have applied for this project (if the examination <br>result is NG, we will send you the terminal as soon).</p>
+                            <label class="pualugin-checkbox">
+                                <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input">
+                                <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                <span class="pualugin-checkbox__text"><a href="https://terms2.line.me/paymerchant_LP_Device?lang=ja" target="_blank" class="text-btn">Please confirmthe agreement on the use of the stationary LINE Pay terminal.</a></span>
+                            </label>
+                        </div>
+                    </article>
+                    <!-- //Response Plan -->
+                    <article class="cont__article">
+                        <h2>Payment Method</h2>
+                        <p class="cont__comment-sub">The usage fee is calculated and charged for each individual terminal. <br>Monthly fee: 1500yen / month (tax not included)</p>
+                        <div class="btn-radio" role="radiogroup">
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio1" id="radio11" class="btn-radio__input">
+                                <!-- 190712 default 체크아님 --> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Credit card</span>
+                            </label>
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio1" id="radio22" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Paid</span>
+                            </label>
+                        </div>
+                    </article>
+                    <article class="cont__article">
+                        <div class="with-btn">
+                            <h2>Mounted device shipping information</h2>
+                        </div>
+                        <div class="btn-radio widen" role="radiogroup">
+                            <label class="btn-radio__label row" for="radio11_1">
+                                <input type="radio" name="radio1_1" id="radio11_1" class="btn-radio__input">
+                                <!-- 190712 default 체크아님 --> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Ship to store address</span>
+                            </label>
+                            <div class="info-count__wrap">
+                                <div class="device__info-box">
+                                    <div class="form">
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">Postal Code</label>
+                                            <!-- readonly 속성 보유 시 수정 불가 및 밑줄 css 제거 -->
+                                            <input type="text" id="input16" class="form__element comp" value="84039" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">State/ Province/ Region</label>
+                                            <input type="text" id="input16" class="form__element comp" value="N/A (Not acclicable)" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">City</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Seoul" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">Street Address</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Galhyeon 2-dong" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">Name of Building</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Imchang ever Vile" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Family name</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Hemsworth">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Given name</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Chris">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit tel__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Phone number of recipient</label>
+                                            <input type="tel" id="input16" class="form__element tel__elements" value="080">
+                                            <span class="tel__hyphen">-</span>
+                                            <input type="tel" id="input16_1" class="form__element tel__elements" title="tel_input" value="3424">
+                                            <span class="tel__hyphen">-</span>
+                                            <input type="tel" id="input16_2" class="form__element tel__elements" title="tel_input" value="3659">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="count_box">
+                                    <div class="mcht-info">
+                                        <div class="mcht-info__header">
+                                            <h2 class="mcht-info__title">Select the number of terminals (Max 20)</h2>
+                                        </div>
+                                        <div class="device__count">
+                                            <strong class="count-title">Green color</strong>
+                                            <span class="bg-box green"></span>
+                                            <div class="device__counter green">
+                                                <label class="device__counter--label" for="greenIpt"> <span aria-hidden="true">0</span>
+                                                    <!-- visual적으로 표현만 해주는 영역입니다. input값에
+                                                        따라 자동으로 설정됩니다. -->
+                                                </label>
+                                                <input type="number" id="greenIpt" value="0" readonly>
+                                                <button type="button" class="device__counter--down icon-minus">DOWN</button>
+                                                <button type="button" class="device__counter--up icon-plus">UP</button>
+                                            </div>
+                                        </div>
+                                        <div class="device__count">
+                                            <strong class="count-title">White color</strong>
+                                            <span class="bg-box white"></span>
+                                            <div class="device__counter white">
+                                                <label class="device__counter--label" for="whiteIpt"> <span aria-hidden="true">0</span>
+                                                    <!-- visual적으로 표현만 해주는 영역입니다. input값에
+                                                        따라 자동으로 설정됩니다. -->
+                                                </label>
+                                                <input type="number" id="whiteIpt" value="0" readonly>
+                                                <button type="button" class="device__counter--down icon-minus">DOWN</button>
+                                                <button type="button" class="device__counter--up icon-plus">UP</button>
+                                            </div>
+                                        </div>
+                                        <div class="device__counter--total">
+                                            <label for="deviceTotal"><em>Quantity</em> <div class="amount">Total<span aria-hidden="true">0</span></div>
+                                                <!-- visual적으로 표현만 해주는
+                                                    영역입니다. input값에 따라 자동으로 설정됩니다. -->
+                                            </label>
+                                            <input type="number" id="deviceTotal" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-radio widen" role="radiogroup">
+                            <label class="btn-radio__label row" for="radio11_2">
+                                <input type="radio" name="radio1_1" id="radio11_2" class="btn-radio__input">
+                                <!-- 190712 default 체크아님 --> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Ship to company address</span>
+                            </label>
+                            <div class="info-count__wrap">
+                                <div class="device__info-box">
+                                    <div class="form">
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">Postal Code</label>
+                                            <input type="text" id="input16" class="form__element comp" value="84039" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">State/ Province/ Region</label>
+                                            <input type="text" id="input16" class="form__element comp" value="N/A (Not acclicable)" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">City</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Seoul" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">Street Address</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Galhyeon 2-dong" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label" style="font-size: 22px; top: 27px;">Name of Building</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Imchang ever Vile" readonly>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Family name</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Hemsworth">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Given name</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Chris">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit tel__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Phone number of recipient</label>
+                                            <input type="tel" id="input16" class="form__element tel__elements" value="080">
+                                            <span class="tel__hyphen">-</span>
+                                            <input type="tel" id="input16_1" class="form__element tel__elements" title="tel_input" value="3424">
+                                            <span class="tel__hyphen">-</span>
+                                            <input type="tel" id="input16_2" class="form__element tel__elements" title="tel_input" value="3659">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="count_box">
+                                    <div class="mcht-info">
+                                        <div class="mcht-info__header">
+                                            <h2 class="mcht-info__title">Select the number of terminals (Max 20)</h2>
+                                        </div>
+                                        <div class="device__count">
+                                            <strong class="count-title">Green color</strong>
+                                            <span class="bg-box green"></span>
+                                            <div class="device__counter green">
+                                                <label class="device__counter--label" for="greenIpt"> <span aria-hidden="true">0</span>
+                                                    <!-- visual적으로 표현만 해주는 영역입니다. input값에
+                                                        따라 자동으로 설정됩니다. -->
+                                                </label>
+                                                <input type="number" id="greenIpt" value="0" readonly>
+                                                <button type="button" class="device__counter--down icon-minus">DOWN</button>
+                                                <button type="button" class="device__counter--up icon-plus">UP</button>
+                                            </div>
+                                        </div>
+                                        <div class="device__count">
+                                            <strong class="count-title">White color</strong>
+                                            <span class="bg-box white"></span>
+                                            <div class="device__counter white">
+                                                <label class="device__counter--label" for="whiteIpt"> <span aria-hidden="true">0</span>
+                                                    <!-- visual적으로 표현만 해주는 영역입니다. input값에
+                                                        따라 자동으로 설정됩니다. -->
+                                                </label>
+                                                <input type="number" id="whiteIpt" value="0" readonly>
+                                                <button type="button" class="device__counter--down icon-minus">DOWN</button>
+                                                <button type="button" class="device__counter--up icon-plus">UP</button>
+                                            </div>
+                                        </div>
+                                        <div class="device__counter--total">
+                                            <label for="deviceTotal"><em>Quantity</em> <div class="amount">Total<span aria-hidden="true">0</span></div>
+                                                <!-- visual적으로 표현만 해주는
+                                                    영역입니다. input값에 따라 자동으로 설정됩니다. -->
+                                            </label>
+                                            <input type="number" id="deviceTotal" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-radio widen" role="radiogroup">
+                            <label class="btn-radio__label row" for="radio11_3">
+                                <input type="radio" name="radio1_1" id="radio11_3" class="btn-radio__input">
+                                <!-- 190712 default 체크아님 --> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Enter address directly (Multiple Shipments Available)</span>
+                                <button type="button" class="add-text">Add Shipping Location</button>
+                            </label>
+                            <div class="info-count__wrap">
+                                <!--  Add Shipping Location 클릭 시 .added 클래스 추가 -->
+                                <div class="device__info-box">
+                                    <strong class="address-num">Address 1</strong>
+                                    <button class="btn-close"></button>
+                                    <div class="form">
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Postal Code</label>
+                                            <input type="text" id="input16" class="form__element comp" value="84039">
+                                            <span class="icon-search"></span>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="select02" class="form__label form__label--required">State/ Province/ Region</label>
+                                            <select name="select" id="select02" class="form__element">
+                                                <option>State/ Province/ Region</option>
+                                                <option>option1</option>
+                                                <option>option1</option>
+                                            </select>
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">City</label>
+                                            <input type="text" id="input16" class="form__element comp" value="Seoul">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Street Address</label>
+                                            <input type="text" id="input16" class="form__element comp">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Name of Building</label>
+                                            <input type="text" id="input16" class="form__element comp">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Family name</label>
+                                            <input type="text" id="input16" class="form__element comp" value="">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Given name</label>
+                                            <input type="text" id="input16" class="form__element comp" value="">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                        <div class="form__unit tel__unit">
+                                            <label for="input16" class="form__label form__label--required" style="font-size: 22px; top: 27px;">Phone number of recipient</label>
+                                            <input type="tel" id="input16" class="form__element tel__elements">
+                                            <span class="tel__hyphen">-</span>
+                                            <input type="tel" id="input16_1" class="form__element tel__elements" title="tel_input">
+                                            <span class="tel__hyphen">-</span>
+                                            <input type="tel" id="input16_2" class="form__element tel__elements" title="tel_input">
+                                            <p class="form__error-text">Please fill out this form.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="count_box">
+                                    <div class="mcht-info">
+                                        <div class="mcht-info__header">
+                                            <h2 class="mcht-info__title">Select the number of terminals (Max 20)</h2>
+                                        </div>
+                                        <div class="device__count">
+                                            <strong class="count-title">Green color</strong>
+                                            <span class="bg-box green"></span>
+                                            <div class="device__counter green">
+                                                <label class="device__counter--label" for="greenIpt"> <span aria-hidden="true">0</span>
+                                                    <!-- visual적으로 표현만 해주는 영역입니다. input값에
+                                                        따라 자동으로 설정됩니다. -->
+                                                </label>
+                                                <input type="number" id="greenIpt" value="0" readonly>
+                                                <button type="button" class="device__counter--down icon-minus">DOWN</button>
+                                                <button type="button" class="device__counter--up icon-plus">UP</button>
+                                            </div>
+                                        </div>
+                                        <div class="device__count">
+                                            <strong class="count-title">White color</strong>
+                                            <span class="bg-box white"></span>
+                                            <div class="device__counter white">
+                                                <label class="device__counter--label" for="whiteIpt"> <span aria-hidden="true">0</span>
+                                                    <!-- visual적으로 표현만 해주는 영역입니다. input값에
+                                                        따라 자동으로 설정됩니다. -->
+                                                </label>
+                                                <input type="number" id="whiteIpt" value="0" readonly>
+                                                <button type="button" class="device__counter--down icon-minus">DOWN</button>
+                                                <button type="button" class="device__counter--up icon-plus">UP</button>
+                                            </div>
+                                        </div>
+                                        <div class="device__counter--total">
+                                            <label for="deviceTotal"><em>Quantity</em> <div class="amount">Total<span aria-hidden="true">0</span></div>
+                                                <!-- visual적으로 표현만 해주는
+                                                    영역입니다. input값에 따라 자동으로 설정됩니다. -->
+                                            </label>
+                                            <input type="number" id="deviceTotal" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox col9">
+                    <button type="button" class="btn btn--line">Back</button>
+                    <!-- 190712 버튼 추가 -->
+                    <button type="button" class="btn">Order</button>
+                    <!-- 190712 버튼 텍스트 변경 -->
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+        <ul class="container">
+            <li>
+                <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                <a href="#">0120-993-454</a>
+            </li>
+            <li>
+                <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                <!--
+                    로그인 전 --> <a href="#">Contact Sales</a>
+                <!-- 로그인 후 -->
+                <!--<a href="#">Contact Us<a>-->
+            </li>
+            <li>
+                <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                <p class="footer__txt--normal">We will send your applying related information</p>
+                <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+            </li>
+        </ul>
+    </footer>
+    </div>
+    <!-- 레이어팝업 부분 -->
+    <div id="AMCPJPLP01DeviceOrder" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <h1 class="modal__title--amcp">Edit device shipping information</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap data-wrap">
+                            <button type="button" class="apply-how--btn toggle--btn">Learn more about shipping methods</button>
+                            <div class="mcht-info device-order__shipping">
+                                <div class="gray-box gray-box--half gray-box-type3">
+                                    <ul class="ul-list ul-list--dot ul-list--gray900">
+                                        <li class="ul-list__li">Store Address Bulk Shipping: <span class="sub-text">Bulk delivery will be sent to store information entered.</span>
+                                        </li>
+                                        <li class="ul-list__li">Bulk shipping to company address: <span class="sub-text">Bulk shipping to company information you enter.</span>
+                                        </li>
+                                        <li class="ul-list__li">New address individual setting: <span class="sub-text">Each order will be shipped individually to the newly entered shipping address.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="guide-text">If you would like to receive a different address for each device, please select a new address individually.</p>
+                            </div>
+                            <div class="mcht-info">
+                                <div class="btn-radio btn-radio--block">
+                                    <label class="btn-radio__label">
+                                        <input type="radio" name="radio2" id="radio12" class="btn-radio__input" checked> <i class="btn-radio__checkmark"></i>
+                                        <span class="btn-radio__text">Bulk delivery to store address</span>
+                                    </label>
+                                    <label class="btn-radio__label">
+                                        <input type="radio" name="radio2" id="radio13" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                        <span class="btn-radio__text">Bulk delivery to company addres</span>
+                                    </label>
+                                    <label class="btn-radio__label">
+                                        <input type="radio" name="radio2" id="radio14" class="btn-radio__input" data-toggle="line-terminal"> <i class="btn-radio__checkmark"></i>
+                                        <span class="btn-radio__text">New individual address setting</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- 토글용 line-terminal 한셋트 -->
+                            <div class="mcht-info mcht-info--form mcht-info--form--type2 data__toggle data__line-terminal">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">LINE Terminal Green 01</h2>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input04" class="form__label form__label--required">Postal Code</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input04" class="form__element" />
+                                                    <button type="button" class="icon-search form__search"></button>
+                                                </div>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select11" class="form__label form__label--required">State/ Province/ Region</label>
+                                                <select name="select" id="select11" class="form__element">
+                                                    <option>State/ Province/ Region</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input05" class="form__label form__label--required">City</label>
+                                                <input type="text" id="input05" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input06" class="form__label form__label--required">Street Address</label>
+                                                <input type="text" id="input06" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input03" class="form__label">Name of Building</label>
+                                                <input type="text" id="input03" class="form__element" />
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input15" class="form__label form__label--required">Family Name of recipient</label>
+                                                <input type="text" id="input15" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input16" class="form__label form__label--required">First Name of recipient</label>
+                                                <input type="text" id="input16" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input08" class="form__label form__label--required">Phone number of recipient</label>
+                                                <input type="text" id="input08" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //line-terminal 한셋트 -->
+                            <!-- line-terminal 한셋트 -->
+                            <div class="mcht-info mcht-info--form mcht-info--form--type2">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">LINE Terminal Green 01</h2>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input14" class="form__label form__label--required">Postal Code</label>
+                                                <div class="form__with-btn form__with-btn--type2">
+                                                    <input type="text" id="input14" class="form__element" />
+                                                    <button type="button" class="icon-search form__search"></button>
+                                                </div>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select12" class="form__label form__label--required">State/ Province/ Region</label>
+                                                <select name="select" id="select12" class="form__element">
+                                                    <option>State/ Province/ Region</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input25" class="form__label form__label--required">City</label>
+                                                <input type="text" id="input25" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input26" class="form__label form__label--required">Street Address</label>
+                                                <input type="text" id="input26" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input27" class="form__label">Name of Building</label>
+                                                <input type="text" id="input27" class="form__element" />
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input28" class="form__label form__label--required">Family Name of recipient</label>
+                                                <input type="text" id="input28" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input36" class="form__label form__label--required">First Name of recipient</label>
+                                                <input type="text" id="input36" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input38" class="form__label form__label--required">Phone number of recipient</label>
+                                                <input type="text" id="input38" class="form__element" />
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //line-terminal 한셋트 -->
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- 레이어팝업 부분 -->
+    <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal svc-type">
+                    <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                    <div class="qr-wrap">
+                        <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                        <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                        <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <!-- 마크업 확인용 스크립트 입니다. 개발 시 삭제 부탁드립니다. -->
+    <script>
+        $(function(){
+            var $num = 1;
+            $('.add-text').click(function(){
+                $num++;
+                $(this).closest('.btn-radio.widen').find('.device__info-box').addClass('added');
+                $addressForm = $(this).closest('.btn-radio.widen').find('.info-count__wrap').html();
+                $(this).closest('.btn-radio.widen').append('<div class="info-count__wrap">' + $addressForm + '</div>');
+                $(this).closest('.btn-radio.widen').find('.info-count__wrap').eq($num - 1).find('.address-num').text('Address ' + $num);
+            });
+
+            $('.btn-radio__label').click(function(){
+                $radioCheck = $(this).find('input')
+                $('.info-count__wrap').hide();
+                if($radioCheck.is(':checked') === true ) {
+                    $(this).closest('.btn-radio.widen').find('.info-count__wrap').show();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

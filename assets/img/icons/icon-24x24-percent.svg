@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>62837DBB-B86B-4A00-8D6B-BA50132298E1</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Glyphs/Table/Percent" fill="#949494">
+            <g id="Group" transform="translate(3.000000, 4.000000)">
+                <polygon id="Rectangle" points="14.1358819 0 16 0 3.86411807 16 2 16"></polygon>
+                <path d="M4,8 C6.209139,8 8,6.209139 8,4 C8,1.790861 6.209139,0 4,0 C1.790861,0 0,1.790861 0,4 C0,6.209139 1.790861,8 4,8 Z M4,6.5 C2.61928813,6.5 1.5,5.38071187 1.5,4 C1.5,2.61928813 2.61928813,1.5 4,1.5 C5.38071187,1.5 6.5,2.61928813 6.5,4 C6.5,5.38071187 5.38071187,6.5 4,6.5 Z" id="Oval" fill-rule="nonzero"></path>
+                <path d="M14,16 C16.209139,16 18,14.209139 18,12 C18,9.790861 16.209139,8 14,8 C11.790861,8 10,9.790861 10,12 C10,14.209139 11.790861,16 14,16 Z M14,14.5 C12.6192881,14.5 11.5,13.3807119 11.5,12 C11.5,10.6192881 12.6192881,9.5 14,9.5 C15.3807119,9.5 16.5,10.6192881 16.5,12 C16.5,13.3807119 15.3807119,14.5 14,14.5 Z" id="Oval-Copy" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

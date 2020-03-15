@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container container-fluid">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>Create Account</h1>
+                    <p>Merchant account will be used for My page login on Merchant website. <br>Merchant ID can be seen in various screen.</p>
+                </header>
+                <section class="cont__section merchant__id">
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit error">
+                            <label for="input01" class="form__label form__label--required">Merchant ID</label>
+                            <div class="form__with-btn">
+                                <input type="text" id="input01" class="form__element">
+                                <button class="btn btn--text">ID Check</button>
+                                <!-- check 완료시 done 클래스 추가 -->
+                            </div>
+                            <p class="form__guide-text">4-18 characters are available.</p>
+                            <p class="form__error-text">誤った形式です。</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit">
+                            <label for="input02" class="form__label form__label--required">Password</label>
+                            <input type="password" id="input02" class="form__element">
+                            <p class="form__guide-text">Uppercase and lowercase letters, 8-18 characters</p>
+                            <p class="form__error-text">Please enter 8-18 alphabetic and numeric combinations.</p>
+                        </div>
+                    </article>
+                    <article class="cont__article form contain54 ta-center-block">
+                        <div class="form__unit error">
+                            <label for="input03" class="form__label form__label--required">Confirm Password</label>
+                            <input type="password" id="input03" class="form__element">
+                            <p class="form__error-text">Passwords are not the same. Please re-enter.</p>
+                        </div>
+                    </article>
+                    <!-- 190715 이메일 인증의 경우 노출 -->
+                    <article class="cont__article contain54 form form--review">
+                        <!-- <dl class="form__unit col4">
+                            <dt class="form__label">Email Address</dt>
+                            <dd class="form__element">dfy@line.me</dd>
+                        </dl> -->
+                        <!-- Step2. 활성화된 Verify 클릭 시 .form__with-btn에 .email__verify 클래스 추가 -->
+                        <!-- Step3. 이메일 인증 완료 시 .form__with-btn에 .email__verify-complete 클래스 추가 -->
+                        <div class="form__with-btn form__unit">
+                            <label for="input07" class="form__label form__label--required">Email Address</label>
+                            <input type="text" id="input07" class="form__element" value="dfy@line.me">
+                            <!-- Step1. email 입력됐을 시 활성화 : .done 클래스 추가 -->
+                            <button class="btn btn--text btn__email-verify done" style="top: 1.5rem;">Verify</button>
+                            <div class="btn--resend">
+                                <button class="btn btn--text done">Re-send</button>
+                                <span class="counter--green" style="right: 5.8rem;">02:59</span>
+                            </div>
+                            <p class="form__guide-text email__text email__text-verify"><a href="#" class="form__guide-text--underline">Click here</a> Click here to change your Email Address.</p>
+                            <p class="form__guide-text email__text email__text-complete">Email Address is verified.</p>
+                        </div>
+                        <div class="mgt40">
+                            <label class="pualugin-checkbox">
+                                <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"> <i class="pualugin-checkbox__icon" aria-hidden="true"></i>
+                                <span class="pualugin-checkbox__text">I read and agree to </span>
+                                <button type="button" class="text-btn text-btn--darker" data-element="modal__open" data-target="#terms22LP04">LINE Pay Privacy Policy.</button>
+                            </label>
+                            <!-- 190712 클래스 추가 -->
+                        </div>
+                    </article>
+                    <!-- //190715 이메일 인증의 경우 노출 -->
+                    <div class="cont__btnbox contain54--btn"> <a href="#" class="btn btn--big btn--gray2 mgb50">Create</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                    <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                    <a href="#">0120-993-454</a>
+                </li>
+                <li>
+                    <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                    <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Sales</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

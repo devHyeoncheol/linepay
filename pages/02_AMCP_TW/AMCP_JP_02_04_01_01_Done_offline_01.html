@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>LINE Pay Merchant<br>Application completed!</h1>
+                    <p>Your merchant application is complete. It takes one business day for merchant review. <br>The result of the examination can be confirmed by the merchant center and the LINE message.</p>
+                </header>
+                <section class="cont__section">
+                    <article class="cont__article amcpdone">
+                        <div class="amcp-inner-cont">
+                            <h2 class="amcp-inner-cont__title">Merchant Info</h2>
+                            <div class="gray-box gray-box--dl">
+                                <dl class="gray-box__dl">
+                                    <dt class="gray-box__dt">Merchant ID</dt>
+                                    <dd class="gray-box__dd">merchantID@pay.line</dd>
+                                </dl>
+                                <dl class="gray-box__dl">
+                                    <dt class="gray-box__dt">Email Address</dt>
+                                    <dd class="gray-box__dd">adminEmail@domain.com</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="amcp-inner-cont">
+                            <h2 class="amcp-inner-cont__title">Settlement Info</h2>
+                            <div class="gray-box gray-box--dl">
+                                <dl class="gray-box__dl">
+                                    <dt class="gray-box__dt">Settlement Cycle</dt>
+                                    <dd class="gray-box__dd">Real-time deposit</dd>
+                                </dl>
+                                <dl class="gray-box__dl">
+                                    <dt class="gray-box__dt">Deposit Account</dt>
+                                    <dd class="gray-box__dd">LINE Pay Balance account <span class="guide-text">Account information can be changed through the Merchant Center &gt; Basic Information Management &gt; Change Account menu.</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="amcp-inner-cont amcp-inner-cont--adv linepay-terminal">
+                            <h2 class="amcp-inner-cont__title">LINE Pay Terminal</h2>
+                            <ul class="ul-list ul-list--dot">
+                                <li class="ul-list__li">POS interlock and dedicated apps are not required.</li>
+                                <li class="ul-list__li">Separate communication device connection is not required.</li>
+                                <li class="ul-list__li">You can pay QR code by turning on the power immediately.</li>
+                            </ul>
+                            <div class="cont__btnbox cont__btnbox--left"> <a href="#" class="btn">Order</a>
+                            </div>
+                        </div>
+                        <div class="amcp-inner-cont amcp-inner-cont--qbox">
+                            <div class="gray-box gray-box--border qbox">
+                                <p class="qbox__title">Do you have any question?</p>
+                                <p class="qbox__text">If you have any questions about the merchant service, <a href="https://contact-cc.line.me/ja/" target="_blank" class="text-btn">please contact us at 1: 1.</a>
+                                </p>
+                                <p class="qbox__text">Add your LINE Pay Merchant account as a LINE friend to receive service-related instructions.</p>
+                            </div>
+                            <div class="gray-box gray-box--border qbox">
+                                <p class="qbox__title">Add a LINE friend by QR code</p>
+                                <p class="qbox__text qrcode"> <span class="qrcode__img">
+                                        <img src="../../assets/img/amcp/qrcode-jp.png" alt="qr code">
+                                    </span> Select the Friends tab, click the Add Friends icon on the left, and select 'QR Code' to scan this QR code.</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">Help! <br />Explanation is required.</p>
+                    <p class="footer__txt--normal">Telephone inquiries are available from 10:00 to 17:00 on weekdays</p>
+                    <a href="#">0120-993-454</a>
+                </li>
+                <li>
+                    <p class="footer__txt--bold">It is difficult to call now. <br />Contact me later!</p>
+                    <p class="footer__txt--normal">Please leave your contact and availability time and we will contact you.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Sales</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 190712 레이어팝업 삭제-->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg06">전체 10단계 중 6단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우
+                <p class="prg02">전체 10단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--comp"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li class="left__nav--comp"><a href="#">Merchant Info</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">Address</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">Settlement Info</a>
+                                </li>
+                                <li class="left__nav--curr"><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Device Order</a>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                        <li><a href="#">iPass Application</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>Submit Required Documents</h1>
+                    <p>Please upload the necessary documents to register your LINE Pay merchant.</p>
+                </header>
+                <section class="cont__section">
+                    <article class="cont__article mcht-info-wrap col9 mcht-info-wrap--line">
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Business Registration Documents</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Company Name</dt>
+                                    <dd class="mcht-info__dd">Input value</dd>
+                                    <dt class="mcht-info__dt">Company address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                    <dt class="mcht-info__dt">Representative address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                </dl>
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <!-- 190719 img 파일 이외의 파일이 올라가서 엑박 뜰 경우 notimg 클래스 추가 -->
+                                            <div class="img-item notimg">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <!-- // 190719 img 파일 이외의 파일이 올라가서 엑박 뜰 경우 notimg 클래스 추가 -->
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-sch-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete data-img-delete">delete</button>
+                                            </div>
+                                            <label for="add-file1" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file1" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                        <ul class="ref-list">
+                                            <li class="ref-list__item">Company change registration application / tax payment certificate / 401 regulations</li>
+                                            <li class="ref-list__item">Please upload the latest version of the file</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Identity Card of CEO</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Representative name</dt>
+                                    <dd class="mcht-info__dd">Input value</dd>
+                                    <dt class="mcht-info__dt">Representative address</dt>
+                                    <dd class="mcht-info__dd">123-3467, State City Street Address, Nameofbuilding</dd>
+                                    <dt class="mcht-info__dt">Representative Date of Birth</dt>
+                                    <dd class="mcht-info__dd">April 24, 1992</dd>
+                                </dl>
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                            </div>
+                                            <label for="add-file2" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file2" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                        <ul class="ref-list">
+                                            <li class="ref-list__item">ID image file front and back</li>
+                                            <li class="ref-list__item">If the person in charge is a foreigner, please upload your passport electronic file</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Bank Book</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <dl class="mcht-info__dl">
+                                    <dt class="mcht-info__dt">Bank</dt>
+                                    <dd class="mcht-info__dd">Input value</dd>
+                                    <dt class="mcht-info__dt">Branch</dt>
+                                    <dd class="mcht-info__dd">Quarter</dd>
+                                    <dt class="mcht-info__dt">Account Holder’s Name</dt>
+                                    <dd class="mcht-info__dd">James</dd>
+                                </dl>
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file3" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file3" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                        <ul class="ref-list">
+                                            <li class="ref-list__item">The name of the grant must be the company registration name, the account must be a corporate account, and not an individual account.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Photos inside the store</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file4" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file4" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Photos outside the store</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file5" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file5" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Financial Statements (optional)</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file6" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file6" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Performance Guarantee Insurance (optional)</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <label for="add-file7" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file7" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcht-info img-box">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">Other (optional)</h2>
+                                <button type="button" class="btn tn btn--text btn--text--s img-box__reset">Reset</button>
+                            </div>
+                            <div class="mcht-info__cont">
+                                <div class="mcht-info__img">
+                                    <div class="img-box__wrap">
+                                        <div class="img-box__list">
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                            </div>
+                                            <div class="img-item">
+                                                <img src="../../assets/img/tmp/tmp-square-img.jpg" alt="images">
+                                                <button type="button" class="icon-close-white img-item__delete">delete</button>
+                                            </div>
+                                            <label for="add-file8" class="img-item img-item--add">
+                                                <input type="file" class="blind" id="add-file8" data-js="add-img" /> <span>이미지 추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="img-box__info ref">
+                                        <p class="ref__text">JPG, JPEG, PNG 3MB max</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--between col9">
+                    <button type="button" class="btn btn--line">Save</button>
+                    <button type="button" class="btn btn--line">Back</button>
+                    <button type="button" class="btn" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <script>
+        $('.img-box').each(function() {
+            var imgBox = $(this);
+            var imgList = imgBox.find('.img-box__list');
+            var imgItem = imgList.find('div.img-item');
+            var imgReset = imgBox.find('.img-box__reset');
+            imgItem.each(function() {
+                if ($(this).hasClass('img-preview') || $(this).find('.img-item__delete').length > 0) {
+                    //
+                } else {
+                    $(this).addClass('nofunc');
+                }
+            });
+            if (imgBox.hasClass('img-box-logo')) {
+                if (imgItem.length != 0) {
+                    imgReset.show();
+                }
+            }
+            if (imgItem.length != 0) {
+                imgReset.show();
+            }
+        })
+        $(document).on('click', 'div.img-item', function() {
+            var thisItem = $(this);
+            var imgDelete = thisItem.find('.img-item__delete');
+            var imgItemOn = $(this).hasClass('is-active');
+            //var imgList = $(this).parents('.img-box').find('.img-box__wrap .img-box__list .img-item');
+            //var imgReset = $(this).parents('.img-box').find('.img-box__reset');
+            if (imgDelete.length > 0) {
+                if (!imgItemOn) {
+                    $(this).addClass('is-active');
+                } else {
+                    $(this).removeClass('is-active');
+                }
+            }
+        });
+        $(document).on('click', '.img-item__delete', function() {
+            if ($(this).parent().parent().find('div.img-item').length == 1) {
+                $(this).parents('.img-box').find('.img-box__reset').hide();
+            }
+            $(this).parent().remove();
+        })
+        $(document).on('click', '.img-box__reset', function() {
+            $(this).parents('.img-box').find('.img-box__wrap .img-box__list div.img-item').remove();
+            $(this).hide();
+        });
+    </script>
+</body>
+
+</html>

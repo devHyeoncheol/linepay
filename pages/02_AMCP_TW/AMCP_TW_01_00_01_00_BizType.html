@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg01">전체 7단계 중 1단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우 <p
+                class="prg02">전체 7단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--curr"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li><a href="#">Merchant Info</a>
+                                </li>
+                                <li><a href="#">Address</a>
+                                </li>
+                                <li><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li><a href="#">Settlement Info</a>
+                                </li>
+                                <li><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Device Order</a>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                        <li><a href="#">iPASS Application</a>
+                        </li>
+                        <li><a href="#">Submit</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont biztype" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>LINE Pay Merchant <br />Application</h1>
+                    <p>Please select your business type</a>
+                    </p>
+                </header>
+                <section class="cont__section">
+                    <article class="cont__article form form__unit form__radio error">
+                        <label class="box-radio__label box-radio__label--corporation">
+                            <div>
+                                <input type="radio" name="radio1" id="radio11" class="btn-radio__input" data-toggle="specificCheck"> <i class="btn-radio__checkmark"></i>
+                                <p>Corporation</p> <span class="btn-radio__text">I have an uniform number and<br>duty to pay taxes. </span>
+                            </div>
+                        </label>
+                        <label class="box-radio__label box-radio__label--private">
+                            <div>
+                                <input type="radio" name="radio1" id="radio12" class="btn-radio__input" data-toggle="specificCheck"> <i class="btn-radio__checkmark"></i>
+                                <p>Individual</p> <span class="btn-radio__text">I don't have any uniform number<br>
+                                    and no duty to pay taxes.</span>
+                            </div>
+                        </label>
+                        <p class="form__error-text page">Please select option</p>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--right col9 pdt0 pdb120">
+                    <button type="button" class="btn btn--line">Back</button>
+                    <button type="button" class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--normal">If you have any questions regard to LINE Pay Merchant service, please leave your contact information, LINE Pay will contact you then.</p>
+                    <a href="#">Leave contact request</a>
+                </li>
+                <li>
+                    <p class="footer__txt--normal">We also have LINE official account to support merchant.
+                        Please add LINE Pay Merchant account as your LINE friend.</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add LINE Friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-jp.png" alt="QRCode" width="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

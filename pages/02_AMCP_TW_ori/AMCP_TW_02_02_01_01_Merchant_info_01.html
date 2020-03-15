@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg02">전체 10단계 중 2단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우
+                <p class="prg02">전체 10단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--comp"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li class="left__nav--curr"><a href="#">Merchant Info</a>
+                                </li>
+                                <li><a href="#">Address</a>
+                                </li>
+                                <li><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li><a href="#">Settlement Info</a>
+                                </li>
+                                <li><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Device Order</a>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                        <li><a href="#">iPass Application</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header">
+                    <h1>Merchant Information</h1>
+                    <p>In order to activate merchant account, all required information should be submitted. <br>Additional documents and screening process will be requested according to your business category.</p>
+                </header>
+                <section class="cont__section mc-info">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article form form--half">
+                        <div class="form__unit">
+                            <label for="select01" class="form__label form__label--required">Top categories</label>
+                            <select name="select" id="select01" class="form__element">
+                                <option>Top categories</option>
+                                <option>option1</option>
+                                <option>option1</option>
+                            </select>
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                        <div class="form__unit">
+                            <label for="select02" class="form__label form__label--required disabled">Sub categories</label>
+                            <!--input, select가 disabled 상태일 때 label.form__label에도
+                                disabled 클래스 추가 부탁드려요.-->
+                            <select name="select" id="select02" class="form__element" disabled>
+                                <option>Sub categories</option>
+                                <option>option1</option>
+                                <option>option1</option>
+                            </select>
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                        <div class="mc-info__subtext">If you are having difficulty selecting a category, please <button type="button" data-element="modal__open" data-target="#layer1" class="icon-search underline">use search</button>
+                        </div>
+                    </article>
+                    <article class="cont__article form form--half">
+                        <div class="form__unit">
+                            <label for="select03" class="form__label form__label--required">Product Type</label>
+                            <select name="select" id="select03" class="form__element">
+                                <option>Product Type</option>
+                                <option>Physical Goods</option>
+                                <option>Virtual Goods</option>
+                                <option>Physical + Virtual Goods</option>
+                                <option>Service</option>
+                            </select>
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                        <div class="form__unit">
+                            <label for="select04" class="form__label form__label--required">Transaction Type</label>
+                            <select name="select" id="select04" class="form__element">
+                                <option>Transaction Type</option>
+                                <option>Non-Deferral</option>
+                                <option>Deferral</option>
+                                <option>Tickets</option>
+                                <option>Vouchers</option>
+                                <option>Points</option>
+                            </select>
+                            <p class="form__error-text">Please fill out this form.</p>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--between col9">
+                    <button type="button" class="btn btn--line">Save</button>
+                    <button type="button" class="btn btn--line">Back</button>
+                    <!-- 모든 필수 내용 입력되었는지 확인 후 Next버튼 disabled 삭제하기 -->
+                    <button type="button" class="btn" disabled="">Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 레이어팝업 use search -->
+    <div id="layer1" class="pualugin-modal__element mc-info__modal" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3 searchm" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Search</h1>
+                    <div class="modal__scrollarea">
+                        <div class="form">
+                            <div class="form__unit">
+                                <label for="input12" class="form__label">Search</label>
+                                <div class="form__with-btn form__with-btn--type2">
+                                    <input type="text" id="input12" class="form__element" />
+                                    <button type="button" class="icon-search form__search"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [s] Default 검색 화면 -->
+                        <div class="search-mcht search-mcht--empty">
+                            <p class="search-mcht__empty-msg">Please enter your search term</p>
+                        </div>
+                        <!-- [e] Default 검색 화면 -->
+                        <!-- [s] 검색 결과 있을경우 노출 -->
+                        <div class="search-mcht" style="display: none;">
+                            <div class="search-result search-mcht__result">
+                                <div class="search-result__item"> <span class="top-cate">Groups</span>
+                                    <span class="bottom-cate">Economic groups</span>
+                                </div>
+                                <div class="search-result__item"> <span class="top-cate">Groups</span>
+                                    <span class="bottom-cate">Other groups</span>
+                                </div>
+                                <div class="search-result__item"> <span class="top-cate">Sports Team / Group</span>
+                                    <span class="bottom-cate">Other Sports Team</span>
+                                </div>
+                                <div class="search-result__item"> <span class="top-cate">Agricultural Cooperatives</span>
+                                    <span class="bottom-cate">Economic Organization</span>
+                                </div>
+                                <div class="search-result__item"> <span class="top-cate">Groups</span>
+                                    <span class="bottom-cate">Economic Organization</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [e] 검색 결과 있을경우 노출 -->
+                        <!-- [s] 검색 결과 없을 경우 노출 -->
+                        <div class="search-mcht search-mcht--empty" style="display: none;">
+                            <p class="search-mcht__empty-msg">There are no search results for <strong>団体</strong>
+                            </p>
+                        </div>
+                        <!-- [e] 검색 결과 없을 경우 노출 -->
+                    </div>
+                </section>
+                <div class="cont__btnbox">
+                    <button type="button" class="btn">Save</button>
+                </div>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- 레이어팝업 use search -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>

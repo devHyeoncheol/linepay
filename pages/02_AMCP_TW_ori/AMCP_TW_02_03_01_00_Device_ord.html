@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container-fluid progbar">
+            <p class="prg07">전체 10단계 중 7단계</p>
+            <!-- 전체 단계별로 클래스명 부여, 전체 단계별로 해당 단계 텍스트 변경 : 2단계일 경우
+                <p class="prg02">전체 10단계 중 2단계</p>>-->
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="left__nav">
+                    <ul>
+                        <li class="left__nav--comp"><a href="#">Application</a>
+                        </li>
+                        <!-- 디폴트 클래스:없음, 완료한 페이지의 메뉴 클래스:left__nav--comp, 현재 페이지의 메뉴 클래스:left__nav--curr
+                            -->
+                        <li class="sub">
+                            <button type="button">Merchant Info</button>
+                            <ul>
+                                <li class="left__nav--comp"><a href="#">Merchant Info</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">Address</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">CEO & Admin Info</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">Settlement Info</a>
+                                </li>
+                                <li class="left__nav--comp"><a href="#">Submit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="left__nav--curr"><a href="#">Device Order</a>
+                        </li>
+                        <li><a href="#">Confirm</a>
+                        </li>
+                        <li><a href="#">iPass Application</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont">
+                <header class="cont__header">
+                    <h1>Device Order</h1>
+                    <p>Please enter the information required to deliver the LINE Pay mini.</p>
+                </header>
+                <section class="cont__section device-order">
+                    <article class="cont__article pdt0 radio">
+                        <h2>Would you like to apply for LINE Pay mini? </h2>
+                        <div class="btn-radio" role="radiogroup">
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio1" id="radio11" class="btn-radio__input" checked="checked"> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Yes</span>
+                            </label>
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio1" id="radio12" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">No</span>
+                            </label>
+                        </div>
+                    </article>
+                    <article class="cont__article mcht-info-wrap">
+                        <h2>LINE Pay MiNi</h2>
+                        <div class="mcht-info  mcht-info--form">
+                            <div class="mcht-info__cont info-box info-box--horizontal">
+                                <div class="info-box__list">
+                                    <div class="info-box__img-area">
+                                        <img src="../../assets/img/amcp/device-mini-tw.jpg" alt="">
+                                    </div>
+                                    <div class="info-box__text-area">
+                                        <ul class="ul-list ul-list--dot ul-list--gray900">
+                                            <li class="ul-list__li">Include SIM in a non-stop terminal</li>
+                                            <li class="ul-list__li">Fee NTD <span class="ul-list__li--linegray700">300/per month (without tax)</span>
+                                            </li>
+                                            <li class="ul-list__li">LINE Pay MDR : <span class="ul-list__li--linegray700">3% without tax</span>
+                                            </li>
+                                            <li class="ul-list__li">iPASS Card MDR : <span class="ul-list__li--linegray700">2% without tax</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 테이블 한셋트 -->
+                            <div class="fee-table">
+                                <table class="mclist--table">
+                                    <colgroup>
+                                        <col style="width:25%">
+                                        <col style="width:20%">
+                                        <col style="width:20%">
+                                        <col style="width:20%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>1to 6 month</th>
+                                            <th>7 to 12 month</th>
+                                            <th>13 to 36 month</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Registration Period <br>(2019.01.25 ~ 2019.08.31)</th>
+                                            <td>Free</td>
+                                            <td>150 NTD / per month</td>
+                                            <td>300 NTD / per month</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Registration Period <br>(2019.09.01 ~ 2020.02.29)</th>
+                                            <td>150 NTD / per month</td>
+                                            <td>300 NTD / per month</td>
+                                            <td>300 NTD / per month</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //테이블 한셋트 -->
+                        </div>
+                    </article>
+                    <article class="cont__article radio">
+                        <h2>Apply iPASS Stored Value Cards <div class="pualugin-tooltip" data-element="tooltip" data-options='{"position": "right", "mode": "popover"}'>
+                                <button class="icon-tooltip" type="button" data-element="tooltip__button" aria-label="tooltip"></button>
+                                <span class="pualugin-tooltip__panel tooltip__panel--type01 tooltip__panel--right pualugin-tooltip__panel--bottom mc-info02__pualugin-tooltip__panel" data-element="tooltip__panel">
+                                    <span class="tooltip__title">LINE Pay mini can accept 3 types of payment.</span>
+                                    <span class="tooltip__detail tooltip__detail--555">LINE Pay, LINE Pay iPASS (QR Code) and iPASS Stored Value Cards (Physical Card), if also apply LINE Pay iPASS mini to accept Stored Value Cards, please choose Enable</span>
+                                    <button class="tooltip__close" type="button" data-element="tooltip__close">Close</button>
+                                </span>
+                            </div>
+                        </h2>
+                        <div class="btn-radio" role="radiogroup">
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio2" id="radio21" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Enable</span>
+                            </label>
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio2" id="radio22" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Disable</span>
+                            </label>
+                        </div>
+                    </article>
+                    <article class="cont__article mcht-info-wrap">
+                        <div class="mcht-info">
+                            <div class="mcht-info__header">
+                                <h2 class="mcht-info__title">LINE Pay mini Delivery</h2>
+                            </div>
+                            <div class="device__count">
+                                <h4 class="device__count--green">Green color</h4>
+                                <div class="device__counter green">
+                                    <label class="device__counter--label" for="greenIpt"> <span aria-hidden="true">0</span>
+                                        <!-- visual적으로 표현만 해주는 영역입니다. input값에
+                                            따라 자동으로 설정됩니다. -->
+                                    </label>
+                                    <input type="number" id="greenIpt" value="0" readonly>
+                                    <button type="button" class="device__counter--down icon-minus">DOWN</button>
+                                    <button type="button" class="device__counter--up icon-plus">UP</button>
+                                </div>
+                            </div>
+                            <div class="device__count">
+                                <h4 class="device__count--white">White color</h4>
+                                <div class="device__counter white">
+                                    <label class="device__counter--label" for="whiteIpt"> <span aria-hidden="true">0</span>
+                                        <!-- visual적으로 표현만 해주는 영역입니다. input값에
+                                            따라 자동으로 설정됩니다. -->
+                                    </label>
+                                    <input type="number" id="whiteIpt" value="0" readonly>
+                                    <button type="button" class="device__counter--down icon-minus">DOWN</button>
+                                    <button type="button" class="device__counter--up icon-plus">UP</button>
+                                </div>
+                            </div>
+                            <div class="device__counter--total">
+                                <label for="deviceTotal">Total Quantity <span aria-hidden="true">0</span>
+                                    <!-- visual적으로 표현만 해주는
+                                        영역입니다. input값에 따라 자동으로 설정됩니다. -->
+                                </label>
+                                <input type="number" id="deviceTotal" readonly>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cont__article">
+                        <h2>Payment Method</h2>
+                        <p class="cont__comment-sub">The usage fee is calculated and charged for each individual terminal. <br>Monthly fee: 300 NTD / month (tax not included)</p>
+                        <div class="btn-radio" role="radiogroup">
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio3" id="radio31" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">QR payment</span>
+                            </label>
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio3" id="radio32" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Credit card automatic payment</span>
+                            </label>
+                            <label class="btn-radio__label">
+                                <input type="radio" name="radio3" id="radio33" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                <span class="btn-radio__text">Settlement charge</span>
+                            </label>
+                        </div>
+                    </article>
+                    <article class="cont__article">
+                        <div class="with-btn">
+                            <h2>Mounted device shipping information</h2>
+                            <button type="button" class="btn btn--text btn--text--s" data-element="modal__open" data-target="#AMCPTWLP01DeviceOrder" aria-expended="false" aria-controls="#AMCPTWLP01DeviceOrder">Edit</button>
+                        </div>
+                        <div class="gray-box gray-box--border">
+                            <div class="mcht-info-wrap">
+                                <div class="mcht-info__cont">
+                                    <div class="gray-box__sub-title">LINE Terminal Green 01</div>
+                                    <dl class="mcht-info__dl">
+                                        <dt class="mcht-info__dt">Store Country/District</dt>
+                                        <dd class="mcht-info__dd">N/A (Not aoolicable)</dd>
+                                        <dt class="mcht-info__dt">Postal Code</dt>
+                                        <dd class="mcht-info__dd">06039</dd>
+                                        <dt class="mcht-info__dt">Address</dt>
+                                        <dd class="mcht-info__dd">Galhyeon 2-dong</dd>
+                                        <dt class="mcht-info__dt">Name of recipient</dt>
+                                        <dd class="mcht-info__dd">Chris</dd>
+                                        <dt class="mcht-info__dt">Phone number of recipient</dt>
+                                        <dd class="mcht-info__dd">010-1234-5678</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gray-box gray-box--border">
+                            <div class="mcht-info-wrap">
+                                <div class="mcht-info__cont">
+                                    <div class="gray-box__sub-title">LINE Terminal Green 01</div>
+                                    <dl class="mcht-info__dl">
+                                        <dt class="mcht-info__dt">Store Country/District</dt>
+                                        <dd class="mcht-info__dd">N/A (Not aoolicable)</dd>
+                                        <dt class="mcht-info__dt">Postal Code</dt>
+                                        <dd class="mcht-info__dd">06039</dd>
+                                        <dt class="mcht-info__dt">Address</dt>
+                                        <dd class="mcht-info__dd">Galhyeon 2-dong</dd>
+                                        <dt class="mcht-info__dt">Name of recipient</dt>
+                                        <dd class="mcht-info__dd">Chris</dd>
+                                        <dt class="mcht-info__dt">Phone number of recipient</dt>
+                                        <dd class="mcht-info__dd">010-1234-5678</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="cont__btnbox cont__btnbox--between col9">
+                    <button type="button" class="btn btn--line">Save</button>
+                    <button type="button" class="btn btn--line">Back</button>
+                    <button type="button" class="btn" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--type2">
+            <ul class="container">
+                <li>
+                    <p class="footer__txt--bold">If you have any questions please contact us</p>
+                    <p class="footer__txt--normal">If you have any questions, please contact us to resolve your issue faster.</p>
+                    <!--
+                        로그인 전 --> <a href="#">Contact Us</a>
+                    <!-- 로그인 후 -->
+                    <!--<a href="#">Contact Us<a>-->
+                </li>
+                <li>
+                    <p class="footer__txt--bold">Supporting account of apply for LINE merchant</p>
+                    <p class="footer__txt--normal">We will send your applying related information</p>
+                    <button type="button" data-element="modal__open" data-target="#addFriend">Add to friend</button>
+                </li>
+            </ul>
+        </footer>
+        <div id="addFriend" class="pualugin-modal__element" data-element="modal__element">
+            <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type1" data-element="modal__element-container">
+                <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                    <section class="modal svc-type">
+                        <h1 class="modal__title--amcp">Add to LINE friends</h1>
+                        <div class="qr-wrap">
+                            <img src="../../assets/img/amcp/qrcode-tw.png" alt="QRCode" width="164" height="164" />
+                            <p class="qr-wrap--p1">Add LINE Friends via QR Code</p>
+                            <p class="qr-wrap--p2">Open the Friends tab in your LINE app, tap the add friends icon in the top right, select "QR code," and then scan this QR code.</p>
+                        </div>
+                    </section>
+                </div>
+                <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 레이어팝업 부분 -->
+    <div id="AMCPTWLP01DeviceOrder" class="pualugin-modal__element" data-element="modal__element">
+        <div class="pualugin-modal__container modal__wrap--amcp modal__wrap--type3" data-element="modal__element-container">
+            <div class="pualugin-modal__contents" data-element="modal__element-contetns">
+                <section class="modal">
+                    <h1 class="modal__title--amcp">Edit device shipping information</h1>
+                    <div class="modal__scrollarea">
+                        <article class="modal__article mcht-info-wrap data-wrap">
+                            <button type="button" class="apply-how--btn toggle--btn">Learn more about shipping methods</button>
+                            <div class="mcht-info device-order__shipping">
+                                <div class="gray-box gray-box--half gray-box-type3">
+                                    <ul class="ul-list ul-list--dot ul-list--gray900">
+                                        <li class="ul-list__li">Store Address Bulk Shipping: <span class="sub-text">Bulk delivery will be sent to store information entered.</span>
+                                        </li>
+                                        <li class="ul-list__li">Bulk shipping to company address: <span class="sub-text">Bulk shipping to company information you enter.</span>
+                                        </li>
+                                        <li class="ul-list__li">New address individual setting: <span class="sub-text">Each order will be shipped individually to the newly entered shipping address.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="guide-text">If you would like to receive a different address for each device, please select a new address individually.</p>
+                            </div>
+                            <div class="mcht-info">
+                                <div class="btn-radio btn-radio--block">
+                                    <label class="btn-radio__label">
+                                        <input type="radio" name="radio5" id="radio51" class="btn-radio__input" checked> <i class="btn-radio__checkmark"></i>
+                                        <span class="btn-radio__text">Bulk delivery to store address</span>
+                                    </label>
+                                    <label class="btn-radio__label">
+                                        <input type="radio" name="radio5" id="radio52" class="btn-radio__input"> <i class="btn-radio__checkmark"></i>
+                                        <span class="btn-radio__text">Bulk delivery to company addres</span>
+                                    </label>
+                                    <label class="btn-radio__label">
+                                        <input type="radio" name="radio5" id="radio53" class="btn-radio__input" data-toggle="line-terminal"> <i class="btn-radio__checkmark"></i>
+                                        <span class="btn-radio__text">New individual address setting</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- 토글용 line-pay-mini 한셋트 -->
+                            <div class="mcht-info mcht-info--form mcht-info--form--type2 data__toggle data__line-terminal">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">LINE Pay mini Green 01</h2>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="select03" class="form__label form__label--required">Store Country</label>
+                                                <select name="select" id="select03" class="form__element">
+                                                    <option>Store Country</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select04" class="form__label form__label--required">Store District</label>
+                                                <select name="select" id="select04" class="form__element">
+                                                    <option>Store District</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input01" class="form__label form__label--required">Address</label>
+                                                <input type="text" id="input01" class="form__element">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input02" class="form__label form__label--required">Postal Code</label>
+                                                <input type="text" id="input02" class="form__element">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input03" class="form__label form__label--required">Family Name of Receiver</label>
+                                                <input type="text" id="input03" class="form__element" value="Chris">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input04" class="form__label form__label--required">First Name of Receiver</label>
+                                                <input type="text" id="input04" class="form__element" value="Hur">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input05" class="form__label form__label--required">Phone Number of recipient</label>
+                                                <input type="text" id="input05" class="form__element" value="123-456-789">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //토글용 line-pay-mini 한셋트 -->
+                            <!-- 디폴트 line-pay-mini 한셋트 -->
+                            <div class="mcht-info mcht-info--form mcht-info--form--type2">
+                                <div class="mcht-info__header">
+                                    <h2 class="mcht-info__title">LINE Pay mini Green 01</h2>
+                                </div>
+                                <div class="mcht-info__cont">
+                                    <div class="mcht-info__form">
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="select05" class="form__label form__label--required">Store Country</label>
+                                                <select name="select" id="select05" class="form__element">
+                                                    <option>06039</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="select06" class="form__label form__label--required">Store District</label>
+                                                <select name="select" id="select06" class="form__element">
+                                                    <option>N/A (Not aoolicable)</option>
+                                                    <option>option1</option>
+                                                    <option>option1</option>
+                                                </select>
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input06" class="form__label form__label--required">Address</label>
+                                                <input type="text" id="input06" class="form__element" value="Gangnam-daero Line Pay Building">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input07" class="form__label form__label--required">Postal Code</label>
+                                                <input type="text" id="input07" class="form__element" value="06039">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form form--half">
+                                            <div class="form__unit">
+                                                <label for="input08" class="form__label form__label--required">Family Name of Receiver</label>
+                                                <input type="text" id="input08" class="form__element" value="Chris">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                            <div class="form__unit">
+                                                <label for="input09" class="form__label form__label--required">First Name of Receiver</label>
+                                                <input type="text" id="input09" class="form__element" value="Hur">
+                                                <p class="form__error-text">Please fill out this form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form__unit">
+                                                <label for="input10" class="form__label form__label--required">Phone Number of recipient</label>
+                                                <input type="text" id="input10" class="form__element" value="123-456-789">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //디폴트 line-pay-mini 한셋트 -->
+                        </article>
+                        <div class="cont__btnbox">
+                            <button type="button" class="btn" disabled>Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="pualugin-modal__close icon-amcpclose" data-element="modal__close">닫기</button>
+        </div>
+    </div>
+    <!-- 레이어팝업 부분 -->
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+    <script>
+        $('.img-box').each(function() {
+            var imgBox = $(this);
+            var imgList = imgBox.find('.img-box__list');
+            var imgItem = imgList.find('div.img-item');
+            var imgReset = imgBox.find('.img-box__reset');
+            imgItem.each(function() {
+                if ($(this).hasClass('img-preview') || $(this).find('.img-item__delete').length > 0) {
+                    //
+                } else {
+                    $(this).addClass('nofunc');
+                }
+            });
+            if (imgBox.hasClass('img-box-logo')) {
+                if (imgItem.length != 0) {
+                    imgReset.show();
+                }
+            }
+            if (imgItem.length != 0) {
+                imgReset.show();
+            }
+        })
+        $(document).on('click', 'div.img-item', function() {
+            var thisItem = $(this);
+            var imgDelete = thisItem.find('.img-item__delete');
+            var imgItemOn = $(this).hasClass('is-active');
+            //var imgList = $(this).parents('.img-box').find('.img-box__wrap .img-box__list .img-item');
+            //var imgReset = $(this).parents('.img-box').find('.img-box__reset');
+            if (imgDelete.length > 0) {
+                if (!imgItemOn) {
+                    $(this).addClass('is-active');
+                } else {
+                    $(this).removeClass('is-active');
+                }
+            }
+        });
+        $(document).on('click', '.img-item__delete', function() {
+            if ($(this).parent().parent().find('div.img-item').length == 1) {
+                $(this).parents('.img-box').find('.img-box__reset').hide();
+            }
+            $(this).parent().remove();
+        })
+        $(document).on('click', '.img-box__reset', function() {
+            $(this).parents('.img-box').find('.img-box__wrap .img-box__list div.img-item').remove();
+            $(this).hide();
+        });
+    </script>
+</body>
+
+</html>

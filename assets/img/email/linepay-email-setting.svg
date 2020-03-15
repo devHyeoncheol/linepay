@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <path id="a" d="M.416 2.049a1.117 1.117 0 1 0 2.234 0c0-.616-.5-1.115-1.117-1.115S.416 1.433.416 2.049z"/>
+        <path id="b" d="M.884 2.049a1.117 1.117 0 0 0 2.232 0c0-.616-.5-1.115-1.117-1.115S.884 1.433.884 2.049z"/>
+        <path id="c" d="M.35 2.049a1.117 1.117 0 1 0 2.234 0c0-.616-.5-1.115-1.117-1.115S.35 1.433.35 2.049z"/>
+        <path id="d" d="M6.456.027C2.982.027.166 3.532.166 7.855c1.662-.18 2.846-.485 3.552-.912.707-.428 1.626-1.395 2.756-2.904 1.112 1.473 2.036 2.44 2.77 2.904.734.463 1.918.825 3.552 1.084v-.14c0-4.341-2.827-7.86-6.315-7.86h-.025z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-472 -244)">
+        <path fill="#F5F5F5" d="M-1 71h1024v730H-1z"/>
+        <rect width="768" height="380" x="127" y="196" fill="#FFF" rx="5"/>
+        <path d="M472 244h80v80h-80z" opacity=".3"/>
+        <path stroke="#262424" stroke-linecap="round" stroke-width="2" d="M518 287h18M518 293h18M518 281h14"/>
+        <path stroke="#262424" stroke-width="2" d="M542.442 306.926h-61a3 3 0 0 1-3-3v-38.667a3 3 0 0 1 3-3h61a3 3 0 0 1 3 3v38.667a3 3 0 0 1-3 3z"/>
+        <g>
+            <g transform="translate(492.481 274)">
+                <mask id="e" fill="#fff">
+                    <use xlink:href="#d"/>
+                </mask>
+                <path fill="#08BF5B" d="M-1.87 8.202h16.703V-1.94H-1.871z" mask="url(#e)"/>
+            </g>
+            <g stroke="#262424" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M505.074 279.97c0 3.26-2.736 5.902-6.111 5.902-3.375 0-6.112-2.642-6.112-5.901 0-3.26 2.737-5.902 6.112-5.902s6.11 2.643 6.11 5.902zM509.839 293.735C509 289.35 504.997 286 500.222 286h-2.444c-5.378 0-9.778 4.25-9.778 9.443v2.36h17.51"/>
+            </g>
+        </g>
+        <g transform="translate(505 255)">
+            <ellipse cx="7.184" cy="7.192" fill="#07B53B" rx="7.184" ry="7.192"/>
+            <path stroke="#FFF" stroke-width="1.497" d="M3.918 7.263l2.456 2.544 4.075-4.577"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+@mixin clear {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin sp-icon_cgmtw ($positionX, $positionY) {
+    display: inline-block;
+    background: url('../img/cgmtw/sp_icon.png') no-repeat;
+    -webkit-background-size: 250px 200px;
+    background-size: 250px 200px;
+    background-position: $positionX $positionY;
+    vertical-align: middle;
+}
+
+@mixin icon_select_cgmtw ($positionX, $positionY) {
+    background: url('../img/cgmtw/icon_select.png') no-repeat;
+    -webkit-background-size: 26px 75px;
+    background-size: 26px 75px;
+    background-position: $positionX $positionY;
+}
+
+@mixin radius ($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+
+@mixin before_absolute{
+    position: absolute;
+    content: '';
+}

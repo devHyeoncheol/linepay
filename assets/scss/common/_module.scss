@@ -1,0 +1,514 @@
+
+// checkbox
+.checkbox_area{
+    font-size: 0;
+    .check_box{
+        visibility: hidden;
+        appearance: none;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        margin: -1px 0 0 -1px;
+        &:checked{
+            & + .check_label:before{
+                @include sp-icon_cgmtw (-45px, -25px);
+            }
+        }
+    }
+    .check_label{
+        position: relative;
+        padding: 5px 0 5px 28px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        color: #222;
+        &:before{
+            @include before_absolute;
+            top: 6px;
+            left: 0;
+            overflow: hidden;
+            width: 20px;
+            height: 20px;
+            @include sp-icon_cgmtw (-45px, 0);
+        }
+    }
+    .additional_noti{
+        display: block;
+        padding-left: 27px;
+        font-size: 13px;
+        line-height: 1.31;
+        color: #97999e;
+        white-space: nowrap;
+    }
+    &.finish{
+        .additional_noti{
+            padding-left: 0;
+        }
+    }
+}
+
+//ID 이미지 추가
+.img_add_box{
+    position: relative;
+    width: 100%;
+    margin: 20px auto 0;
+    font-size: 0;
+    &:before{
+        @include before_absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include radius(10px);
+        border: solid 0.5px #d8d8de;
+    }
+    .img-add{
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-top: 61.59%;
+        &:before{
+            @include before_absolute;
+            top: 37.12%;
+            left: 50%;
+            margin-left:-10px;
+            width: 21px;
+            height: 21px;
+            @include radius(10px);
+            @include sp-icon_cgmtw (-150px, -50px);
+        }
+        .img_add_label{
+            position: absolute;
+            left: 0;
+            top:37.12%;
+            width: 100%;
+            margin-top: 32px;
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            color: #797a7e;
+        }
+    }
+    .img_box{
+        position: relative;
+        display: none;
+        vertical-align: middle;
+        .img_del_btn{
+            position: absolute;
+            display: block;
+            top: -5px;
+            right: -5px;
+            width: 20px;
+            height: 20px;
+            @include sp-icon_cgmtw (-210px, -60px);
+        }
+        img{
+            height: auto;
+            width: 100%;
+            @include radius(10px);
+        }
+        &:before{
+            @include before_absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            @include radius(10px);
+            border: solid 0.5px #d8d8de;
+        }
+    }
+    &.add_img{
+        &:before{
+            display: none;
+        }
+        &:after{
+            display: inline-block;
+            vertical-align: middle;
+            width: 1px;
+            height: 100%;
+            margin-right: -1px;
+            content: '';
+        }
+        .img_box{
+            display: block;
+        }
+        .img-add{
+            display: none;
+        }
+    }
+    &+.img_add_box{
+        margin-top: 15px;
+    }
+    &.img_finish{
+        .img_box{
+            display:block;
+        }
+        .img_box .img_del_btn,.img-add{
+            display: none;
+        }
+    }
+}
+
+// 하단 버튼
+.btn_bottom{
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: #08bf5b;
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    &:disabled{
+        background: #f0f1f3;
+        color: #797a7e;
+    }
+    &.iphone_x{
+        height: 90px;
+        padding-bottom: 35px;
+    }
+}
+
+//본문 버튼
+.btn_cont{
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 0 10px;
+    @include radius(5px);
+    background: #08bf5b;
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    &:disabled{
+        background: #e7e7ea;
+    }
+    &.btn_white{
+        height: 48px;
+        background: #fff;
+        border: solid 0.5px #d3d3d3;
+        font-size: 16px;
+        color: #797a7e;
+        font-weight: bold;
+        &:disabled{
+            background: #f0f1f3;
+            color: #797a7e;
+            border: none;
+        }
+    }
+}
+
+
+//입금계좌, 신분증 등록 버튼
+.btn_register{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 82px;
+    padding: 0 40px 0 61px;
+    background: #08bf5b;
+    color: #fff;
+    font-size: 13px;
+    text-align: left;
+    @include radius(5px);
+    & + .btn_register{
+        margin-top: 8px;
+    }
+    .btn_title{
+        display: block;
+        line-height: 1.69;
+    }
+    .btn_text{
+        line-height: 16px;
+        color: #a6f0a5;
+    }
+    &:before{
+        @include before_absolute;
+        top: 50%;
+        left: 20px;
+        width: 30px;
+        height: 26px;
+        margin-top: -13px;
+        @include sp-icon_cgmtw (-180px, 0);
+    }
+    &.idcard{
+        &:before{
+            @include sp-icon_cgmtw (-210px, 0);
+        }
+    }
+    &.idcard_again{
+        &:before{
+            @include sp-icon_cgmtw (-180px, -30px);
+        }
+    }
+    .arrow_icon{
+        &:after,&:before{
+            @include before_absolute;
+            display: block;
+            width:1px;
+            height:6px;
+            background:rgba(255,255,255,.6);
+            right:20px;
+        }
+        &:after {
+            top:40px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        &:before {
+            top:36px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+//등록정보 박스
+.register_info{
+    position: relative;
+    margin-bottom: 22px;
+    padding-left: 60px;
+    font-size: 16px;
+    word-break: break-all;
+    white-space: normal;
+    color: #909093;
+    .register_title{
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #1c1c1c;
+        line-height: 1.13;
+        font-weight: bold;
+    }
+    .details_link{
+        display: inline-block;
+        margin-top: 6px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #cbcbcb;
+        text-decoration: underline;
+    }
+    &:before{
+        @include before_absolute;
+        top: 1px;
+        left: 0;
+        width: 42px;
+        height: 43px;
+        @include sp-icon_cgmtw (-70px, 0);
+    }
+    &.recommend dd {
+        font-size: 18px;
+    }
+    &.linker{
+        &:before{
+            @include sp-icon_cgmtw (-120px, 0);
+        }
+    }
+    dd{
+        font-size: 16px;
+        line-height: 21px;
+        font-family: -apple-system, SFProText, Arial, Helvetica, sans-serif;
+    }
+}
+
+// text input
+.input_box{
+    position: relative;
+    padding-top: 42px;
+    width: 100%;
+    .text_label{
+        position: absolute;
+        top: 42px;
+        left: 0;
+        font-size: 19px;
+        line-height: 37px;
+        color: #97999e;
+        z-index: 8;
+    }
+    .text_input{
+        display: block;
+        width: 100%;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -webkit-border-radius: 0;
+        appearance: none;
+        background-color: transparent;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 37px;
+        color: #222;
+        height:37px;
+        border-bottom: 1px solid #ececec;
+        outline: none;
+    }
+    &.inputon{
+        .text_label{
+            top: 28px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    &.input_finish{
+        .text_label{
+            top: 28px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .text_input{
+            border-bottom: none;
+        }
+    }
+}
+
+// select box
+.select_area{
+    position: relative;
+    display:block;
+    .select_label{
+        position: absolute;
+        z-index: 8;
+        font-size: 16px;
+        color: #949494;
+        line-height: 26px;
+        top: 5px;
+        font-family: -apple-system,SFProDisplay,Arial, Helvetica, sans-serif;
+    }
+    .select_element{
+        position: relative;
+        display: block;
+        width: 100%;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -webkit-border-radius: 0;
+        appearance: none;
+        background-color: transparent;
+        font-size: 1.0625rem;
+        color: #fff;
+        font-weight: 300;
+        line-height: 40px;
+        @include icon_select_cgmtw(100%, 5px);
+        option{
+            color: #111111;
+        }
+    }
+}
+
+//popup 관련
+.dimmed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(34,34,34,.45);
+    text-align: center;
+    font-size: 0;
+    z-index: 1000;
+    &:after{
+        width: 1px;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        content: '';
+    }
+    .popup_ly{
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        @include radius(12px);
+        background-color: #ffffff;
+    }
+}
+
+// 영문 텍스트
+.text_en {
+    font-family: -apple-system,SFProDisplay,"SF Pro Display",Arial, Helvetica, sans-serif;
+}
+
+// go to top
+.btn_top {
+    display: block;
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+    width: 59px;
+    height: 59px;
+    background: url('../img/cgmtw/ico_gototop2.svg') 50% 50% no-repeat;
+}
+
+
+// loader
+.loader * {
+    box-sizing: unset;
+}
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    .loader__item {
+        width: 52px;
+        height: 52px;
+        margin: 0 auto;
+        .loader__item-round {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -26px 0 0 -26px;
+            width: 40px;
+            height: 40px;
+            border: 6px solid #d8dbe5;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            opacity: .2;
+        }
+        .loader__item-spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -26px 0 0 -26px;
+            width: 40px;
+            height: 40px;
+            border: 6px solid transparent;
+            border-right-color: #e3e5ec;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            -webkit-animation: loader-rotate 1s linear infinite;
+            animation: loader-rotate 1s linear infinite;
+        }
+    }
+}
+@-webkit-keyframes loader-rotate{
+    0% {-webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    70% {-webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    100% {-webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+@keyframes loader-rotate {
+    0% {-webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    70% {-webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    100% {-webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}

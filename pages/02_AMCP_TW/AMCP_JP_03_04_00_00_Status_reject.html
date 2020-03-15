@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Application - LINE Pay</title>
+    <title>Sales center - LINE Pay</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../assets/css/amcptw.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container"> <a href="#cont" class="shortcut">Shortcut</a>
+            <header class="header">
+                <h2>
+                    <span>LINE PAY</span>
+                </h2>
+            </header>
+        </div>
+        <div class="container">
+            <div class="cont" id="cont" tabIndex="0">
+                <header class="cont__header cont__header--center">
+                    <h1>Application Status </h1>
+                </header>
+                <section class="cont__section cont__section--status">
+                    <!-- ! form 에러 발생시 해당 폼 감싸는 <div class="form__unit"> 에 .error 클래스 추가 필요 (빨간 라인 + 에러메시지 노출됨)
+
+                    -->
+                    <article class="cont__article pdt0">
+                        <div class="gray-box gray-box--type1">
+                            <div class="gray-box__title">merchantID@pay.line</div>
+                            <p class="gray-box__detail">I will refuse the application result. <br>Please apply for a new application according to the LINE Pay policy.</p>
+                            <div class="gray-box__inner">
+                                <dl class="vertical-d">
+                                    <dt class="vertical-d__dt">Reason of Rejection</dt>
+                                    <dd class="vertical-d__dd">Missing required documents</dd>
+                                    <dt class="vertical-d__dt">Details of Rejection</dt>
+                                    <dd class="vertical-d__dd">Please submit the required documents in addition to the required documents. submit the required documents in addition to the required documents.Please submit the required documents in addition to the required documents. submit the required documents in addition to the required documents. Please submit the required documents in addition to the required documents. submit the required documents in addition to the required documents. Please submit the required documents in addition to the required documents. submit the required documents in addition to the required documents. Please submit the required documents in addition to the required documents. submit the required documents in addition to the required documents.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="cont__btnbox">
+                        <button type="button" class="btn btn--big">Confirm</button>
+                        <!-- 190712 btn--big 클래스 추가 -->
+                    </div>
+                    <div class="status__footer ta-center">
+                        <p class="status__footer-title">Please leave inquiries related to the examination.</p>
+                        <div class="status__footer-textarea clearfix">
+                            <p class="status__footer-detail fl"><span class="status__footer-detail--bold">Call</span>0120-993-454</p>
+                            <p class="status__footer-detail fl"><span class="status__footer-detail--bold">Email</span> linepay_judge_biz_jp@linecorp.com</p>
+                            <!--
+                            190701 태그명 오류 spab -> span 수정 -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/lib/slick.js"></script>
+    <script src="../../assets/js/pualugin.js"></script>
+    <script src="../../assets/js/lib/jquery.selectric.min.js"></script>
+    <script src="../../assets/js/lib/moment.min.js"></script>
+    <script src="../../assets/js/lib/daterangepicker.js"></script>
+    <script src="../../assets/js/amcpscript.js"></script>
+</body>
+
+</html>
